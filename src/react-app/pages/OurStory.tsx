@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import Footer from "@/react-app/components/Footer";
 import {
   ArrowLeft,
   Target,
@@ -544,34 +545,7 @@ export default function OurStoryPage() {
         </div>
       </section>
 
-      {/* ── Footer ── */}
-      <footer className="py-8 px-6" style={{ background: "#0a0a0a" }}>
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Slonix Solutions. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
-            <Link
-              to="/privacy-policy"
-              className="text-gray-500 text-xs hover:text-white transition-colors"
-            >
-              Privacy
-            </Link>
-            <Link
-              to="/terms-and-conditions"
-              className="text-gray-500 text-xs hover:text-white transition-colors"
-            >
-              Terms
-            </Link>
-            <Link
-              to="/"
-              className="text-gray-500 text-xs hover:text-white transition-colors"
-            >
-              Home
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
