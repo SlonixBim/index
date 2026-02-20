@@ -134,12 +134,12 @@ export default function CourseDetailPage() {
                 </div>
                 
                 <div className="p-6">
-                  <a 
-                    href="/#contact"
+                  <Link
+                    to={`/enroll/${course.id}`}
                     className="block w-full px-6 py-4 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-xl font-semibold text-lg hover:shadow-lg hover:shadow-red-500/50 transition-all text-center"
                   >
                     Enroll This Course
-                  </a>
+                  </Link>
 
                   <div className="mt-6 pt-6 border-t border-gray-200">
                     <div className="text-sm font-semibold text-gray-900 mb-3">This program includes:</div>
@@ -260,13 +260,13 @@ export default function CourseDetailPage() {
           <p className="text-xl text-red-100 mb-8 leading-relaxed">
             Join thousands of successful students who have launched their careers with Slonix Solutions
           </p>
-          <a 
-            href="/#contact"
+          <Link
+            to={`/enroll/${course.id}`}
             className="group px-8 py-4 bg-white text-red-600 rounded-xl font-semibold text-lg hover:bg-red-50 transition-all flex items-center justify-center gap-2 mx-auto shadow-lg"
           >
             Enroll This Course
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
         </div>
       </section>
 

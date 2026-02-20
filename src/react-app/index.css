@@ -5,3 +5,407 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+/* ===== Hero Landing Animations ===== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawUnderline {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) rotate(8deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(239, 68, 68, 0.15);
+  }
+}
+
+@keyframes tealBlockReveal1 {
+  from {
+    opacity: 0;
+    transform: translateX(30px) scale(0.9);
+    border-radius: 2rem;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    border-radius: 1.5rem;
+  }
+}
+
+@keyframes tealBlockReveal2 {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    border-radius: 1.5rem;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    border-radius: 1rem;
+  }
+}
+
+@keyframes cardPopIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Utility animation classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.animate-fade-in-right {
+  animation: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.animate-fade-in-left {
+  animation: fadeInLeft 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.animate-scale-in {
+  animation: scaleIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.animate-slide-in-bottom {
+  animation: slideInFromBottom 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.animate-draw-underline {
+  stroke-dasharray: 300;
+  animation: drawUnderline 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.animate-sparkle {
+  animation: sparkle 2.5s ease-in-out infinite;
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+.animate-teal-block-1 {
+  animation: tealBlockReveal1 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.animate-teal-block-2 {
+  animation: tealBlockReveal2 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.animate-card-pop {
+  animation: cardPopIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Hero carousel progress bar */
+@keyframes progressBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Hero image carousel crossfade */
+.hero-img-enter {
+  animation: heroImgIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes heroImgIn {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+/* Stagger delay utilities */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-600 {
+  animation-delay: 600ms;
+}
+.delay-700 {
+  animation-delay: 700ms;
+}
+.delay-800 {
+  animation-delay: 800ms;
+}
+.delay-900 {
+  animation-delay: 900ms;
+}
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+.delay-1100 {
+  animation-delay: 1100ms;
+}
+.delay-1200 {
+  animation-delay: 1200ms;
+}
+
+/* Hide scrollbar for testimonial track */
+#testimonial-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== Bento Grid — Why Choose Slonix ===== */
+
+/* Bento card entrance animation */
+@keyframes bentoReveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.bento-card {
+  opacity: 0;
+  animation: bentoReveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.bento-card:nth-child(1) {
+  animation-delay: 0ms;
+}
+.bento-card:nth-child(2) {
+  animation-delay: 120ms;
+}
+.bento-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+.bento-card:nth-child(4) {
+  animation-delay: 320ms;
+}
+
+/* ── Floating orb animations ── */
+@keyframes orbDrift1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(15px, -20px) scale(1.08);
+  }
+  50% {
+    transform: translate(-10px, -35px) scale(0.95);
+  }
+  75% {
+    transform: translate(20px, -10px) scale(1.05);
+  }
+}
+@keyframes orbDrift2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    transform: translate(-20px, 15px) scale(1.1);
+  }
+  60% {
+    transform: translate(10px, 25px) scale(0.92);
+  }
+  80% {
+    transform: translate(-15px, 5px) scale(1.04);
+  }
+}
+@keyframes orbDrift3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(25px, 10px) scale(0.95);
+  }
+  45% {
+    transform: translate(-5px, -20px) scale(1.12);
+  }
+  70% {
+    transform: translate(15px, 15px) scale(0.98);
+  }
+}
+@keyframes orbDrift4 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  35% {
+    transform: translate(-12px, -25px) scale(1.06);
+  }
+  55% {
+    transform: translate(18px, -8px) scale(0.94);
+  }
+  85% {
+    transform: translate(-8px, 12px) scale(1.1);
+  }
+}
+
+.orb-float-1 {
+  animation: orbDrift1 8s ease-in-out infinite;
+}
+.orb-float-2 {
+  animation: orbDrift2 10s ease-in-out infinite;
+}
+.orb-float-3 {
+  animation: orbDrift3 12s ease-in-out infinite;
+}
+.orb-float-4 {
+  animation: orbDrift4 9s ease-in-out infinite;
+}
+
+/* ── Tablet (≥768px): 2-column hybrid ── */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(12, 1fr) !important;
+    grid-template-rows: auto auto auto !important;
+  }
+  .bento-grid > :nth-child(1) {
+    grid-column: 1 / span 12 !important;
+  }
+  .bento-grid > :nth-child(2) {
+    grid-column: 1 / span 6 !important;
+  }
+  .bento-grid > :nth-child(3) {
+    grid-column: 7 / span 6 !important;
+  }
+  .bento-grid > :nth-child(4) {
+    grid-column: 1 / span 12 !important;
+  }
+}
+
+/* ── Desktop (≥1024px): Full asymmetric bento ── */
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(12, 1fr) !important;
+    grid-template-rows: 1fr 1fr !important;
+    min-height: 600px;
+  }
+  /* Title card: left column, spans both rows */
+  .bento-grid > :nth-child(1) {
+    grid-column: 1 / span 4 !important;
+    grid-row: 1 / span 2;
+    min-height: unset !important;
+  }
+  /* Industry training: top middle */
+  .bento-grid > :nth-child(2) {
+    grid-column: 5 / span 4 !important;
+    grid-row: 1;
+    min-height: unset !important;
+  }
+  /* Hands-on projects: top right */
+  .bento-grid > :nth-child(3) {
+    grid-column: 9 / span 4 !important;
+    grid-row: 1;
+    min-height: unset !important;
+  }
+  /* Real Results + Career-ready: spans full bottom row */
+  .bento-grid > :nth-child(4) {
+    grid-column: 5 / span 8 !important;
+    grid-row: 2;
+    min-height: unset !important;
+  }
+}

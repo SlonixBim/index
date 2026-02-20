@@ -12,8 +12,7 @@ app.post('/', async (c) => {
       return c.json({ error: 'Name, email, and message are required' }, 400);
     }
 
-//    const resend = new Resend(c.env.RESEND_API_KEY);
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend(c.env.RESEND_API_KEY);
 
     // Send email to your team
     await resend.emails.send({
