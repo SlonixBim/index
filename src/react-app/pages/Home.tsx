@@ -502,6 +502,8 @@ export default function HomePage() {
     canonical: "https://slonix.in/",
   });
 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -628,29 +630,74 @@ export default function HomePage() {
               >
                 Start Learning
               </a>
-              {/* Mobile menu icon placeholder */}
+              {/* Mobile menu button */}
               <button
                 type="button"
-                aria-label="Open navigation menu"
+                aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                onClick={() => setMobileMenuOpen((prev) => !prev)}
                 className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
               >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                {mobileMenuOpen ? (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-3 flex flex-col gap-1">
+            <Link
+              to="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
+            >
+              Home
+            </Link>
+            <Link
+              to="/courses"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
+            >
+              Courses
+            </Link>
+            <a
+              href="#testimonials"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
+            >
+              Testimonials
+            </a>
+            <a
+              href="#about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
+            >
+              About
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
+            >
+              Contact
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="mt-2 px-4 py-3 rounded-xl border-2 border-gray-900 text-gray-900 text-sm font-semibold hover:bg-gray-900 hover:text-white transition-all duration-200 text-center"
+            >
+              Start Learning
+            </a>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
