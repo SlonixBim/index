@@ -1,0 +1,16 @@
+# Build output
+dist/
+
+# Dependencies
+node_modules/
+
+# Cloudflare
+.wrangler/
+.dev.vars
+worker-configuration.d.ts
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
