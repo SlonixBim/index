@@ -1,4 +1,5 @@
 import { useEffect, useState, useMemo, useRef } from "react";
+import { useSEO } from "@/react-app/hooks/useSEO";
 import { Link } from "react-router";
 import {
   ArrowRight,
@@ -15,6 +16,12 @@ import {
 import { courses } from "@/data/courses";
 
 export default function CoursesPage() {
+  useSEO({
+    title: "All Courses | Slonix Solutions — Engineering Training Institute",
+    description: "Browse all engineering training courses at Slonix Solutions — SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack, Python and more. Enroll today.",
+    canonical: "https://slonix.in/courses",
+  });
+
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [filterOpen, setFilterOpen] = useState(false);
@@ -546,10 +553,10 @@ export default function CoursesPage() {
                     />
                   </svg>
                   <a
-                    href="tel:+919344457370"
+                    href="tel:+919080211696"
                     className="hover:text-white transition-colors"
                   >
-                    +91 93444 57370
+                    +91 90802 11696
                   </a>
                 </li>
                 <li className="text-gray-400 text-sm flex items-start gap-2">
