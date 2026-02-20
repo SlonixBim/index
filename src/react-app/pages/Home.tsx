@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
+import { useSEO } from "@/react-app/hooks/useSEO";
 import {
   ArrowRight,
   BookOpen,
@@ -495,6 +496,12 @@ function ImpactStats() {
 }
 
 export default function HomePage() {
+  useSEO({
+    title: "Slonix Solutions | Engineering Training Institute in India",
+    description: "Industry-ready engineering training in SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack & Python. Hands-on courses with placement support in Bengaluru.",
+    canonical: "https://slonix.in/",
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -1667,11 +1674,11 @@ export default function HomePage() {
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Phone:</p>
                   <a
-                    href="tel:+919344457370"
+                    href="tel:+919080211696"
                     className="text-gray-900 font-bold text-xl hover:underline"
                     style={{ fontFamily: "Space Grotesk, sans-serif" }}
                   >
-                    +91 93444 57370
+                    +91 90802 11696
                   </a>
                   <p className="text-gray-400 text-sm mt-1">
                     Available Monday to Friday, 9 AM - 6 PM IST
@@ -1695,7 +1702,7 @@ export default function HomePage() {
               {/* Live Chat Button */}
               <div className="mt-10">
                 <a
-                  href="https://wa.me/919344457370?text=Hi%20Slonix%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20courses%20and%20training%20programs.%20Could%20you%20please%20share%20the%20details%3F"
+                  href="https://wa.me/919080211696?text=Hi%20Slonix%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20courses%20and%20training%20programs.%20Could%20you%20please%20share%20the%20details%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg"
@@ -2012,10 +2019,10 @@ export default function HomePage() {
                     style={{ color: "#f14625" }}
                   />
                   <a
-                    href="tel:+919344457370"
+                    href="tel:+919080211696"
                     className="hover:text-white transition-colors"
                   >
-                    +91 93444 57370
+                    +91 90802 11696
                   </a>
                 </li>
                 <li className="text-gray-400 text-sm flex items-start gap-2">
