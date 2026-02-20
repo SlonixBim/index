@@ -25,7 +25,7 @@ export const courses: Course[] = [
     title: "Full Stack Web Development",
     category: "IT Programs",
     gradient: "from-violet-600 to-purple-500",
-    duration: "16 weeks",
+    duration: "16 week's",
     level: "Beginner to Advanced",
     description:
       "Master HTML, CSS, JavaScript, React, Node.js, and databases to build complete web applications from scratch.",
@@ -45,12 +45,47 @@ export const courses: Course[] = [
       "Deploy full stack apps to the cloud",
     ],
     curriculum: [
-      { module: "Module 1: Frontend Basics", topics: ["HTML5 structure", "CSS3 & Flexbox/Grid", "Responsive design", "Bootstrap"] },
-      { module: "Module 2: JavaScript & React", topics: ["JS ES6+", "DOM manipulation", "React components", "Hooks & state management"] },
-      { module: "Module 3: Backend with Node.js", topics: ["Node.js basics", "Express framework", "REST API design", "Authentication & JWT"] },
-      { module: "Module 4: Databases & Deployment", topics: ["MySQL & MongoDB", "ORM/ODM", "Git & GitHub", "Deployment on Vercel/AWS"] },
+      {
+        module: "Module 1: Frontend Basics",
+        topics: [
+          "HTML5 structure",
+          "CSS3 & Flexbox/Grid",
+          "Responsive design",
+          "Bootstrap",
+        ],
+      },
+      {
+        module: "Module 2: JavaScript & React",
+        topics: [
+          "JS ES6+",
+          "DOM manipulation",
+          "React components",
+          "Hooks & state management",
+        ],
+      },
+      {
+        module: "Module 3: Backend with Node.js",
+        topics: [
+          "Node.js basics",
+          "Express framework",
+          "REST API design",
+          "Authentication & JWT",
+        ],
+      },
+      {
+        module: "Module 4: Databases & Deployment",
+        topics: [
+          "MySQL & MongoDB",
+          "ORM/ODM",
+          "Git & GitHub",
+          "Deployment on Vercel/AWS",
+        ],
+      },
     ],
-    prerequisites: ["Basic computer skills", "No prior programming experience needed"],
+    prerequisites: [
+      "Basic computer skills",
+      "No prior programming experience needed",
+    ],
   },
   {
     id: "full-stack-java",
@@ -877,12 +912,47 @@ export const courses: Course[] = [
       "Create professional electrical reports",
     ],
     curriculum: [
-      { module: "Module 1: AutoCAD Basics", topics: ["Interface & navigation", "Drawing tools", "Layers & properties", "Blocks & attributes"] },
-      { module: "Module 2: Electrical Schematics", topics: ["Schematic symbols", "Wire routing", "Ladder diagrams", "Component tagging"] },
-      { module: "Module 3: Panel & Layout Design", topics: ["Panel layout drawing", "Single-line diagrams", "Terminal strips", "Cable schedules"] },
-      { module: "Module 4: Reports & Output", topics: ["Bill of materials", "Wire list reports", "PDF export", "Project documentation"] },
+      {
+        module: "Module 1: AutoCAD Basics",
+        topics: [
+          "Interface & navigation",
+          "Drawing tools",
+          "Layers & properties",
+          "Blocks & attributes",
+        ],
+      },
+      {
+        module: "Module 2: Electrical Schematics",
+        topics: [
+          "Schematic symbols",
+          "Wire routing",
+          "Ladder diagrams",
+          "Component tagging",
+        ],
+      },
+      {
+        module: "Module 3: Panel & Layout Design",
+        topics: [
+          "Panel layout drawing",
+          "Single-line diagrams",
+          "Terminal strips",
+          "Cable schedules",
+        ],
+      },
+      {
+        module: "Module 4: Reports & Output",
+        topics: [
+          "Bill of materials",
+          "Wire list reports",
+          "PDF export",
+          "Project documentation",
+        ],
+      },
     ],
-    prerequisites: ["Basic electrical engineering knowledge", "No prior AutoCAD experience needed"],
+    prerequisites: [
+      "Basic electrical engineering knowledge",
+      "No prior AutoCAD experience needed",
+    ],
   },
   {
     id: "embedded-systems",
@@ -911,7 +981,12 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: Microcontroller Basics",
-        topics: ["Architecture overview", "GPIO programming", "Timers & counters", "ADC/DAC"],
+        topics: [
+          "Architecture overview",
+          "GPIO programming",
+          "Timers & counters",
+          "ADC/DAC",
+        ],
       },
       {
         module: "Module 2: Communication Protocols",
@@ -919,18 +994,36 @@ export const courses: Course[] = [
       },
       {
         module: "Module 3: Peripheral Interfacing",
-        topics: ["LCD & OLED displays", "Keypad & switches", "Motor drivers", "Sensor integration"],
+        topics: [
+          "LCD & OLED displays",
+          "Keypad & switches",
+          "Motor drivers",
+          "Sensor integration",
+        ],
       },
       {
         module: "Module 4: RTOS & Interrupts",
-        topics: ["Interrupt handling", "FreeRTOS basics", "Task scheduling", "Semaphores & queues"],
+        topics: [
+          "Interrupt handling",
+          "FreeRTOS basics",
+          "Task scheduling",
+          "Semaphores & queues",
+        ],
       },
       {
         module: "Module 5: Project Development",
-        topics: ["PCB design basics", "Prototyping", "Debugging techniques", "Industry projects"],
+        topics: [
+          "PCB design basics",
+          "Prototyping",
+          "Debugging techniques",
+          "Industry projects",
+        ],
       },
     ],
-    prerequisites: ["Basic electronics knowledge", "C programming fundamentals"],
+    prerequisites: [
+      "Basic electronics knowledge",
+      "C programming fundamentals",
+    ],
   },
 
   {
@@ -960,23 +1053,48 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: Digital Logic Design",
-        topics: ["Boolean algebra", "Combinational circuits", "Sequential circuits", "State machines"],
+        topics: [
+          "Boolean algebra",
+          "Combinational circuits",
+          "Sequential circuits",
+          "State machines",
+        ],
       },
       {
         module: "Module 2: Verilog HDL",
-        topics: ["Data types & operators", "Behavioral modeling", "Structural modeling", "Testbenches"],
+        topics: [
+          "Data types & operators",
+          "Behavioral modeling",
+          "Structural modeling",
+          "Testbenches",
+        ],
       },
       {
         module: "Module 3: CMOS Design",
-        topics: ["MOSFET characteristics", "CMOS inverter", "Logic gates", "Pass transistor logic"],
+        topics: [
+          "MOSFET characteristics",
+          "CMOS inverter",
+          "Logic gates",
+          "Pass transistor logic",
+        ],
       },
       {
         module: "Module 4: Synthesis & STA",
-        topics: ["Logic synthesis", "Timing constraints", "Setup/hold analysis", "Clock domain crossing"],
+        topics: [
+          "Logic synthesis",
+          "Timing constraints",
+          "Setup/hold analysis",
+          "Clock domain crossing",
+        ],
       },
       {
         module: "Module 5: Physical Design",
-        topics: ["Floorplanning", "Placement & routing", "DRC & LVS", "Tape-out flow"],
+        topics: [
+          "Floorplanning",
+          "Placement & routing",
+          "DRC & LVS",
+          "Tape-out flow",
+        ],
       },
     ],
     prerequisites: ["Basic electronics", "Digital electronics fundamentals"],
@@ -1009,23 +1127,48 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: IoT Fundamentals",
-        topics: ["IoT architecture", "Sensors & actuators", "ESP32 programming", "Arduino IDE"],
+        topics: [
+          "IoT architecture",
+          "Sensors & actuators",
+          "ESP32 programming",
+          "Arduino IDE",
+        ],
       },
       {
         module: "Module 2: Wireless Connectivity",
-        topics: ["WiFi protocols", "MQTT broker", "BLE basics", "LoRa & NB-IoT overview"],
+        topics: [
+          "WiFi protocols",
+          "MQTT broker",
+          "BLE basics",
+          "LoRa & NB-IoT overview",
+        ],
       },
       {
         module: "Module 3: Cloud Integration",
-        topics: ["AWS IoT Core", "Firebase Realtime DB", "Node-RED", "ThingSpeak"],
+        topics: [
+          "AWS IoT Core",
+          "Firebase Realtime DB",
+          "Node-RED",
+          "ThingSpeak",
+        ],
       },
       {
         module: "Module 4: Data & Dashboards",
-        topics: ["Grafana dashboards", "Data logging", "Alerts & notifications", "Edge computing"],
+        topics: [
+          "Grafana dashboards",
+          "Data logging",
+          "Alerts & notifications",
+          "Edge computing",
+        ],
       },
       {
         module: "Module 5: Industry Projects",
-        topics: ["Smart home system", "Industrial monitoring", "Agriculture IoT", "Wearable devices"],
+        topics: [
+          "Smart home system",
+          "Industrial monitoring",
+          "Agriculture IoT",
+          "Wearable devices",
+        ],
       },
     ],
     prerequisites: ["Basic programming knowledge", "Electronics fundamentals"],
@@ -1058,23 +1201,48 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: Robotics Fundamentals",
-        topics: ["Kinematics", "Degrees of freedom", "Actuators & motors", "Robot types"],
+        topics: [
+          "Kinematics",
+          "Degrees of freedom",
+          "Actuators & motors",
+          "Robot types",
+        ],
       },
       {
         module: "Module 2: Motor Control",
-        topics: ["DC & stepper motors", "PID control", "Servo systems", "H-bridge drivers"],
+        topics: [
+          "DC & stepper motors",
+          "PID control",
+          "Servo systems",
+          "H-bridge drivers",
+        ],
       },
       {
         module: "Module 3: ROS Programming",
-        topics: ["ROS architecture", "Topics & services", "URDF models", "Gazebo simulation"],
+        topics: [
+          "ROS architecture",
+          "Topics & services",
+          "URDF models",
+          "Gazebo simulation",
+        ],
       },
       {
         module: "Module 4: Sensors & Perception",
-        topics: ["LIDAR integration", "IMU & odometry", "Camera calibration", "Sensor fusion"],
+        topics: [
+          "LIDAR integration",
+          "IMU & odometry",
+          "Camera calibration",
+          "Sensor fusion",
+        ],
       },
       {
         module: "Module 5: Autonomous Navigation",
-        topics: ["SLAM algorithms", "Path planning", "Obstacle avoidance", "ROS Nav Stack"],
+        topics: [
+          "SLAM algorithms",
+          "Path planning",
+          "Obstacle avoidance",
+          "ROS Nav Stack",
+        ],
       },
     ],
     prerequisites: ["Python or C++ basics", "Basic electronics knowledge"],
@@ -1107,26 +1275,49 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: PLC Fundamentals",
-        topics: ["PLC architecture", "Input/output modules", "Scan cycle", "Wiring basics"],
+        topics: [
+          "PLC architecture",
+          "Input/output modules",
+          "Scan cycle",
+          "Wiring basics",
+        ],
       },
       {
         module: "Module 2: Ladder Logic Programming",
-        topics: ["Contacts & coils", "Timers & counters", "Math functions", "Comparison instructions"],
+        topics: [
+          "Contacts & coils",
+          "Timers & counters",
+          "Math functions",
+          "Comparison instructions",
+        ],
       },
       {
         module: "Module 3: Advanced Programming",
-        topics: ["Function block diagram", "Structured text", "Sequential function chart", "Subroutines"],
+        topics: [
+          "Function block diagram",
+          "Structured text",
+          "Sequential function chart",
+          "Subroutines",
+        ],
       },
       {
         module: "Module 4: SCADA & HMI",
-        topics: ["HMI design", "Tag configuration", "Alarm management", "Data logging"],
+        topics: [
+          "HMI design",
+          "Tag configuration",
+          "Alarm management",
+          "Data logging",
+        ],
       },
       {
         module: "Module 5: Industrial Protocols",
         topics: ["Modbus RTU/TCP", "Profibus", "EtherNet/IP", "OPC-UA basics"],
       },
     ],
-    prerequisites: ["Basic electrical knowledge", "No prior PLC experience required"],
+    prerequisites: [
+      "Basic electrical knowledge",
+      "No prior PLC experience required",
+    ],
   },
 
   {
@@ -1156,22 +1347,45 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: ETAP Interface & Modelling",
-        topics: ["One-line diagram", "Bus & branch modelling", "Equipment libraries", "Load data entry"],
+        topics: [
+          "One-line diagram",
+          "Bus & branch modelling",
+          "Equipment libraries",
+          "Load data entry",
+        ],
       },
       {
         module: "Module 2: Load Flow Analysis",
-        topics: ["Newton-Raphson method", "Voltage profiles", "Power factor correction", "Reports"],
+        topics: [
+          "Newton-Raphson method",
+          "Voltage profiles",
+          "Power factor correction",
+          "Reports",
+        ],
       },
       {
         module: "Module 3: Short Circuit Studies",
-        topics: ["ANSI & IEC methods", "Fault current calculation", "Equipment rating", "Protective device sizing"],
+        topics: [
+          "ANSI & IEC methods",
+          "Fault current calculation",
+          "Equipment rating",
+          "Protective device sizing",
+        ],
       },
       {
         module: "Module 4: Protection Coordination",
-        topics: ["Relay settings", "Time-current curves", "Selectivity analysis", "Arc flash study"],
+        topics: [
+          "Relay settings",
+          "Time-current curves",
+          "Selectivity analysis",
+          "Arc flash study",
+        ],
       },
     ],
-    prerequisites: ["Electrical engineering fundamentals", "Basic power systems knowledge"],
+    prerequisites: [
+      "Electrical engineering fundamentals",
+      "Basic power systems knowledge",
+    ],
   },
 
   {
@@ -1201,22 +1415,45 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: Electrical Drawing Basics",
-        topics: ["SLD preparation", "Schematic symbols", "Wiring diagrams", "AutoCAD Electrical intro"],
+        topics: [
+          "SLD preparation",
+          "Schematic symbols",
+          "Wiring diagrams",
+          "AutoCAD Electrical intro",
+        ],
       },
       {
         module: "Module 2: Panel & Switchboard Design",
-        topics: ["Busbar sizing", "Circuit breaker selection", "Panel layout", "Earthing systems"],
+        topics: [
+          "Busbar sizing",
+          "Circuit breaker selection",
+          "Panel layout",
+          "Earthing systems",
+        ],
       },
       {
         module: "Module 3: Cable Engineering",
-        topics: ["Cable types", "Sizing calculations", "Voltage drop", "Conduit & tray design"],
+        topics: [
+          "Cable types",
+          "Sizing calculations",
+          "Voltage drop",
+          "Conduit & tray design",
+        ],
       },
       {
         module: "Module 4: Standards & Safety",
-        topics: ["IS 732", "IEC 60364", "Electrical safety", "Inspection & testing"],
+        topics: [
+          "IS 732",
+          "IEC 60364",
+          "Electrical safety",
+          "Inspection & testing",
+        ],
       },
     ],
-    prerequisites: ["Basic electrical concepts", "No design experience required"],
+    prerequisites: [
+      "Basic electrical concepts",
+      "No design experience required",
+    ],
   },
 
   {
@@ -1246,19 +1483,39 @@ export const courses: Course[] = [
     curriculum: [
       {
         module: "Module 1: Dialux Interface",
-        topics: ["Room creation", "Surface properties", "Import DWG plans", "Viewport navigation"],
+        topics: [
+          "Room creation",
+          "Surface properties",
+          "Import DWG plans",
+          "Viewport navigation",
+        ],
       },
       {
         module: "Module 2: Luminaire Placement",
-        topics: ["Manufacturer plug-ins", "Array placement", "Spot & linear fixtures", "Outdoor luminaires"],
+        topics: [
+          "Manufacturer plug-ins",
+          "Array placement",
+          "Spot & linear fixtures",
+          "Outdoor luminaires",
+        ],
       },
       {
         module: "Module 3: Calculations & Analysis",
-        topics: ["Lux level calculation", "Uniformity", "Glare analysis", "False colour maps"],
+        topics: [
+          "Lux level calculation",
+          "Uniformity",
+          "Glare analysis",
+          "False colour maps",
+        ],
       },
       {
         module: "Module 4: Reporting & Standards",
-        topics: ["Report generation", "IS 3646 standard", "Emergency lighting", "Energy efficiency"],
+        topics: [
+          "Report generation",
+          "IS 3646 standard",
+          "Emergency lighting",
+          "Energy efficiency",
+        ],
       },
     ],
     prerequisites: ["No prior experience required", "Basic computer skills"],
@@ -1291,12 +1548,45 @@ export const courses: Course[] = [
       "Write unit and integration tests",
     ],
     curriculum: [
-      { module: "Module 1: Python Advanced", topics: ["OOP", "Decorators", "Generators", "Async programming"] },
-      { module: "Module 2: Django Framework", topics: ["Models & ORM", "Views & URLs", "Django REST Framework", "Authentication"] },
-      { module: "Module 3: Flask", topics: ["Blueprints", "SQLAlchemy", "Flask-JWT", "API design"] },
-      { module: "Module 4: React Frontend", topics: ["Components & hooks", "Redux Toolkit", "Axios", "Tailwind CSS"] },
-      { module: "Module 5: Databases", topics: ["PostgreSQL", "Redis caching", "Migrations", "Query optimization"] },
-      { module: "Module 6: Deployment", topics: ["Docker", "AWS EC2/RDS", "Nginx", "CI/CD with GitHub Actions"] },
+      {
+        module: "Module 1: Python Advanced",
+        topics: ["OOP", "Decorators", "Generators", "Async programming"],
+      },
+      {
+        module: "Module 2: Django Framework",
+        topics: [
+          "Models & ORM",
+          "Views & URLs",
+          "Django REST Framework",
+          "Authentication",
+        ],
+      },
+      {
+        module: "Module 3: Flask",
+        topics: ["Blueprints", "SQLAlchemy", "Flask-JWT", "API design"],
+      },
+      {
+        module: "Module 4: React Frontend",
+        topics: [
+          "Components & hooks",
+          "Redux Toolkit",
+          "Axios",
+          "Tailwind CSS",
+        ],
+      },
+      {
+        module: "Module 5: Databases",
+        topics: [
+          "PostgreSQL",
+          "Redis caching",
+          "Migrations",
+          "Query optimization",
+        ],
+      },
+      {
+        module: "Module 6: Deployment",
+        topics: ["Docker", "AWS EC2/RDS", "Nginx", "CI/CD with GitHub Actions"],
+      },
     ],
     prerequisites: ["Python basics", "Basic web development knowledge"],
   },
@@ -1326,12 +1616,60 @@ export const courses: Course[] = [
       "Deploy PHP apps on Linux servers",
     ],
     curriculum: [
-      { module: "Module 1: PHP Core", topics: ["Syntax & data types", "OOP in PHP", "Sessions & cookies", "File handling"] },
-      { module: "Module 2: Laravel", topics: ["MVC architecture", "Eloquent ORM", "Blade templating", "Artisan CLI"] },
-      { module: "Module 3: MySQL", topics: ["Schema design", "Complex queries", "Joins & indexes", "Stored procedures"] },
-      { module: "Module 4: Vue.js", topics: ["Composition API", "Vuex/Pinia", "Vue Router", "Axios integration"] },
-      { module: "Module 5: APIs & Auth", topics: ["RESTful API design", "Laravel Sanctum", "OAuth 2.0", "API versioning"] },
-      { module: "Module 6: Deployment", topics: ["Apache/Nginx config", "cPanel hosting", "SSL setup", "Performance tuning"] },
+      {
+        module: "Module 1: PHP Core",
+        topics: [
+          "Syntax & data types",
+          "OOP in PHP",
+          "Sessions & cookies",
+          "File handling",
+        ],
+      },
+      {
+        module: "Module 2: Laravel",
+        topics: [
+          "MVC architecture",
+          "Eloquent ORM",
+          "Blade templating",
+          "Artisan CLI",
+        ],
+      },
+      {
+        module: "Module 3: MySQL",
+        topics: [
+          "Schema design",
+          "Complex queries",
+          "Joins & indexes",
+          "Stored procedures",
+        ],
+      },
+      {
+        module: "Module 4: Vue.js",
+        topics: [
+          "Composition API",
+          "Vuex/Pinia",
+          "Vue Router",
+          "Axios integration",
+        ],
+      },
+      {
+        module: "Module 5: APIs & Auth",
+        topics: [
+          "RESTful API design",
+          "Laravel Sanctum",
+          "OAuth 2.0",
+          "API versioning",
+        ],
+      },
+      {
+        module: "Module 6: Deployment",
+        topics: [
+          "Apache/Nginx config",
+          "cPanel hosting",
+          "SSL setup",
+          "Performance tuning",
+        ],
+      },
     ],
     prerequisites: ["Basic HTML/CSS", "Fundamental programming concepts"],
   },
@@ -1361,14 +1699,60 @@ export const courses: Course[] = [
       "Deploy on Microsoft Azure",
     ],
     curriculum: [
-      { module: "Module 1: C# Fundamentals", topics: ["Syntax & types", "OOP principles", "LINQ", "Async/await"] },
-      { module: "Module 2: ASP.NET Core", topics: ["MVC pattern", "Web API", "Middleware", "Dependency injection"] },
-      { module: "Module 3: Entity Framework Core", topics: ["Code-first migrations", "CRUD operations", "Relationships", "Query optimization"] },
-      { module: "Module 4: Frontend", topics: ["Angular components", "Services & RxJS", "HTTP client", "Material UI"] },
-      { module: "Module 5: Auth & Security", topics: ["ASP.NET Identity", "JWT tokens", "Role-based auth", "HTTPS & CORS"] },
-      { module: "Module 6: Azure Deployment", topics: ["App Service", "Azure SQL", "Azure DevOps", "Application Insights"] },
+      {
+        module: "Module 1: C# Fundamentals",
+        topics: ["Syntax & types", "OOP principles", "LINQ", "Async/await"],
+      },
+      {
+        module: "Module 2: ASP.NET Core",
+        topics: [
+          "MVC pattern",
+          "Web API",
+          "Middleware",
+          "Dependency injection",
+        ],
+      },
+      {
+        module: "Module 3: Entity Framework Core",
+        topics: [
+          "Code-first migrations",
+          "CRUD operations",
+          "Relationships",
+          "Query optimization",
+        ],
+      },
+      {
+        module: "Module 4: Frontend",
+        topics: [
+          "Angular components",
+          "Services & RxJS",
+          "HTTP client",
+          "Material UI",
+        ],
+      },
+      {
+        module: "Module 5: Auth & Security",
+        topics: [
+          "ASP.NET Identity",
+          "JWT tokens",
+          "Role-based auth",
+          "HTTPS & CORS",
+        ],
+      },
+      {
+        module: "Module 6: Azure Deployment",
+        topics: [
+          "App Service",
+          "Azure SQL",
+          "Azure DevOps",
+          "Application Insights",
+        ],
+      },
     ],
-    prerequisites: ["Basic programming knowledge", "Understanding of web concepts"],
+    prerequisites: [
+      "Basic programming knowledge",
+      "Understanding of web concepts",
+    ],
   },
 
   {
@@ -1396,13 +1780,56 @@ export const courses: Course[] = [
       "Build AI-powered workflows for business",
     ],
     curriculum: [
-      { module: "Module 1: Prompt Engineering", topics: ["Prompt structure", "Chain-of-thought", "Few-shot prompting", "System prompts"] },
-      { module: "Module 2: AI Image Generation", topics: ["Midjourney basics", "DALL-E 3", "Stable Diffusion", "Prompt styles"] },
-      { module: "Module 3: AI Coding Tools", topics: ["GitHub Copilot", "Cursor AI", "Code review with AI", "Debugging workflows"] },
-      { module: "Module 4: AI Productivity", topics: ["Notion AI", "Grammarly AI", "Otter.ai transcription", "AI research tools"] },
-      { module: "Module 5: Automation", topics: ["Zapier + ChatGPT", "Make.com flows", "n8n automation", "AI business workflows"] },
+      {
+        module: "Module 1: Prompt Engineering",
+        topics: [
+          "Prompt structure",
+          "Chain-of-thought",
+          "Few-shot prompting",
+          "System prompts",
+        ],
+      },
+      {
+        module: "Module 2: AI Image Generation",
+        topics: [
+          "Midjourney basics",
+          "DALL-E 3",
+          "Stable Diffusion",
+          "Prompt styles",
+        ],
+      },
+      {
+        module: "Module 3: AI Coding Tools",
+        topics: [
+          "GitHub Copilot",
+          "Cursor AI",
+          "Code review with AI",
+          "Debugging workflows",
+        ],
+      },
+      {
+        module: "Module 4: AI Productivity",
+        topics: [
+          "Notion AI",
+          "Grammarly AI",
+          "Otter.ai transcription",
+          "AI research tools",
+        ],
+      },
+      {
+        module: "Module 5: Automation",
+        topics: [
+          "Zapier + ChatGPT",
+          "Make.com flows",
+          "n8n automation",
+          "AI business workflows",
+        ],
+      },
     ],
-    prerequisites: ["No technical background required", "Basic computer skills"],
+    prerequisites: [
+      "No technical background required",
+      "Basic computer skills",
+    ],
   },
 
   {
@@ -1430,12 +1857,45 @@ export const courses: Course[] = [
       "Work on end-to-end data science projects",
     ],
     curriculum: [
-      { module: "Module 1: Python for Data Science", topics: ["NumPy", "Pandas", "Matplotlib", "Seaborn"] },
-      { module: "Module 2: Statistics & Probability", topics: ["Descriptive stats", "Hypothesis testing", "Probability distributions", "Bayesian thinking"] },
-      { module: "Module 3: Machine Learning", topics: ["Supervised learning", "Unsupervised learning", "Model evaluation", "Feature engineering"] },
-      { module: "Module 4: Deep Learning", topics: ["Neural networks", "CNNs", "RNNs", "Transfer learning"] },
-      { module: "Module 5: NLP", topics: ["Text preprocessing", "Sentiment analysis", "Transformers", "BERT & GPT"] },
-      { module: "Module 6: MLOps & Deployment", topics: ["Flask API", "Docker", "MLflow", "AWS SageMaker"] },
+      {
+        module: "Module 1: Python for Data Science",
+        topics: ["NumPy", "Pandas", "Matplotlib", "Seaborn"],
+      },
+      {
+        module: "Module 2: Statistics & Probability",
+        topics: [
+          "Descriptive stats",
+          "Hypothesis testing",
+          "Probability distributions",
+          "Bayesian thinking",
+        ],
+      },
+      {
+        module: "Module 3: Machine Learning",
+        topics: [
+          "Supervised learning",
+          "Unsupervised learning",
+          "Model evaluation",
+          "Feature engineering",
+        ],
+      },
+      {
+        module: "Module 4: Deep Learning",
+        topics: ["Neural networks", "CNNs", "RNNs", "Transfer learning"],
+      },
+      {
+        module: "Module 5: NLP",
+        topics: [
+          "Text preprocessing",
+          "Sentiment analysis",
+          "Transformers",
+          "BERT & GPT",
+        ],
+      },
+      {
+        module: "Module 6: MLOps & Deployment",
+        topics: ["Flask API", "Docker", "MLflow", "AWS SageMaker"],
+      },
     ],
     prerequisites: ["Python programming basics", "Basic statistics knowledge"],
   },
@@ -1465,10 +1925,42 @@ export const courses: Course[] = [
       "Evaluate and iterate prompt quality",
     ],
     curriculum: [
-      { module: "Module 1: LLM Fundamentals", topics: ["How LLMs work", "Tokenization", "Context windows", "Model comparison"] },
-      { module: "Module 2: Prompting Techniques", topics: ["Zero-shot", "Few-shot", "Chain-of-thought", "ReAct prompting"] },
-      { module: "Module 3: Advanced Techniques", topics: ["RAG pipelines", "Agent prompting", "Tool use", "Structured outputs"] },
-      { module: "Module 4: Real-World Applications", topics: ["Code generation", "Content writing", "Data extraction", "Evaluation frameworks"] },
+      {
+        module: "Module 1: LLM Fundamentals",
+        topics: [
+          "How LLMs work",
+          "Tokenization",
+          "Context windows",
+          "Model comparison",
+        ],
+      },
+      {
+        module: "Module 2: Prompting Techniques",
+        topics: [
+          "Zero-shot",
+          "Few-shot",
+          "Chain-of-thought",
+          "ReAct prompting",
+        ],
+      },
+      {
+        module: "Module 3: Advanced Techniques",
+        topics: [
+          "RAG pipelines",
+          "Agent prompting",
+          "Tool use",
+          "Structured outputs",
+        ],
+      },
+      {
+        module: "Module 4: Real-World Applications",
+        topics: [
+          "Code generation",
+          "Content writing",
+          "Data extraction",
+          "Evaluation frameworks",
+        ],
+      },
     ],
     prerequisites: ["Basic understanding of AI concepts", "No coding required"],
   },
@@ -1498,14 +1990,60 @@ export const courses: Course[] = [
       "Ship production-ready AI SaaS products",
     ],
     curriculum: [
-      { module: "Module 1: LLM APIs", topics: ["OpenAI API", "Claude API", "Streaming responses", "Function calling"] },
-      { module: "Module 2: Vector Databases & RAG", topics: ["Embeddings", "Pinecone setup", "RAG pipeline", "Semantic search"] },
-      { module: "Module 3: LangChain & LlamaIndex", topics: ["Chains & agents", "Memory modules", "Document loaders", "Custom tools"] },
-      { module: "Module 4: AI Frontend", topics: ["React + AI SDK", "Streaming UI", "Chat interfaces", "File upload & parsing"] },
-      { module: "Module 5: Backend & APIs", topics: ["FastAPI", "WebSockets", "Auth & rate limiting", "Database integration"] },
-      { module: "Module 6: Deployment & Scaling", topics: ["Docker", "AWS Lambda", "Monitoring", "Cost optimization"] },
+      {
+        module: "Module 1: LLM APIs",
+        topics: [
+          "OpenAI API",
+          "Claude API",
+          "Streaming responses",
+          "Function calling",
+        ],
+      },
+      {
+        module: "Module 2: Vector Databases & RAG",
+        topics: [
+          "Embeddings",
+          "Pinecone setup",
+          "RAG pipeline",
+          "Semantic search",
+        ],
+      },
+      {
+        module: "Module 3: LangChain & LlamaIndex",
+        topics: [
+          "Chains & agents",
+          "Memory modules",
+          "Document loaders",
+          "Custom tools",
+        ],
+      },
+      {
+        module: "Module 4: AI Frontend",
+        topics: [
+          "React + AI SDK",
+          "Streaming UI",
+          "Chat interfaces",
+          "File upload & parsing",
+        ],
+      },
+      {
+        module: "Module 5: Backend & APIs",
+        topics: [
+          "FastAPI",
+          "WebSockets",
+          "Auth & rate limiting",
+          "Database integration",
+        ],
+      },
+      {
+        module: "Module 6: Deployment & Scaling",
+        topics: ["Docker", "AWS Lambda", "Monitoring", "Cost optimization"],
+      },
     ],
-    prerequisites: ["Python & JavaScript knowledge", "Basic web development experience"],
+    prerequisites: [
+      "Python & JavaScript knowledge",
+      "Basic web development experience",
+    ],
   },
 
   {
@@ -1533,13 +2071,46 @@ export const courses: Course[] = [
       "Build mini projects in C",
     ],
     curriculum: [
-      { module: "Module 1: C Fundamentals", topics: ["Data types", "Operators", "Control flow", "Functions"] },
-      { module: "Module 2: Arrays & Strings", topics: ["1D & 2D arrays", "String operations", "Searching & sorting", "String library"] },
-      { module: "Module 3: Pointers", topics: ["Pointer basics", "Pointer arithmetic", "Dynamic memory", "malloc & free"] },
-      { module: "Module 4: Structures & Unions", topics: ["struct definition", "Nested structures", "Unions", "Typedef"] },
-      { module: "Module 5: File I/O & Projects", topics: ["File operations", "Binary files", "Mini projects", "Debugging with GDB"] },
+      {
+        module: "Module 1: C Fundamentals",
+        topics: ["Data types", "Operators", "Control flow", "Functions"],
+      },
+      {
+        module: "Module 2: Arrays & Strings",
+        topics: [
+          "1D & 2D arrays",
+          "String operations",
+          "Searching & sorting",
+          "String library",
+        ],
+      },
+      {
+        module: "Module 3: Pointers",
+        topics: [
+          "Pointer basics",
+          "Pointer arithmetic",
+          "Dynamic memory",
+          "malloc & free",
+        ],
+      },
+      {
+        module: "Module 4: Structures & Unions",
+        topics: ["struct definition", "Nested structures", "Unions", "Typedef"],
+      },
+      {
+        module: "Module 5: File I/O & Projects",
+        topics: [
+          "File operations",
+          "Binary files",
+          "Mini projects",
+          "Debugging with GDB",
+        ],
+      },
     ],
-    prerequisites: ["No prior programming experience required", "Basic computer skills"],
+    prerequisites: [
+      "No prior programming experience required",
+      "Basic computer skills",
+    ],
   },
 
   {
@@ -1567,13 +2138,46 @@ export const courses: Course[] = [
       "Solve competitive programming problems",
     ],
     curriculum: [
-      { module: "Module 1: C++ Basics", topics: ["Syntax", "References", "Functions", "Namespaces"] },
-      { module: "Module 2: OOP in C++", topics: ["Classes & objects", "Inheritance", "Polymorphism", "Operator overloading"] },
-      { module: "Module 3: STL", topics: ["Vectors", "Maps & sets", "Algorithms", "Iterators"] },
-      { module: "Module 4: Templates & Advanced", topics: ["Function templates", "Class templates", "Smart pointers", "Move semantics"] },
-      { module: "Module 5: Projects", topics: ["Data structures implementation", "Mini game", "File system project", "Competitive problems"] },
+      {
+        module: "Module 1: C++ Basics",
+        topics: ["Syntax", "References", "Functions", "Namespaces"],
+      },
+      {
+        module: "Module 2: OOP in C++",
+        topics: [
+          "Classes & objects",
+          "Inheritance",
+          "Polymorphism",
+          "Operator overloading",
+        ],
+      },
+      {
+        module: "Module 3: STL",
+        topics: ["Vectors", "Maps & sets", "Algorithms", "Iterators"],
+      },
+      {
+        module: "Module 4: Templates & Advanced",
+        topics: [
+          "Function templates",
+          "Class templates",
+          "Smart pointers",
+          "Move semantics",
+        ],
+      },
+      {
+        module: "Module 5: Projects",
+        topics: [
+          "Data structures implementation",
+          "Mini game",
+          "File system project",
+          "Competitive problems",
+        ],
+      },
     ],
-    prerequisites: ["C programming basics or equivalent", "Basic programming concepts"],
+    prerequisites: [
+      "C programming basics or equivalent",
+      "Basic programming concepts",
+    ],
   },
 
   {
@@ -1601,13 +2205,51 @@ export const courses: Course[] = [
       "Build simple GUI apps with JavaFX",
     ],
     curriculum: [
-      { module: "Module 1: Java Fundamentals", topics: ["Syntax & data types", "Control flow", "Methods", "Arrays"] },
-      { module: "Module 2: OOP in Java", topics: ["Classes & objects", "Inheritance", "Interfaces", "Abstract classes"] },
-      { module: "Module 3: Collections & Generics", topics: ["ArrayList & LinkedList", "HashMap & HashSet", "Generics", "Iterators"] },
-      { module: "Module 4: Advanced Java", topics: ["Exception handling", "Multithreading", "Lambda expressions", "Streams API"] },
-      { module: "Module 5: JDBC & Projects", topics: ["JDBC connection", "CRUD operations", "JavaFX basics", "Mini projects"] },
+      {
+        module: "Module 1: Java Fundamentals",
+        topics: ["Syntax & data types", "Control flow", "Methods", "Arrays"],
+      },
+      {
+        module: "Module 2: OOP in Java",
+        topics: [
+          "Classes & objects",
+          "Inheritance",
+          "Interfaces",
+          "Abstract classes",
+        ],
+      },
+      {
+        module: "Module 3: Collections & Generics",
+        topics: [
+          "ArrayList & LinkedList",
+          "HashMap & HashSet",
+          "Generics",
+          "Iterators",
+        ],
+      },
+      {
+        module: "Module 4: Advanced Java",
+        topics: [
+          "Exception handling",
+          "Multithreading",
+          "Lambda expressions",
+          "Streams API",
+        ],
+      },
+      {
+        module: "Module 5: JDBC & Projects",
+        topics: [
+          "JDBC connection",
+          "CRUD operations",
+          "JavaFX basics",
+          "Mini projects",
+        ],
+      },
     ],
-    prerequisites: ["No prior Java experience required", "Basic programming concepts helpful"],
+    prerequisites: [
+      "No prior Java experience required",
+      "Basic programming concepts helpful",
+    ],
   },
   // ─── MECH: AUTOCAD ────────────────────────────────────────────────────────
   {
@@ -1635,12 +2277,47 @@ export const courses: Course[] = [
       "Generate drawing sheets per IS/ISO standards",
     ],
     curriculum: [
-      { module: "Module 1: AutoCAD Foundations", topics: ["Interface & workspace", "Precision drawing tools", "Layers & linetypes", "Object snaps"] },
-      { module: "Module 2: Mechanical Drafting", topics: ["Orthographic views", "Section views", "Isometric drawing", "Auxiliary views"] },
-      { module: "Module 3: Tolerances & Annotation", topics: ["Dimensioning standards", "GD&T basics", "Surface finish symbols", "Title block"] },
-      { module: "Module 4: Assembly & Output", topics: ["Assembly drawings", "Exploded views", "BOM creation", "Plotting & PDF export"] },
+      {
+        module: "Module 1: AutoCAD Foundations",
+        topics: [
+          "Interface & workspace",
+          "Precision drawing tools",
+          "Layers & linetypes",
+          "Object snaps",
+        ],
+      },
+      {
+        module: "Module 2: Mechanical Drafting",
+        topics: [
+          "Orthographic views",
+          "Section views",
+          "Isometric drawing",
+          "Auxiliary views",
+        ],
+      },
+      {
+        module: "Module 3: Tolerances & Annotation",
+        topics: [
+          "Dimensioning standards",
+          "GD&T basics",
+          "Surface finish symbols",
+          "Title block",
+        ],
+      },
+      {
+        module: "Module 4: Assembly & Output",
+        topics: [
+          "Assembly drawings",
+          "Exploded views",
+          "BOM creation",
+          "Plotting & PDF export",
+        ],
+      },
     ],
-    prerequisites: ["Basic mechanical engineering knowledge", "No prior AutoCAD experience needed"],
+    prerequisites: [
+      "Basic mechanical engineering knowledge",
+      "No prior AutoCAD experience needed",
+    ],
   },
   // ─── MECH: CREO ───────────────────────────────────────────────────────────
   {
@@ -1668,12 +2345,42 @@ export const courses: Course[] = [
       "Use CREO simulation for basic analysis",
     ],
     curriculum: [
-      { module: "Module 1: CREO Interface & Sketching", topics: ["UI overview", "Sketch tools", "Constraints", "Dimensions"] },
-      { module: "Module 2: Part Modeling", topics: ["Extrude & revolve", "Sweep & blend", "Holes & chamfers", "Patterns"] },
-      { module: "Module 3: Assembly Design", topics: ["Assembly constraints", "Exploded views", "BOM creation", "Top-down design"] },
-      { module: "Module 4: Drawing & Sheet Metal", topics: ["Engineering drawings", "GD&T symbols", "Sheet metal bends", "Flat patterns"] },
+      {
+        module: "Module 1: CREO Interface & Sketching",
+        topics: ["UI overview", "Sketch tools", "Constraints", "Dimensions"],
+      },
+      {
+        module: "Module 2: Part Modeling",
+        topics: [
+          "Extrude & revolve",
+          "Sweep & blend",
+          "Holes & chamfers",
+          "Patterns",
+        ],
+      },
+      {
+        module: "Module 3: Assembly Design",
+        topics: [
+          "Assembly constraints",
+          "Exploded views",
+          "BOM creation",
+          "Top-down design",
+        ],
+      },
+      {
+        module: "Module 4: Drawing & Sheet Metal",
+        topics: [
+          "Engineering drawings",
+          "GD&T symbols",
+          "Sheet metal bends",
+          "Flat patterns",
+        ],
+      },
     ],
-    prerequisites: ["Basic mechanical engineering knowledge", "No prior CREO experience needed"],
+    prerequisites: [
+      "Basic mechanical engineering knowledge",
+      "No prior CREO experience needed",
+    ],
   },
   // ─── MECH: STADD PRO ──────────────────────────────────────────────────────
   {
@@ -1701,12 +2408,47 @@ export const courses: Course[] = [
       "Generate professional structural reports",
     ],
     curriculum: [
-      { module: "Module 1: STAAD Basics", topics: ["Interface overview", "Node & beam creation", "Material properties", "Section assignment"] },
-      { module: "Module 2: Load Cases", topics: ["Dead & live loads", "Wind load IS codes", "Seismic analysis", "Load combinations"] },
-      { module: "Module 3: Analysis", topics: ["Linear static analysis", "Dynamic analysis", "Result interpretation", "Displacement checks"] },
-      { module: "Module 4: Design & Reports", topics: ["Steel design IS 800", "RCC design IS 456", "Foundation design", "Report generation"] },
+      {
+        module: "Module 1: STAAD Basics",
+        topics: [
+          "Interface overview",
+          "Node & beam creation",
+          "Material properties",
+          "Section assignment",
+        ],
+      },
+      {
+        module: "Module 2: Load Cases",
+        topics: [
+          "Dead & live loads",
+          "Wind load IS codes",
+          "Seismic analysis",
+          "Load combinations",
+        ],
+      },
+      {
+        module: "Module 3: Analysis",
+        topics: [
+          "Linear static analysis",
+          "Dynamic analysis",
+          "Result interpretation",
+          "Displacement checks",
+        ],
+      },
+      {
+        module: "Module 4: Design & Reports",
+        topics: [
+          "Steel design IS 800",
+          "RCC design IS 456",
+          "Foundation design",
+          "Report generation",
+        ],
+      },
     ],
-    prerequisites: ["Basic structural engineering concepts", "Familiarity with IS codes helpful"],
+    prerequisites: [
+      "Basic structural engineering concepts",
+      "Familiarity with IS codes helpful",
+    ],
   },
   // ─── CIVIL: AUTOCAD ───────────────────────────────────────────────────────
   {
@@ -1734,12 +2476,47 @@ export const courses: Course[] = [
       "Apply civil engineering standards to drawings",
     ],
     curriculum: [
-      { module: "Module 1: AutoCAD Basics", topics: ["Interface & navigation", "Drawing tools", "Layers & linetypes", "Blocks & references"] },
-      { module: "Module 2: Civil Drawing Types", topics: ["Site layout plans", "Road cross-sections", "Contour mapping", "North point & scales"] },
-      { module: "Module 3: Drainage & Utilities", topics: ["Drainage layout", "Utility line drawing", "Manhole symbols", "Pipe schedules"] },
-      { module: "Module 4: Documentation", topics: ["Title block setup", "Dimensioning & annotation", "Plot setup", "PDF & DWG export"] },
+      {
+        module: "Module 1: AutoCAD Basics",
+        topics: [
+          "Interface & navigation",
+          "Drawing tools",
+          "Layers & linetypes",
+          "Blocks & references",
+        ],
+      },
+      {
+        module: "Module 2: Civil Drawing Types",
+        topics: [
+          "Site layout plans",
+          "Road cross-sections",
+          "Contour mapping",
+          "North point & scales",
+        ],
+      },
+      {
+        module: "Module 3: Drainage & Utilities",
+        topics: [
+          "Drainage layout",
+          "Utility line drawing",
+          "Manhole symbols",
+          "Pipe schedules",
+        ],
+      },
+      {
+        module: "Module 4: Documentation",
+        topics: [
+          "Title block setup",
+          "Dimensioning & annotation",
+          "Plot setup",
+          "PDF & DWG export",
+        ],
+      },
     ],
-    prerequisites: ["Basic civil engineering knowledge", "No prior AutoCAD experience needed"],
+    prerequisites: [
+      "Basic civil engineering knowledge",
+      "No prior AutoCAD experience needed",
+    ],
   },
   // ─── CIVIL: SKETCHUP ──────────────────────────────────────────────────────
   {
@@ -1767,12 +2544,47 @@ export const courses: Course[] = [
       "Export high-quality renders for presentations",
     ],
     curriculum: [
-      { module: "Module 1: SketchUp Basics", topics: ["Interface & navigation", "Drawing tools", "Push/pull modeling", "Groups & components"] },
-      { module: "Module 2: Advanced Modeling", topics: ["Follow-me tool", "Solid tools", "Curved surfaces", "Complex geometry"] },
-      { module: "Module 3: Materials & Textures", topics: ["Applying materials", "Custom textures", "Lighting setup", "Shadow studies"] },
-      { module: "Module 4: Presentation", topics: ["Scenes & animations", "LayOut basics", "Export for rendering", "Client presentations"] },
+      {
+        module: "Module 1: SketchUp Basics",
+        topics: [
+          "Interface & navigation",
+          "Drawing tools",
+          "Push/pull modeling",
+          "Groups & components",
+        ],
+      },
+      {
+        module: "Module 2: Advanced Modeling",
+        topics: [
+          "Follow-me tool",
+          "Solid tools",
+          "Curved surfaces",
+          "Complex geometry",
+        ],
+      },
+      {
+        module: "Module 3: Materials & Textures",
+        topics: [
+          "Applying materials",
+          "Custom textures",
+          "Lighting setup",
+          "Shadow studies",
+        ],
+      },
+      {
+        module: "Module 4: Presentation",
+        topics: [
+          "Scenes & animations",
+          "LayOut basics",
+          "Export for rendering",
+          "Client presentations",
+        ],
+      },
     ],
-    prerequisites: ["No prior experience required", "Basic design interest helpful"],
+    prerequisites: [
+      "No prior experience required",
+      "Basic design interest helpful",
+    ],
   },
   // ─── CIVIL: REVIT ARCH ────────────────────────────────────────────────────
   {
@@ -1800,12 +2612,47 @@ export const courses: Course[] = [
       "Collaborate using worksharing and linked models",
     ],
     curriculum: [
-      { module: "Module 1: Revit Fundamentals", topics: ["BIM concepts", "Interface & views", "Levels & grids", "Walls & floors"] },
-      { module: "Module 2: Architectural Elements", topics: ["Doors & windows", "Roofs & ceilings", "Stairs & railings", "Curtain walls"] },
-      { module: "Module 3: Families & Schedules", topics: ["System families", "Loadable families", "Schedules", "Tags & annotations"] },
-      { module: "Module 4: Documentation & Sheets", topics: ["Floor plan sheets", "Sections & elevations", "Title blocks", "Printing & export"] },
+      {
+        module: "Module 1: Revit Fundamentals",
+        topics: [
+          "BIM concepts",
+          "Interface & views",
+          "Levels & grids",
+          "Walls & floors",
+        ],
+      },
+      {
+        module: "Module 2: Architectural Elements",
+        topics: [
+          "Doors & windows",
+          "Roofs & ceilings",
+          "Stairs & railings",
+          "Curtain walls",
+        ],
+      },
+      {
+        module: "Module 3: Families & Schedules",
+        topics: [
+          "System families",
+          "Loadable families",
+          "Schedules",
+          "Tags & annotations",
+        ],
+      },
+      {
+        module: "Module 4: Documentation & Sheets",
+        topics: [
+          "Floor plan sheets",
+          "Sections & elevations",
+          "Title blocks",
+          "Printing & export",
+        ],
+      },
     ],
-    prerequisites: ["Basic architectural knowledge helpful", "No prior Revit experience needed"],
+    prerequisites: [
+      "Basic architectural knowledge helpful",
+      "No prior Revit experience needed",
+    ],
   },
   // ─── CIVIL: MICROSOFT PROJECT ─────────────────────────────────────────────
   {
@@ -1833,12 +2680,47 @@ export const courses: Course[] = [
       "Manage project budgets and costs",
     ],
     curriculum: [
-      { module: "Module 1: Project Setup", topics: ["Creating new project", "Calendar settings", "Work breakdown structure", "Task dependencies"] },
-      { module: "Module 2: Scheduling", topics: ["Gantt chart creation", "Critical path method", "Milestones", "Lag & lead time"] },
-      { module: "Module 3: Resources", topics: ["Resource sheet", "Resource assignment", "Resource leveling", "Cost tracking"] },
-      { module: "Module 4: Tracking & Reports", topics: ["Setting baseline", "Tracking progress", "Variance analysis", "Custom reports"] },
+      {
+        module: "Module 1: Project Setup",
+        topics: [
+          "Creating new project",
+          "Calendar settings",
+          "Work breakdown structure",
+          "Task dependencies",
+        ],
+      },
+      {
+        module: "Module 2: Scheduling",
+        topics: [
+          "Gantt chart creation",
+          "Critical path method",
+          "Milestones",
+          "Lag & lead time",
+        ],
+      },
+      {
+        module: "Module 3: Resources",
+        topics: [
+          "Resource sheet",
+          "Resource assignment",
+          "Resource leveling",
+          "Cost tracking",
+        ],
+      },
+      {
+        module: "Module 4: Tracking & Reports",
+        topics: [
+          "Setting baseline",
+          "Tracking progress",
+          "Variance analysis",
+          "Custom reports",
+        ],
+      },
     ],
-    prerequisites: ["Basic computer skills", "No prior project management software experience needed"],
+    prerequisites: [
+      "Basic computer skills",
+      "No prior project management software experience needed",
+    ],
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1869,12 +2751,47 @@ export const courses: Course[] = [
       "Generate professional drawing sets for construction",
     ],
     curriculum: [
-      { module: "Module 1: AutoCAD for BIM Setup", topics: ["Interface & workspace", "Layer standards (AIA/ISO)", "Blocks & xrefs", "Template setup"] },
-      { module: "Module 2: Architectural Drawings", topics: ["Floor plans", "Sections & elevations", "Details & schedules", "Annotation standards"] },
-      { module: "Module 3: BIM Coordination", topics: ["DWG linking in Revit", "Xref management", "Clash coordination", "BIM drawing standards"] },
-      { module: "Module 4: Output & Deliverables", topics: ["Sheet setup", "Plot styles", "PDF/DWG deliverables", "BIM handover docs"] },
+      {
+        module: "Module 1: AutoCAD for BIM Setup",
+        topics: [
+          "Interface & workspace",
+          "Layer standards (AIA/ISO)",
+          "Blocks & xrefs",
+          "Template setup",
+        ],
+      },
+      {
+        module: "Module 2: Architectural Drawings",
+        topics: [
+          "Floor plans",
+          "Sections & elevations",
+          "Details & schedules",
+          "Annotation standards",
+        ],
+      },
+      {
+        module: "Module 3: BIM Coordination",
+        topics: [
+          "DWG linking in Revit",
+          "Xref management",
+          "Clash coordination",
+          "BIM drawing standards",
+        ],
+      },
+      {
+        module: "Module 4: Output & Deliverables",
+        topics: [
+          "Sheet setup",
+          "Plot styles",
+          "PDF/DWG deliverables",
+          "BIM handover docs",
+        ],
+      },
     ],
-    prerequisites: ["No prior AutoCAD experience needed", "Basic architectural or engineering knowledge helpful"],
+    prerequisites: [
+      "No prior AutoCAD experience needed",
+      "Basic architectural or engineering knowledge helpful",
+    ],
   },
   {
     id: "revit-mep",
@@ -1901,12 +2818,47 @@ export const courses: Course[] = [
       "Produce equipment schedules and load calculations",
     ],
     curriculum: [
-      { module: "Module 1: Revit MEP Setup", topics: ["MEP templates", "Linking architectural model", "Levels & grids", "MEP worksets"] },
-      { module: "Module 2: HVAC & Piping", topics: ["Duct routing", "Pipe systems", "Fittings & accessories", "Mechanical equipment"] },
-      { module: "Module 3: Electrical Systems", topics: ["Lighting fixtures", "Power circuits", "Electrical panels", "Conduit routing"] },
-      { module: "Module 4: Coordination & Docs", topics: ["Clash detection", "Coordination views", "MEP sheets", "Schedules & reports"] },
+      {
+        module: "Module 1: Revit MEP Setup",
+        topics: [
+          "MEP templates",
+          "Linking architectural model",
+          "Levels & grids",
+          "MEP worksets",
+        ],
+      },
+      {
+        module: "Module 2: HVAC & Piping",
+        topics: [
+          "Duct routing",
+          "Pipe systems",
+          "Fittings & accessories",
+          "Mechanical equipment",
+        ],
+      },
+      {
+        module: "Module 3: Electrical Systems",
+        topics: [
+          "Lighting fixtures",
+          "Power circuits",
+          "Electrical panels",
+          "Conduit routing",
+        ],
+      },
+      {
+        module: "Module 4: Coordination & Docs",
+        topics: [
+          "Clash detection",
+          "Coordination views",
+          "MEP sheets",
+          "Schedules & reports",
+        ],
+      },
     ],
-    prerequisites: ["Basic Revit or CAD knowledge helpful", "Understanding of MEP systems recommended"],
+    prerequisites: [
+      "Basic Revit or CAD knowledge helpful",
+      "Understanding of MEP systems recommended",
+    ],
   },
   {
     id: "navisworks",
@@ -1933,12 +2885,47 @@ export const courses: Course[] = [
       "Produce coordination and clash reports",
     ],
     curriculum: [
-      { module: "Module 1: Navisworks Basics", topics: ["Interface & navigation", "Model aggregation", "File formats", "Section planes"] },
-      { module: "Module 2: Clash Detection", topics: ["Clash tests setup", "Clash types", "Managing results", "Clash reports"] },
-      { module: "Module 3: 4D Simulation", topics: ["TimeLiner tool", "Linking schedule", "Simulation settings", "Construction animation"] },
-      { module: "Module 4: Quantification & Review", topics: ["Quantity takeoff", "Markup tools", "Viewpoints", "Final reports"] },
+      {
+        module: "Module 1: Navisworks Basics",
+        topics: [
+          "Interface & navigation",
+          "Model aggregation",
+          "File formats",
+          "Section planes",
+        ],
+      },
+      {
+        module: "Module 2: Clash Detection",
+        topics: [
+          "Clash tests setup",
+          "Clash types",
+          "Managing results",
+          "Clash reports",
+        ],
+      },
+      {
+        module: "Module 3: 4D Simulation",
+        topics: [
+          "TimeLiner tool",
+          "Linking schedule",
+          "Simulation settings",
+          "Construction animation",
+        ],
+      },
+      {
+        module: "Module 4: Quantification & Review",
+        topics: [
+          "Quantity takeoff",
+          "Markup tools",
+          "Viewpoints",
+          "Final reports",
+        ],
+      },
     ],
-    prerequisites: ["Basic BIM or Revit knowledge helpful", "No prior Navisworks experience needed"],
+    prerequisites: [
+      "Basic BIM or Revit knowledge helpful",
+      "No prior Navisworks experience needed",
+    ],
   },
   {
     id: "scan-to-bim",
@@ -1965,12 +2952,47 @@ export const courses: Course[] = [
       "Deliver LOD 200/300 as-built BIM models",
     ],
     curriculum: [
-      { module: "Module 1: Scanning Fundamentals", topics: ["Laser scanning basics", "Scanner types", "Field data capture", "Registration"] },
-      { module: "Module 2: Point Cloud Processing", topics: ["ReCap Pro workflow", "Noise filtering", "Coordinate systems", "Export formats"] },
-      { module: "Module 3: Modeling in Revit", topics: ["Linking point cloud", "Tracing walls & floors", "MEP elements", "LOD standards"] },
-      { module: "Module 4: Quality & Delivery", topics: ["Deviation analysis", "QA/QC checks", "Client deliverables", "Project workflows"] },
+      {
+        module: "Module 1: Scanning Fundamentals",
+        topics: [
+          "Laser scanning basics",
+          "Scanner types",
+          "Field data capture",
+          "Registration",
+        ],
+      },
+      {
+        module: "Module 2: Point Cloud Processing",
+        topics: [
+          "ReCap Pro workflow",
+          "Noise filtering",
+          "Coordinate systems",
+          "Export formats",
+        ],
+      },
+      {
+        module: "Module 3: Modeling in Revit",
+        topics: [
+          "Linking point cloud",
+          "Tracing walls & floors",
+          "MEP elements",
+          "LOD standards",
+        ],
+      },
+      {
+        module: "Module 4: Quality & Delivery",
+        topics: [
+          "Deviation analysis",
+          "QA/QC checks",
+          "Client deliverables",
+          "Project workflows",
+        ],
+      },
     ],
-    prerequisites: ["Basic Revit or AutoCAD knowledge", "Interest in as-built documentation"],
+    prerequisites: [
+      "Basic Revit or AutoCAD knowledge",
+      "Interest in as-built documentation",
+    ],
   },
   {
     id: "bim-360",
@@ -1997,12 +3019,47 @@ export const courses: Course[] = [
       "Coordinate field teams with mobile apps",
     ],
     curriculum: [
-      { module: "Module 1: BIM 360 Setup", topics: ["Account & project setup", "Member roles", "Document folders", "Permission control"] },
-      { module: "Module 2: Design Collaboration", topics: ["Model coordination", "Clash review", "Design packages", "Version control"] },
-      { module: "Module 3: Field Management", topics: ["Issues & RFIs", "Submittals", "Daily logs", "Photo documentation"] },
-      { module: "Module 4: Reporting & Handover", topics: ["Project dashboards", "Analytics reports", "Asset management", "Project closeout"] },
+      {
+        module: "Module 1: BIM 360 Setup",
+        topics: [
+          "Account & project setup",
+          "Member roles",
+          "Document folders",
+          "Permission control",
+        ],
+      },
+      {
+        module: "Module 2: Design Collaboration",
+        topics: [
+          "Model coordination",
+          "Clash review",
+          "Design packages",
+          "Version control",
+        ],
+      },
+      {
+        module: "Module 3: Field Management",
+        topics: [
+          "Issues & RFIs",
+          "Submittals",
+          "Daily logs",
+          "Photo documentation",
+        ],
+      },
+      {
+        module: "Module 4: Reporting & Handover",
+        topics: [
+          "Project dashboards",
+          "Analytics reports",
+          "Asset management",
+          "Project closeout",
+        ],
+      },
     ],
-    prerequisites: ["Basic computer skills", "Familiarity with Revit or AutoCAD helpful"],
+    prerequisites: [
+      "Basic computer skills",
+      "Familiarity with Revit or AutoCAD helpful",
+    ],
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -2033,12 +3090,47 @@ export const courses: Course[] = [
       "Use HRMS software for day-to-day operations",
     ],
     curriculum: [
-      { module: "Module 1: HR Fundamentals", topics: ["HR roles & functions", "Org structure", "Job analysis", "HR policies"] },
-      { module: "Module 2: Recruitment & Onboarding", topics: ["Sourcing strategies", "Interview techniques", "Offer management", "Onboarding process"] },
-      { module: "Module 3: Payroll & Benefits", topics: ["Salary structure", "PF & ESI", "Income tax basics", "Leave management"] },
-      { module: "Module 4: Performance & Compliance", topics: ["KRA/KPI setting", "Appraisal methods", "Labor laws", "HRMS tools"] },
+      {
+        module: "Module 1: HR Fundamentals",
+        topics: [
+          "HR roles & functions",
+          "Org structure",
+          "Job analysis",
+          "HR policies",
+        ],
+      },
+      {
+        module: "Module 2: Recruitment & Onboarding",
+        topics: [
+          "Sourcing strategies",
+          "Interview techniques",
+          "Offer management",
+          "Onboarding process",
+        ],
+      },
+      {
+        module: "Module 3: Payroll & Benefits",
+        topics: [
+          "Salary structure",
+          "PF & ESI",
+          "Income tax basics",
+          "Leave management",
+        ],
+      },
+      {
+        module: "Module 4: Performance & Compliance",
+        topics: [
+          "KRA/KPI setting",
+          "Appraisal methods",
+          "Labor laws",
+          "HRMS tools",
+        ],
+      },
     ],
-    prerequisites: ["No prior HR experience required", "Basic English communication skills"],
+    prerequisites: [
+      "No prior HR experience required",
+      "Basic English communication skills",
+    ],
   },
   {
     id: "finance-tally",
@@ -2065,12 +3157,47 @@ export const courses: Course[] = [
       "Generate MIS reports and audit trails",
     ],
     curriculum: [
-      { module: "Module 1: Accounting Basics", topics: ["Accounting principles", "Journal entries", "Ledger accounts", "Trial balance"] },
-      { module: "Module 2: Financial Statements", topics: ["P&L statement", "Balance sheet", "Cash flow", "Ratio analysis"] },
-      { module: "Module 3: GST & Taxation", topics: ["GST concepts", "GSTR filing", "TDS basics", "Income tax overview"] },
-      { module: "Module 4: Tally Operations", topics: ["Company setup", "Voucher entry", "Bank reconciliation", "MIS reports"] },
+      {
+        module: "Module 1: Accounting Basics",
+        topics: [
+          "Accounting principles",
+          "Journal entries",
+          "Ledger accounts",
+          "Trial balance",
+        ],
+      },
+      {
+        module: "Module 2: Financial Statements",
+        topics: [
+          "P&L statement",
+          "Balance sheet",
+          "Cash flow",
+          "Ratio analysis",
+        ],
+      },
+      {
+        module: "Module 3: GST & Taxation",
+        topics: [
+          "GST concepts",
+          "GSTR filing",
+          "TDS basics",
+          "Income tax overview",
+        ],
+      },
+      {
+        module: "Module 4: Tally Operations",
+        topics: [
+          "Company setup",
+          "Voucher entry",
+          "Bank reconciliation",
+          "MIS reports",
+        ],
+      },
     ],
-    prerequisites: ["Basic math skills", "Commerce background helpful but not required"],
+    prerequisites: [
+      "Basic math skills",
+      "Commerce background helpful but not required",
+    ],
   },
   {
     id: "digital-marketing",
@@ -2097,12 +3224,47 @@ export const courses: Course[] = [
       "Build a digital marketing portfolio",
     ],
     curriculum: [
-      { module: "Module 1: SEO & Content", topics: ["Keyword research", "On-page SEO", "Off-page & link building", "Content strategy"] },
-      { module: "Module 2: Paid Advertising", topics: ["Google Ads setup", "Meta Ads manager", "Campaign optimization", "Budget management"] },
-      { module: "Module 3: Social Media & Email", topics: ["Social media strategy", "Content calendar", "Email campaigns", "Automation tools"] },
-      { module: "Module 4: Analytics & Portfolio", topics: ["Google Analytics 4", "Conversion tracking", "Reporting dashboards", "Portfolio projects"] },
+      {
+        module: "Module 1: SEO & Content",
+        topics: [
+          "Keyword research",
+          "On-page SEO",
+          "Off-page & link building",
+          "Content strategy",
+        ],
+      },
+      {
+        module: "Module 2: Paid Advertising",
+        topics: [
+          "Google Ads setup",
+          "Meta Ads manager",
+          "Campaign optimization",
+          "Budget management",
+        ],
+      },
+      {
+        module: "Module 3: Social Media & Email",
+        topics: [
+          "Social media strategy",
+          "Content calendar",
+          "Email campaigns",
+          "Automation tools",
+        ],
+      },
+      {
+        module: "Module 4: Analytics & Portfolio",
+        topics: [
+          "Google Analytics 4",
+          "Conversion tracking",
+          "Reporting dashboards",
+          "Portfolio projects",
+        ],
+      },
     ],
-    prerequisites: ["Basic internet and computer skills", "No prior marketing experience needed"],
+    prerequisites: [
+      "Basic internet and computer skills",
+      "No prior marketing experience needed",
+    ],
   },
   {
     id: "business-analytics",
@@ -2129,12 +3291,47 @@ export const courses: Course[] = [
       "Develop data-driven decision-making skills",
     ],
     curriculum: [
-      { module: "Module 1: Excel for Analytics", topics: ["Pivot tables", "VLOOKUP & INDEX-MATCH", "Data cleaning", "Charts & dashboards"] },
-      { module: "Module 2: Power BI", topics: ["Data modeling", "DAX basics", "Interactive visuals", "Publishing reports"] },
-      { module: "Module 3: SQL for Business", topics: ["SELECT & joins", "Aggregations", "Subqueries", "Business case queries"] },
-      { module: "Module 4: Statistics & Insights", topics: ["Descriptive statistics", "Regression basics", "KPI frameworks", "Storytelling with data"] },
+      {
+        module: "Module 1: Excel for Analytics",
+        topics: [
+          "Pivot tables",
+          "VLOOKUP & INDEX-MATCH",
+          "Data cleaning",
+          "Charts & dashboards",
+        ],
+      },
+      {
+        module: "Module 2: Power BI",
+        topics: [
+          "Data modeling",
+          "DAX basics",
+          "Interactive visuals",
+          "Publishing reports",
+        ],
+      },
+      {
+        module: "Module 3: SQL for Business",
+        topics: [
+          "SELECT & joins",
+          "Aggregations",
+          "Subqueries",
+          "Business case queries",
+        ],
+      },
+      {
+        module: "Module 4: Statistics & Insights",
+        topics: [
+          "Descriptive statistics",
+          "Regression basics",
+          "KPI frameworks",
+          "Storytelling with data",
+        ],
+      },
     ],
-    prerequisites: ["Basic Excel knowledge", "No programming experience required"],
+    prerequisites: [
+      "Basic Excel knowledge",
+      "No programming experience required",
+    ],
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -2165,12 +3362,47 @@ export const courses: Course[] = [
       "Prepare for DELF A1/A2 certification",
     ],
     curriculum: [
-      { module: "Module 1: Foundations (A1)", topics: ["Alphabet & pronunciation", "Greetings & introductions", "Numbers & colors", "Basic sentences"] },
-      { module: "Module 2: Everyday French (A2)", topics: ["Family & relationships", "Shopping & food", "Time & dates", "Past tense basics"] },
-      { module: "Module 3: Intermediate (B1)", topics: ["Future & conditional", "Professional vocabulary", "Reading passages", "Writing emails"] },
-      { module: "Module 4: Fluency Building", topics: ["Conversation practice", "Listening exercises", "Cultural context", "DELF exam prep"] },
+      {
+        module: "Module 1: Foundations (A1)",
+        topics: [
+          "Alphabet & pronunciation",
+          "Greetings & introductions",
+          "Numbers & colors",
+          "Basic sentences",
+        ],
+      },
+      {
+        module: "Module 2: Everyday French (A2)",
+        topics: [
+          "Family & relationships",
+          "Shopping & food",
+          "Time & dates",
+          "Past tense basics",
+        ],
+      },
+      {
+        module: "Module 3: Intermediate (B1)",
+        topics: [
+          "Future & conditional",
+          "Professional vocabulary",
+          "Reading passages",
+          "Writing emails",
+        ],
+      },
+      {
+        module: "Module 4: Fluency Building",
+        topics: [
+          "Conversation practice",
+          "Listening exercises",
+          "Cultural context",
+          "DELF exam prep",
+        ],
+      },
     ],
-    prerequisites: ["No prior French knowledge required", "Basic English literacy helpful"],
+    prerequisites: [
+      "No prior French knowledge required",
+      "Basic English literacy helpful",
+    ],
   },
   {
     id: "german",
@@ -2197,12 +3429,47 @@ export const courses: Course[] = [
       "Prepare for Goethe-Zertifikat A1/A2 exam",
     ],
     curriculum: [
-      { module: "Module 1: German Basics (A1)", topics: ["Pronunciation", "Articles & genders", "Basic verbs", "Everyday phrases"] },
-      { module: "Module 2: Grammar Foundations (A2)", topics: ["Cases: Nominative & Accusative", "Prepositions", "Modal verbs", "Past tense (Perfekt)"] },
-      { module: "Module 3: Intermediate (B1)", topics: ["Dative & Genitive", "Subordinate clauses", "Passive voice", "Professional vocabulary"] },
-      { module: "Module 4: Communication Skills", topics: ["Conversation practice", "Listening exercises", "Writing tasks", "Goethe exam prep"] },
+      {
+        module: "Module 1: German Basics (A1)",
+        topics: [
+          "Pronunciation",
+          "Articles & genders",
+          "Basic verbs",
+          "Everyday phrases",
+        ],
+      },
+      {
+        module: "Module 2: Grammar Foundations (A2)",
+        topics: [
+          "Cases: Nominative & Accusative",
+          "Prepositions",
+          "Modal verbs",
+          "Past tense (Perfekt)",
+        ],
+      },
+      {
+        module: "Module 3: Intermediate (B1)",
+        topics: [
+          "Dative & Genitive",
+          "Subordinate clauses",
+          "Passive voice",
+          "Professional vocabulary",
+        ],
+      },
+      {
+        module: "Module 4: Communication Skills",
+        topics: [
+          "Conversation practice",
+          "Listening exercises",
+          "Writing tasks",
+          "Goethe exam prep",
+        ],
+      },
     ],
-    prerequisites: ["No prior German knowledge required", "Basic literacy in any language"],
+    prerequisites: [
+      "No prior German knowledge required",
+      "Basic literacy in any language",
+    ],
   },
   {
     id: "english",
@@ -2229,12 +3496,47 @@ export const courses: Course[] = [
       "Understand American and British English accents",
     ],
     curriculum: [
-      { module: "Module 1: Grammar & Vocabulary", topics: ["Tenses & verb forms", "Articles & prepositions", "Word building", "Common errors"] },
-      { module: "Module 2: Spoken English", topics: ["Pronunciation & accent", "Conversation skills", "Active listening", "Telephone English"] },
-      { module: "Module 3: Business Writing", topics: ["Email writing", "Report writing", "Resume & cover letter", "Meeting minutes"] },
-      { module: "Module 4: Professional Skills", topics: ["Interview preparation", "Group discussion", "Presentation skills", "Public speaking"] },
+      {
+        module: "Module 1: Grammar & Vocabulary",
+        topics: [
+          "Tenses & verb forms",
+          "Articles & prepositions",
+          "Word building",
+          "Common errors",
+        ],
+      },
+      {
+        module: "Module 2: Spoken English",
+        topics: [
+          "Pronunciation & accent",
+          "Conversation skills",
+          "Active listening",
+          "Telephone English",
+        ],
+      },
+      {
+        module: "Module 3: Business Writing",
+        topics: [
+          "Email writing",
+          "Report writing",
+          "Resume & cover letter",
+          "Meeting minutes",
+        ],
+      },
+      {
+        module: "Module 4: Professional Skills",
+        topics: [
+          "Interview preparation",
+          "Group discussion",
+          "Presentation skills",
+          "Public speaking",
+        ],
+      },
     ],
-    prerequisites: ["Basic understanding of English alphabets", "Suitable for all levels"],
+    prerequisites: [
+      "Basic understanding of English alphabets",
+      "Suitable for all levels",
+    ],
   },
   {
     id: "japanese",
@@ -2261,11 +3563,46 @@ export const courses: Course[] = [
       "Prepare for JLPT N5 certification",
     ],
     curriculum: [
-      { module: "Module 1: Scripts (N5)", topics: ["Hiragana", "Katakana", "Basic Kanji 50", "Pronunciation rules"] },
-      { module: "Module 2: Grammar Basics", topics: ["Sentence structure", "Particles は/が/を", "Verb conjugation", "Adjectives"] },
-      { module: "Module 3: Conversations", topics: ["Greetings", "Shopping & directions", "Time & numbers", "Daily routines"] },
-      { module: "Module 4: JLPT Prep", topics: ["N5 vocabulary list", "Reading practice", "Listening drills", "Mock tests"] },
+      {
+        module: "Module 1: Scripts (N5)",
+        topics: [
+          "Hiragana",
+          "Katakana",
+          "Basic Kanji 50",
+          "Pronunciation rules",
+        ],
+      },
+      {
+        module: "Module 2: Grammar Basics",
+        topics: [
+          "Sentence structure",
+          "Particles は/が/を",
+          "Verb conjugation",
+          "Adjectives",
+        ],
+      },
+      {
+        module: "Module 3: Conversations",
+        topics: [
+          "Greetings",
+          "Shopping & directions",
+          "Time & numbers",
+          "Daily routines",
+        ],
+      },
+      {
+        module: "Module 4: JLPT Prep",
+        topics: [
+          "N5 vocabulary list",
+          "Reading practice",
+          "Listening drills",
+          "Mock tests",
+        ],
+      },
     ],
-    prerequisites: ["No prior Japanese knowledge required", "Patience for learning a new script system"],
+    prerequisites: [
+      "No prior Japanese knowledge required",
+      "Patience for learning a new script system",
+    ],
   },
 ];
