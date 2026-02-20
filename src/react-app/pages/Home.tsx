@@ -503,6 +503,16 @@ export default function HomePage() {
   });
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [cursor, setCursor] = useState({ x: 0, y: 0, visible: false });
+  const cursorRef = useRef<HTMLDivElement>(null);
+
+  const handleCardMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    setCursor({ x: e.clientX, y: e.clientY, visible: true });
+  };
+
+  const handleCardMouseLeave = () => {
+    setCursor((prev) => ({ ...prev, visible: false }));
+  };
 
   const [formData, setFormData] = useState({
     name: "",
@@ -575,6 +585,12 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      {/* Global bento cursor */}
+      <div
+        ref={cursorRef}
+        className={`card-cursor${cursor.visible ? " visible" : ""}`}
+        style={{ left: cursor.x, top: cursor.y }}
+      />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -602,12 +618,6 @@ export default function HomePage() {
               >
                 Courses
               </Link>
-              <a
-                href="#testimonials"
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-              >
-                Testimonials
-              </a>
               <a
                 href="#about"
                 className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
@@ -668,13 +678,6 @@ export default function HomePage() {
             >
               Courses
             </Link>
-            <a
-              href="#testimonials"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-            >
-              Testimonials
-            </a>
             <a
               href="#about"
               onClick={() => setMobileMenuOpen(false)}
@@ -1065,7 +1068,7 @@ export default function HomePage() {
                 <span className="relative inline-block">
                   <span
                     style={{
-                      background: "linear-gradient(to right, #f14625, #e03a1b)",
+                      background: "linear-gradient(135deg, #f14625, #ff8c42)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                     }}
@@ -1104,14 +1107,14 @@ export default function HomePage() {
 
               {/* CTA Buttons */}
               <div className="animate-fade-in-up delay-300 flex flex-row gap-2 sm:gap-3 mb-5 sm:mb-10 justify-center lg:justify-start">
-                <a
-                  href="/courses"
+                <Link
+                  to="/courses"
                   className="group animate-pulse-glow inline-flex items-center justify-center gap-1.5 px-4 sm:px-6 py-2 sm:py-3 text-white rounded-lg sm:rounded-xl font-semibold text-[11px] sm:text-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
                   style={{ background: "#f14625" }}
                 >
                   GET STARTED NOW
                   <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
                 <a
                   href="#testimonials"
                   className="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 bg-white text-gray-800 rounded-lg sm:rounded-xl font-semibold text-[11px] sm:text-sm border-2 border-gray-200 hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 hover:-translate-y-0.5"
@@ -1161,6 +1164,8 @@ export default function HomePage() {
                 background: "linear-gradient(160deg, #111111 0%, #1a1a1a 100%)",
                 minHeight: "280px",
               }}
+              onMouseMove={handleCardMouseMove}
+              onMouseLeave={handleCardMouseLeave}
             >
               {/* Animated floating orbs */}
               <div
@@ -1198,19 +1203,21 @@ export default function HomePage() {
                     letterSpacing: "-0.02em",
                   }}
                 >
-                  Why
-                  <br />
-                  Choose
-                  <br />
-                  <span className="relative inline-block">
-                    <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
-                      Slonix
+                  <span className="bento-title">
+                    Why
+                    <br />
+                    Choose
+                    <br />
+                    <span className="relative inline-block">
+                      <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+                        Slonix
+                      </span>
                     </span>
                   </span>
                 </h2>
               </div>
               <p
-                className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-sm relative z-10"
+                className="bento-desc text-gray-400 text-base sm:text-lg leading-relaxed max-w-sm relative z-10"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 This isn't just another training center. It's a transformation —
@@ -1226,6 +1233,8 @@ export default function HomePage() {
                 background: "linear-gradient(160deg, #131313 0%, #1d1d1d 100%)",
                 minHeight: "260px",
               }}
+              onMouseMove={handleCardMouseMove}
+              onMouseLeave={handleCardMouseLeave}
             >
               {/* Animated floating orbs */}
               <div
@@ -1250,9 +1259,9 @@ export default function HomePage() {
                 className="text-xl sm:text-2xl font-bold text-white mb-4 leading-tight relative z-10"
                 style={{ fontFamily: "'Space Grotesk', sans-serif" }}
               >
-                Industry-Relevant Training
+                <span className="bento-title">Industry-Relevant Training</span>
               </h3>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs relative z-10">
+              <p className="bento-desc text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs relative z-10">
                 Master engineering tools like CATIA, SolidWorks, MATLAB, and
                 Python — the exact tools companies demand.
               </p>
@@ -1266,6 +1275,8 @@ export default function HomePage() {
                 background: "linear-gradient(160deg, #151515 0%, #1f1f1f 100%)",
                 minHeight: "260px",
               }}
+              onMouseMove={handleCardMouseMove}
+              onMouseLeave={handleCardMouseLeave}
             >
               {/* Animated floating orbs */}
               <div
@@ -1290,9 +1301,9 @@ export default function HomePage() {
                 className="text-xl sm:text-2xl font-bold text-white mb-4 leading-tight relative z-10"
                 style={{ fontFamily: "'Space Grotesk', sans-serif" }}
               >
-                Hands-On Projects
+                <span className="bento-title">Hands-On Projects</span>
               </h3>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs relative z-10">
+              <p className="bento-desc text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs relative z-10">
                 Get access to ready-to-use real-world projects, portfolio
                 pieces, and guided capstone work.
               </p>
@@ -1306,6 +1317,8 @@ export default function HomePage() {
                 minHeight: "320px",
                 background: "linear-gradient(160deg, #0f0f0f 0%, #1a1a1a 100%)",
               }}
+              onMouseMove={handleCardMouseMove}
+              onMouseLeave={handleCardMouseLeave}
             >
               {/* Animated floating orbs */}
               <div
@@ -1340,9 +1353,9 @@ export default function HomePage() {
                   className="text-xl sm:text-2xl font-bold text-white leading-tight"
                   style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                 >
-                  Real Results, Career-Ready
+                  <span className="bento-title">Real Results, Career-Ready</span>
                 </h3>
-                <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-sm">
+                <p className="bento-desc text-gray-400 text-sm sm:text-base leading-relaxed max-w-sm">
                   Built by engineers who've done it — not just taught it. 100+
                   placement success stories. No experience needed — start from
                   zero.
@@ -2077,10 +2090,15 @@ export default function HomePage() {
                     className="w-4 h-4 mt-0.5 flex-shrink-0"
                     style={{ color: "#f14625" }}
                   />
-                  <span>
+                  <a
+                    href="https://maps.google.com/?q=Hustlehub+Tech+Park,+Somasundarapalya+Main+Rd,+HSR+Layout,+Bengaluru,+Karnataka+560102"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
                     Hustlehub Tech Park, Somasundarapalya Main Rd, HSR Layout,
                     Bengaluru, Karnataka 560102
-                  </span>
+                  </a>
                 </li>
               </ul>
             </div>

@@ -245,11 +245,64 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      {/* Courses Grid */}
+      {/* Courses Grid with Sidebar */}
       <section className="py-12 px-6 relative min-h-[400px]">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex gap-8">
+          {/* Category Sidebar */}
+          <aside className="hidden lg:block w-72 flex-shrink-0">
+            <div className="sticky top-28 bg-white rounded-2xl border-2 border-red-100 shadow-sm overflow-hidden">
+              <div className="px-6 py-5 border-b border-red-100 bg-gradient-to-r from-red-50 to-white">
+                <h3
+                  className="text-base font-bold text-gray-900 uppercase tracking-wider"
+                  style={{ fontFamily: "Space Grotesk, sans-serif" }}
+                >
+                  Categories
+                </h3>
+              </div>
+              <div className="py-2">
+                {categories.map((category) => {
+                  const count =
+                    category === "All"
+                      ? courses.length
+                      : courses.filter((c) => c.category === category).length;
+                  return (
+                    <button
+                      key={category}
+                      type="button"
+                      onClick={() => {
+                        const scrollY = window.scrollY;
+                        setSelectedCategory(category);
+                        requestAnimationFrame(() => {
+                          window.scrollTo({ top: scrollY, left: 0, behavior: "instant" });
+                        });
+                      }}
+                      className={`w-full flex items-center justify-between gap-2 px-6 py-3.5 text-[15px] font-medium transition-all text-left ${
+                        selectedCategory === category
+                          ? "bg-red-50 text-red-600 border-r-[3px] border-red-600"
+                          : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                      }`}
+                    >
+                      <span>{category}</span>
+                      <span
+                        className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
+                          selectedCategory === category
+                            ? "bg-red-100 text-red-600"
+                            : "bg-gray-100 text-gray-500"
+                        }`}
+                      >
+                        {count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </aside>
+
+          {/* Courses */}
+          <div className="flex-1 min-w-0">
           {filteredCourses.length > 0 ? (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
               {filteredCourses.map((course, index) => (
                 <div
                   key={index}
@@ -333,6 +386,7 @@ export default function CoursesPage() {
               </button>
             </div>
           )}
+          </div>
         </div>
       </section>
 
