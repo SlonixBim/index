@@ -17,7 +17,7 @@ import Footer from "@/react-app/components/Footer";
 
 export default function CoursesPage() {
   useSEO({
-    title: "All Courses | Slonix Solutions — Engineering Training Institute",
+    title: "All Courses | Slonix Solutions — Engineering Training Academy",
     description:
       "Browse all engineering training courses at Slonix Solutions — SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack, Python and more. Enroll today.",
     canonical: "https://slonix.in/courses",

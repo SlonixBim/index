@@ -396,7 +396,7 @@ function TestimonialsSection() {
 }
 export default function HomePage() {
   useSEO({
-    title: "Slonix Solutions | Engineering Training Institute in India",
+    title: "Slonix Solutions | Engineering Training Academy in India",
     description:
       "Industry-ready engineering training in SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack & Python. Hands-on courses with placement support in Bengaluru.",
     canonical: "https://slonix.in/",
