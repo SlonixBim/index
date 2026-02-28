@@ -1,17 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 import { useSEO } from "@/react-app/hooks/useSEO";
-import {
-  ArrowRight,
-  BookOpen,
-  Users,
-  TrendingUp,
-  Zap,
-  Wrench,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Footer from "@/react-app/components/Footer";
+import HeroSection from "@/react-app/components/HeroSection";
 import { courses } from "@/data/courses";
-import heroRightImg from "@/photos/hero-right.png";
 import powerImg from "@/photos/power.jpg";
 
 const testimonials = [
@@ -71,6 +64,22 @@ function TestimonialsSection() {
         setFadeIn(true);
       }, 300);
     }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Desktop auto-scroll every 3.5s
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (trackRef.current && window.innerWidth >= 1024) {
+        const { scrollLeft, scrollWidth, clientWidth } = trackRef.current;
+        // If reached end, jump back to start smoothly
+        if (Math.ceil(scrollLeft + clientWidth) >= scrollWidth) {
+          trackRef.current.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          trackRef.current.scrollBy({ left: 360, behavior: "smooth" });
+        }
+      }
+    }, 3500);
     return () => clearInterval(timer);
   }, []);
 
@@ -385,132 +394,13 @@ function TestimonialsSection() {
     </section>
   );
 }
-
-const impactStats = [
-  { target: 1000, suffix: "+", label: "Students Trained", icon: Users },
-  { target: 50, suffix: "+", label: "Industry-Based Projects", icon: Wrench },
-  {
-    target: 100,
-    suffix: "+",
-    label: "Placement Success Stories",
-    icon: TrendingUp,
-  },
-  {
-    target: 40,
-    suffix: "+",
-    label: "Engineering & Tech Courses",
-    icon: BookOpen,
-  },
-];
-
-function useCountUp(target: number, duration: number, active: boolean) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    if (!active) return;
-    let start = 0;
-    const totalFrames = duration / 20;
-    const step = target / totalFrames;
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 20);
-    return () => clearInterval(timer);
-  }, [active, target, duration]);
-  return count;
-}
-
-function StatCard({
-  stat,
-  active,
-}: {
-  stat: (typeof impactStats)[0];
-  active: boolean;
-}) {
-  const count = useCountUp(stat.target, 3000, active);
-  const Icon = stat.icon;
-  return (
-    <div className="text-center group">
-      <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform border border-white/30">
-        <Icon className="w-8 h-8 text-white" />
-      </div>
-      <div
-        className="text-5xl font-black text-white mb-2"
-        style={{ fontFamily: "Space Grotesk, sans-serif" }}
-      >
-        {count}
-        {stat.suffix}
-      </div>
-      <div className="text-red-100 font-medium">{stat.label}</div>
-    </div>
-  );
-}
-
-function ImpactStats() {
-  const ref = useRef<HTMLElement>(null);
-  const [active, setActive] = useState(false);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setActive(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 },
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-  return (
-    <section
-      ref={ref}
-      className="py-20 px-6 relative overflow-hidden"
-      style={{ background: "linear-gradient(to right, #f14625, #e03a1b)" }}
-    >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.1),transparent_50%)]" />
-      <div className="max-w-7xl mx-auto relative">
-        <div className="text-center mb-16">
-          <h2
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
-            style={{ fontFamily: "Space Grotesk, sans-serif" }}
-          >
-            Our Impact
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {impactStats.map((stat, i) => (
-            <StatCard key={i} stat={stat} active={active} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export default function HomePage() {
   useSEO({
     title: "Slonix Solutions | Engineering Training Institute in India",
-    description: "Industry-ready engineering training in SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack & Python. Hands-on courses with placement support in Bengaluru.",
+    description:
+      "Industry-ready engineering training in SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack & Python. Hands-on courses with placement support in Bengaluru.",
     canonical: "https://slonix.in/",
   });
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [cursor, setCursor] = useState({ x: 0, y: 0, visible: false });
-  const cursorRef = useRef<HTMLDivElement>(null);
-
-  const handleCardMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    setCursor({ x: e.clientX, y: e.clientY, visible: true });
-  };
-
-  const handleCardMouseLeave = () => {
-    setCursor((prev) => ({ ...prev, visible: false }));
-  };
 
   const [formData, setFormData] = useState({
     name: "",
@@ -520,10 +410,6 @@ export default function HomePage() {
     course: "",
   });
 
-  const heroImages = [heroRightImg];
-  const heroAlts = ["Student with books"];
-  const [activeImg, setActiveImg] = useState(0);
-
   useEffect(() => {
     const link = document.createElement("link");
     link.href =
@@ -531,14 +417,6 @@ export default function HomePage() {
     link.rel = "stylesheet";
     document.head.appendChild(link);
   }, []);
-
-  // Carousel disabled — single image only
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveImg((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [heroImages.length]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -583,862 +461,206 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      {/* Global bento cursor */}
-      <div
-        ref={cursorRef}
-        className={`card-cursor${cursor.visible ? " visible" : ""}`}
-        style={{ left: cursor.x, top: cursor.y }}
-      />
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
-            {/* Logo */}
-            <Link to="/" className="flex items-center flex-shrink-0">
-              <img
-                src="https://019c1a08-daa1-7c8a-b634-ca9b54ba789f.mochausercontent.com/ChatGPT-Image-Jan-29-2026-02_25_29-AM.png"
-                alt="Slonix Solutions"
-                className="h-10 md:h-12 w-auto object-contain"
-              />
-            </Link>
+      {/* ════════════ Hero Section Component ════════════ */}
+      <HeroSection />
 
-            {/* Desktop Nav Links */}
-            <div className="hidden md:flex items-center gap-1 lg:gap-2">
-              <Link
-                to="/"
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-              >
-                Home
-              </Link>
-              <Link
-                to="/courses"
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-              >
-                Courses
-              </Link>
-              <a
-                href="#about"
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-              >
-                About
-              </a>
-              <a
-                href="#contact"
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-              >
-                Contact
-              </a>
-            </div>
-
-            {/* CTA Button */}
-            <div className="flex items-center">
-              <a
-                href="#contact"
-                className="hidden md:inline-flex items-center px-5 py-2.5 rounded-xl border-2 border-gray-900 text-gray-900 text-sm font-semibold hover:bg-gray-900 hover:text-white transition-all duration-200"
-              >
-                Start Learning
-              </a>
-              {/* Mobile menu button */}
-              <button
-                type="button"
-                aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-                onClick={() => setMobileMenuOpen((prev) => !prev)}
-                className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
-              >
-                {mobileMenuOpen ? (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                ) : (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Menu Dropdown */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-3 flex flex-col gap-1">
-            <Link
-              to="/"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-            >
-              Home
-            </Link>
-            <Link
-              to="/courses"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-            >
-              Courses
-            </Link>
-            <a
-              href="#about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-            >
-              About
-            </a>
-            <a
-              href="#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-            >
-              Contact
-            </a>
-            <a
-              href="#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="mt-2 px-4 py-3 rounded-xl border-2 border-gray-900 text-gray-900 text-sm font-semibold hover:bg-gray-900 hover:text-white transition-all duration-200 text-center"
-            >
-              Start Learning
-            </a>
-          </div>
-        )}
-      </nav>
-
-      {/* Hero Section */}
-      <section className="pt-14 sm:pt-16 md:pt-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:min-h-[calc(100vh-5rem)]">
-            {/* ========== IMAGE — mobile: compact, desktop: full ========== */}
-            <div className="lg:order-2 w-full">
-              {/* Mobile image: fixed small height, NO aspect-ratio */}
-              <div className="block lg:hidden">
-                <div className="relative mx-auto w-[60%] max-w-[240px] h-[220px] sm:w-[50%] sm:max-w-[280px] sm:h-[280px] mt-2">
-                  {/* Teal blocks */}
-                  <div className="animate-teal-block-1 delay-200 absolute top-0 right-0 w-[70%] h-[58%] bg-teal-600 rounded-xl overflow-hidden">
-                    <svg
-                      className="absolute inset-0 w-full h-full opacity-20"
-                      viewBox="0 0 200 200"
-                      fill="none"
-                    >
-                      <path
-                        d="M40 50 L60 30 L80 50"
-                        stroke="white"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        fill="none"
-                      />
-                      <circle
-                        cx="100"
-                        cy="80"
-                        r="12"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                      <rect
-                        x="50"
-                        y="120"
-                        width="20"
-                        height="25"
-                        rx="3"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  <div className="animate-teal-block-2 delay-400 absolute bottom-0 left-0 w-[58%] h-[42%] bg-teal-600 rounded-lg overflow-hidden">
-                    <svg
-                      className="absolute inset-0 w-full h-full opacity-20"
-                      viewBox="0 0 200 150"
-                      fill="none"
-                    >
-                      <circle
-                        cx="40"
-                        cy="30"
-                        r="8"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                      <rect
-                        x="90"
-                        y="20"
-                        width="35"
-                        height="28"
-                        rx="4"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                      <path
-                        d="M130 70 Q140 50 150 70"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  {/* Sparkle */}
-                  <div className="animate-sparkle delay-500 absolute top-[4%] left-[6%] z-20">
-                    <svg
-                      className="w-4 h-5 sm:w-6 sm:h-7"
-                      viewBox="0 0 36 40"
-                      fill="none"
-                    >
-                      <path
-                        d="M12 2 L14 14"
-                        stroke="#f59e0b"
-                        strokeWidth="3.5"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M22 6 L20 18"
-                        stroke="#f59e0b"
-                        strokeWidth="3.5"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M6 16 L10 28"
-                        stroke="#f59e0b"
-                        strokeWidth="3.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                  </div>
-                  {/* Student image carousel */}
-                  <div className="animate-scale-in delay-300 relative z-10 flex items-end justify-center h-full">
-                    {heroImages.map((src, i) => (
-                      <img
-                        key={i}
-                        src={src}
-                        alt={heroAlts[i]}
-                        className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[88%] w-[85%] object-cover object-top rounded-lg select-none drop-shadow-[0_8px_20px_rgba(0,0,0,0.12)] transition-all duration-700 ease-in-out ${
-                          activeImg === i
-                            ? "opacity-100 scale-100 blur-0"
-                            : "opacity-0 scale-105 blur-[2px]"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  {/* Carousel dots */}
-                  <div className="absolute bottom-1 left-1/2 -translate-x-1/2 z-20 flex gap-1.5">
-                    {heroImages.map((_, i) => (
-                      <button
-                        key={i}
-                        type="button"
-                        aria-label={`Show image ${i + 1}`}
-                        onClick={() => setActiveImg(i)}
-                        className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${
-                          activeImg === i
-                            ? "bg-teal-600 scale-125"
-                            : "bg-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Desktop image: aspect-ratio based, full size */}
-              <div className="hidden lg:block">
-                <div
-                  className="relative mx-auto max-w-[420px] xl:max-w-[480px]"
-                  style={{ aspectRatio: "3/4" }}
-                >
-                  {/* Teal blocks */}
-                  <div className="animate-teal-block-1 delay-200 absolute top-0 right-[2%] w-[68%] h-[60%] bg-teal-600 rounded-3xl z-0 overflow-hidden">
-                    <svg
-                      className="absolute inset-0 w-full h-full opacity-20"
-                      viewBox="0 0 200 200"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M40 50 L60 30 L80 50"
-                        stroke="white"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        fill="none"
-                      />
-                      <path
-                        d="M120 40 L140 25 L155 45"
-                        stroke="white"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        fill="none"
-                      />
-                      <circle
-                        cx="100"
-                        cy="80"
-                        r="12"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                      <rect
-                        x="50"
-                        y="120"
-                        width="20"
-                        height="25"
-                        rx="3"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                      <path
-                        d="M130 130 L145 120 L160 130 L145 140 Z"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  <div className="animate-teal-block-2 delay-400 absolute bottom-[2%] left-[2%] w-[60%] h-[40%] bg-teal-600 rounded-2xl z-0 overflow-hidden">
-                    <svg
-                      className="absolute inset-0 w-full h-full opacity-20"
-                      viewBox="0 0 200 150"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="40"
-                        cy="30"
-                        r="8"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                      <path
-                        d="M35 25 L45 35"
-                        stroke="white"
-                        strokeWidth="1"
-                        strokeLinecap="round"
-                      />
-                      <rect
-                        x="90"
-                        y="20"
-                        width="35"
-                        height="28"
-                        rx="4"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                      <path
-                        d="M95 35 L100 30 L105 35"
-                        stroke="white"
-                        strokeWidth="1"
-                        strokeLinecap="round"
-                        fill="none"
-                      />
-                      <path
-                        d="M30 90 L50 90"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M35 95 L45 95"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M130 70 Q140 50 150 70"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        fill="none"
-                      />
-                      <rect
-                        x="120"
-                        y="90"
-                        width="25"
-                        height="18"
-                        rx="3"
-                        stroke="white"
-                        strokeWidth="1.2"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  {/* Sparkle */}
-                  <div className="animate-sparkle delay-500 absolute top-[6%] left-[8%] z-20">
-                    <svg className="w-8 h-9" viewBox="0 0 36 40" fill="none">
-                      <path
-                        d="M12 2 L14 14"
-                        stroke="#f59e0b"
-                        strokeWidth="3.5"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M22 6 L20 18"
-                        stroke="#f59e0b"
-                        strokeWidth="3.5"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M6 16 L10 28"
-                        stroke="#f59e0b"
-                        strokeWidth="3.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                  </div>
-                  {/* Curved arrow */}
-                  <div className="animate-fade-in-up delay-900 absolute bottom-[38%] left-[1%] z-20">
-                    <svg width="44" height="44" viewBox="0 0 50 50" fill="none">
-                      <path
-                        d="M40 10 Q15 15 20 40"
-                        stroke="#14b8a6"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        fill="none"
-                      />
-                      <path
-                        d="M15 34 L20 40 L27 36"
-                        stroke="#14b8a6"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  {/* Student image carousel */}
-                  <div className="animate-scale-in delay-300 relative z-10 flex items-end justify-center h-full">
-                    {heroImages.map((src, i) => (
-                      <img
-                        key={i}
-                        src={src}
-                        alt={heroAlts[i]}
-                        className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[90%] w-[82%] object-cover object-top rounded-xl select-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.18)] transition-all duration-700 ease-in-out ${
-                          activeImg === i
-                            ? "opacity-100 scale-100 blur-0"
-                            : "opacity-0 scale-105 blur-[2px]"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  {/* Carousel dots + progress */}
-                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2 items-center">
-                    {heroImages.map((_, i) => (
-                      <button
-                        key={i}
-                        type="button"
-                        aria-label={`Show image ${i + 1}`}
-                        onClick={() => setActiveImg(i)}
-                        className="relative w-8 h-1.5 rounded-full bg-gray-200 overflow-hidden cursor-pointer"
-                      >
-                        <span
-                          className={`absolute inset-y-0 left-0 rounded-full transition-all duration-300 ${
-                            activeImg === i
-                              ? "bg-teal-600 w-full"
-                              : "bg-transparent w-0"
-                          }`}
-                          style={
-                            activeImg === i
-                              ? { animation: "progressBar 5s linear forwards" }
-                              : {}
-                          }
-                        />
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* ========== TEXT CONTENT ========== */}
-            <div className="lg:order-1 py-5 sm:py-8 lg:py-0 w-full">
-              {/* Badge */}
-              <div className="animate-fade-in-up flex justify-center lg:justify-start mb-3 sm:mb-5">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-600 text-[10px] sm:text-sm font-medium max-w-full">
-                  <Zap className="w-3 h-3 sm:w-3.5 sm:h-3.5 flex-shrink-0" />
-                  <span className="truncate">
-                    Industry-Focused Engineering Training
-                  </span>
-                </span>
-              </div>
-
-              {/* Headline */}
-              <h1 className="animate-fade-in-up delay-100 text-2xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-black text-gray-900 leading-[1.15] mb-3 sm:mb-5 text-center lg:text-left [font-family:'Space_Grotesk',sans-serif]">
-                Launch{" "}
-                <span className="relative inline-block">
-                  <span
-                    style={{
-                      background: "linear-gradient(135deg, #f14625, #ff8c42)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    Real Careers
-                  </span>
-                  <svg
-                    className="absolute -bottom-0.5 sm:-bottom-1.5 left-0 w-full"
-                    viewBox="0 0 200 8"
-                    fill="none"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      className="animate-draw-underline delay-700"
-                      d="M0 6 Q50 1 100 5 Q150 9 200 4"
-                      stroke="#f97316"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      fill="none"
-                    />
-                  </svg>
-                </span>
-                <br />
-                on Track
-              </h1>
-
-              {/* Description */}
-              <p className="animate-fade-in-up delay-200 text-xs sm:text-sm md:text-base lg:text-lg text-gray-500 leading-relaxed mb-4 sm:mb-7 text-center lg:text-left px-2 sm:px-0 sm:max-w-md lg:max-w-lg sm:mx-auto lg:mx-0 [font-family:'Inter',sans-serif]">
-                Slonix Solutions delivers high-quality, industry-aligned
-                training in advanced engineering tools and IT programs for
-                college learners and job seekers. Our programs cover Full Stack
-                Development, AI Mastery Suite, and Integrated Engineering Design
-                & Automation, with a strong focus on practical skills,
-                real-world projects, and career readiness.
-              </p>
-
-              {/* CTA Buttons */}
-              <div className="animate-fade-in-up delay-300 flex flex-row gap-2 sm:gap-3 mb-5 sm:mb-10 justify-center lg:justify-start">
-                <Link
-                  to="/courses"
-                  className="group animate-pulse-glow inline-flex items-center justify-center gap-1.5 px-4 sm:px-6 py-2 sm:py-3 text-white rounded-lg sm:rounded-xl font-semibold text-[11px] sm:text-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
-                  style={{ background: "#f14625" }}
-                >
-                  GET STARTED NOW
-                  <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <a
-                  href="#testimonials"
-                  className="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 bg-white text-gray-800 rounded-lg sm:rounded-xl font-semibold text-[11px] sm:text-sm border-2 border-gray-200 hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 hover:-translate-y-0.5"
-                >
-                  READ OUR STORY
-                </a>
-              </div>
-
-              {/* Bottom Stats Row — commented out
-              <div className="grid grid-cols-3 gap-1.5 sm:gap-3">
-                ...
-              </div>
-              */}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Slonix — Bento Grid */}
+      {/* ════════════ Stats Bar ════════════ */}
       <section
-        className="py-20 sm:py-28 px-4 sm:px-6 relative overflow-hidden"
-        style={{ background: "#f5f0eb" }}
+        className="py-12 sm:py-16 px-4 sm:px-6"
+        style={{ background: "#faf5ef" }}
       >
-        {/* Subtle decorative grain overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.03] pointer-events-none"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")",
-          }}
-        />
-
-        <div className="max-w-7xl mx-auto relative">
-          {/* ── Bento Grid ── */}
-          <div
-            className="bento-grid grid gap-4 sm:gap-5"
-            style={{
-              gridTemplateColumns: "repeat(12, 1fr)",
-              gridTemplateRows: "auto auto",
-            }}
-          >
-            {/* ── Card 1: Title Card (Left, spans 2 rows on desktop) ── */}
-            <div
-              className="bento-card group rounded-3xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden transition-all duration-500 hover:shadow-2xl"
-              style={{
-                gridColumn: "1 / span 12",
-                background: "linear-gradient(160deg, #111111 0%, #1a1a1a 100%)",
-                minHeight: "280px",
-              }}
-              onMouseMove={handleCardMouseMove}
-              onMouseLeave={handleCardMouseLeave}
-            >
-              {/* Animated floating orbs */}
-              <div
-                className="orb-float-1 absolute w-48 h-48 rounded-full opacity-30 pointer-events-none"
-                style={{
-                  top: "-10%",
-                  right: "-5%",
-                  background:
-                    "radial-gradient(circle, #a855f7, #7c3aed, transparent 70%)",
-                }}
-              />
-              <div
-                className="orb-float-2 absolute w-36 h-36 rounded-full opacity-20 pointer-events-none"
-                style={{
-                  bottom: "-8%",
-                  left: "-3%",
-                  background:
-                    "radial-gradient(circle, #f43f5e, #e11d48, transparent 70%)",
-                }}
-              />
-              <div
-                className="orb-float-3 absolute w-24 h-24 rounded-full opacity-15 pointer-events-none"
-                style={{
-                  top: "40%",
-                  right: "30%",
-                  background:
-                    "radial-gradient(circle, #6366f1, transparent 70%)",
-                }}
-              />
-              <div className="relative z-10">
-                <h2
-                  className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[1.05] mb-6"
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+            {[
+              { value: "2K+", label: "Students" },
+              { value: "2+", label: "Years of Experience" },
+              { value: "500+", label: "Live Sessions Delivered" },
+              { value: "47+", label: "Brand Partners" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <p
+                  className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-1"
                   style={{
-                    fontFamily: "'Space Grotesk', serif",
+                    fontFamily: "'Space Grotesk', sans-serif",
                     letterSpacing: "-0.02em",
                   }}
                 >
-                  <span className="bento-title">
-                    Why
-                    <br />
-                    Choose
-                    <br />
-                    <span className="relative inline-block">
-                      <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
-                        Slonix
-                      </span>
-                    </span>
-                  </span>
-                </h2>
-              </div>
-              <p
-                className="bento-desc text-gray-400 text-base sm:text-lg leading-relaxed max-w-sm relative z-10"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                This isn't just another training center. It's a transformation —
-                from learning to earning.
-              </p>
-            </div>
-
-            {/* ── Card 2: Industry-Relevant Training (Top Middle) ── */}
-            <div
-              className="bento-card group rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
-              style={{
-                gridColumn: "1 / span 12",
-                background: "linear-gradient(160deg, #131313 0%, #1d1d1d 100%)",
-                minHeight: "260px",
-              }}
-              onMouseMove={handleCardMouseMove}
-              onMouseLeave={handleCardMouseLeave}
-            >
-              {/* Animated floating orbs */}
-              <div
-                className="orb-float-2 absolute w-44 h-44 rounded-full opacity-25 pointer-events-none"
-                style={{
-                  top: "-15%",
-                  right: "-10%",
-                  background:
-                    "radial-gradient(circle, #06b6d4, #0891b2, transparent 70%)",
-                }}
-              />
-              <div
-                className="orb-float-4 absolute w-28 h-28 rounded-full opacity-15 pointer-events-none"
-                style={{
-                  bottom: "10%",
-                  left: "5%",
-                  background:
-                    "radial-gradient(circle, #14b8a6, transparent 70%)",
-                }}
-              />
-              <h3
-                className="text-xl sm:text-2xl font-bold text-white mb-4 leading-tight relative z-10"
-                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-              >
-                <span className="bento-title">Industry-Relevant Training</span>
-              </h3>
-              <p className="bento-desc text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs relative z-10">
-                Master engineering tools like CATIA, SolidWorks, MATLAB, and
-                Python — the exact tools companies demand.
-              </p>
-            </div>
-
-            {/* ── Card 3: Hands-On Projects (Top Right) ── */}
-            <div
-              className="bento-card group rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
-              style={{
-                gridColumn: "1 / span 12",
-                background: "linear-gradient(160deg, #151515 0%, #1f1f1f 100%)",
-                minHeight: "260px",
-              }}
-              onMouseMove={handleCardMouseMove}
-              onMouseLeave={handleCardMouseLeave}
-            >
-              {/* Animated floating orbs */}
-              <div
-                className="orb-float-3 absolute w-40 h-40 rounded-full opacity-25 pointer-events-none"
-                style={{
-                  bottom: "-12%",
-                  right: "-8%",
-                  background:
-                    "radial-gradient(circle, #f59e0b, #d97706, transparent 70%)",
-                }}
-              />
-              <div
-                className="orb-float-1 absolute w-24 h-24 rounded-full opacity-15 pointer-events-none"
-                style={{
-                  top: "15%",
-                  left: "60%",
-                  background:
-                    "radial-gradient(circle, #fb923c, transparent 70%)",
-                }}
-              />
-              <h3
-                className="text-xl sm:text-2xl font-bold text-white mb-4 leading-tight relative z-10"
-                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-              >
-                <span className="bento-title">Hands-On Projects</span>
-              </h3>
-              <p className="bento-desc text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs relative z-10">
-                Get access to ready-to-use real-world projects, portfolio
-                pieces, and guided capstone work.
-              </p>
-            </div>
-
-            {/* ── Card 4: Real Results & Career-Ready ── */}
-            <div
-              className="bento-card group rounded-3xl relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
-              style={{
-                gridColumn: "1 / span 12",
-                minHeight: "320px",
-                background: "linear-gradient(160deg, #0f0f0f 0%, #1a1a1a 100%)",
-              }}
-              onMouseMove={handleCardMouseMove}
-              onMouseLeave={handleCardMouseLeave}
-            >
-              {/* Animated floating orbs */}
-              <div
-                className="orb-float-4 absolute w-56 h-56 rounded-full opacity-30 pointer-events-none"
-                style={{
-                  top: "-15%",
-                  right: "-10%",
-                  background:
-                    "radial-gradient(circle, #f14625, #d63517, transparent 70%)",
-                }}
-              />
-              <div
-                className="orb-float-1 absolute w-44 h-44 rounded-full opacity-20 pointer-events-none"
-                style={{
-                  bottom: "-10%",
-                  left: "-5%",
-                  background:
-                    "radial-gradient(circle, #3b82f6, #2563eb, transparent 70%)",
-                }}
-              />
-              <div
-                className="orb-float-3 absolute w-32 h-32 rounded-full opacity-15 pointer-events-none"
-                style={{
-                  top: "50%",
-                  right: "40%",
-                  background:
-                    "radial-gradient(circle, #8b5cf6, transparent 70%)",
-                }}
-              />
-              <div className="relative z-10 p-7 sm:p-8 flex flex-col justify-between h-full">
-                <h3
-                  className="text-xl sm:text-2xl font-bold text-white leading-tight"
-                  style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                  {stat.value}
+                </p>
+                <p
+                  className="text-sm sm:text-base text-gray-500"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
                 >
-                  <span className="bento-title">Real Results, Career-Ready</span>
-                </h3>
-                <p className="bento-desc text-gray-400 text-sm sm:text-base leading-relaxed max-w-sm">
-                  Built by engineers who've done it — not just taught it. 100+
-                  placement success stories. No experience needed — start from
-                  zero.
+                  {stat.label}
                 </p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Popular Programs */}
+      {/* ════════════ Company Logos Marquee ════════════ */}
+      <section
+        className="py-10 overflow-hidden relative"
+        style={{ background: "#faf5ef" }}
+      >
+        {/* Fade gradients on edges */}
+        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#faf5ef] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#faf5ef] to-transparent z-10 pointer-events-none"></div>
+
+        <div className="flex w-max animate-marquee hover:animation-play-state-paused">
+          {[1, 2].map((set) => (
+            <div
+              key={set}
+              className="flex shrink-0 items-center justify-around translate-x-0"
+            >
+              {[
+                "TechFlow",
+                "CodeWorks",
+                "DevSync",
+                "CloudNine",
+                "InnovateIT",
+                "Dataforge",
+                "Appify",
+                "NextGen",
+                "WebSolutions",
+                "ByteCraft",
+              ].map((logo) => (
+                <div
+                  key={logo}
+                  className="mx-8 sm:mx-12 flex items-center justify-center"
+                >
+                  <span
+                    className="text-xl sm:text-2xl font-black text-black/20 tracking-wider uppercase transition-colors hover:text-black/40"
+                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                  >
+                    {logo}
+                  </span>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ════════════ Popular Courses ════════════ */}
       <section
         id="programs"
-        className="py-20 px-6 relative bg-gradient-to-br from-red-50 via-white to-red-50"
+        className="py-16 sm:py-24 px-4 sm:px-6"
+        style={{ background: "#faf5ef" }}
       >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          {/* Section heading */}
+          <div className="text-center mb-12 sm:mb-16">
             <h2
-              className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
-              style={{ fontFamily: "Space Grotesk, sans-serif" }}
+              className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-4"
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                letterSpacing: "-0.02em",
+              }}
             >
-              POPULAR PROGRAM
+              Popular{" "}
+              <span
+                style={{
+                  background: "linear-gradient(135deg, #f14625, #ff8c42)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Programs
+              </span>
             </h2>
-            <p className="text-xl text-gray-600">
+            <p
+              className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
               Master IT programs, engineering tools, AI, and design skills
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {courses.slice(0, 5).map((course, index) => (
-              <div
-                key={index}
-                className="group relative rounded-2xl bg-white backdrop-blur-sm border-2 border-red-100 hover:border-red-300 transition-all overflow-hidden shadow-sm hover:shadow-lg"
+          {/* Course cards grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            {courses.slice(0, 4).map((course, index) => (
+              <Link
+                key={course.id}
+                to={`/courses/${course.id}`}
+                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
+                {/* Image container */}
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={course.imageUrl}
                     alt={course.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
                   />
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${course.gradient} opacity-20`}
-                  />
+                  {/* Best seller badge on first and last */}
+                  {(index === 0 || index === 3) && (
+                    <span
+                      className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold text-gray-900"
+                      style={{ background: "#ffd700" }}
+                    >
+                      BEST SELLER
+                    </span>
+                  )}
                 </div>
-                <div className="p-6">
-                  <div className="inline-block px-3 py-1 rounded-full bg-red-100 text-red-700 text-xs font-medium mb-3 border border-red-200">
-                    {course.category}
-                  </div>
+
+                {/* Card body */}
+                <div className="p-5">
                   <h3
-                    className="text-xl font-bold text-gray-900 mb-3 leading-snug"
-                    style={{ fontFamily: "Space Grotesk, sans-serif" }}
+                    className="text-base font-bold text-gray-900 mb-1 leading-snug line-clamp-2"
+                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                   >
                     {course.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    {course.description}
-                  </p>
-                  <Link
-                    to={`/courses/${course.id}`}
-                    className="inline-flex items-center gap-2 px-6 py-2.5 text-white rounded-lg font-semibold text-sm hover:shadow-lg transition-all"
-                    style={{
-                      background: "linear-gradient(to right, #f14625, #e03a1b)",
-                    }}
+                  <p
+                    className="text-xs text-gray-400 mb-3"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
                   >
-                    Learn More
-                  </Link>
+                    {course.category}
+                  </p>
+
+                  {/* Rating row */}
+                  <div className="flex items-center gap-1.5">
+                    <span
+                      className="text-sm font-bold text-gray-900"
+                      style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                    >
+                      {(4.5 + (index % 5) * 0.1).toFixed(1)}
+                    </span>
+                    <div className="flex items-center gap-0.5">
+                      {[...Array(5)].map((_, i) => (
+                        <svg
+                          key={i}
+                          className={`w-3.5 h-3.5 ${i < 4 ? "text-yellow-400" : "text-gray-200"}`}
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                        </svg>
+                      ))}
+                    </div>
+                    <span className="text-xs text-gray-400">
+                      ({(120 + index * 54).toLocaleString()})
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          {/* View All button */}
+          <div className="text-center mt-10 sm:mt-14">
             <Link
               to="/courses"
-              className="px-8 py-4 bg-white rounded-xl font-semibold text-lg hover:opacity-90 transition-all border-2 inline-block"
-              style={{ color: "#f14625", borderColor: "#f14625" }}
+              onClick={() => window.scrollTo(0, 0)}
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-gray-900 text-white text-sm font-bold hover:bg-gray-800 hover:shadow-xl transition-all duration-200"
             >
-              View All Programs
+              View All
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Impact Stats */}
-      <ImpactStats />
 
       {/* How It Works */}
       <section className="py-20 px-6 relative bg-white">

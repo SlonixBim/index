@@ -6,7 +6,6 @@ import {
   BookOpen,
   Clock,
   Award,
-  ChevronLeft,
   Search,
   Filter,
   X,
@@ -65,8 +64,7 @@ export default function CoursesPage() {
     });
   }, [searchQuery, selectedCategory]);
 
-  const logoUrl =
-    "https://019c1a08-daa1-7c8a-b634-ca9b54ba789f.mochausercontent.com/ChatGPT-Image-Jan-29-2026-02_25_29-AM.png";
+  const logoUrl = "/logo.jpeg";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50">
@@ -83,35 +81,11 @@ export default function CoursesPage() {
           <div className="hidden md:flex items-center gap-8 text-sm">
             <Link
               to="/"
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+              className="px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-red-500/50 transition-all"
             >
-              Home
+              Back to Home
             </Link>
-            <Link to="/courses" className="text-red-600 font-semibold">
-              Courses
-            </Link>
-            <a
-              href="/#testimonials"
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
-            >
-              Testimonials
-            </a>
-            <a
-              href="/#about"
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
-            >
-              About
-            </a>
-            <a
-              href="/#contact"
-              className="text-gray-700 hover:text-red-600 transition-colors font-medium"
-            >
-              Contact
-            </a>
           </div>
-          <button className="px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-red-500/50 transition-all">
-            Start Learning
-          </button>
         </div>
       </nav>
 
@@ -124,14 +98,6 @@ export default function CoursesPage() {
         </div>
 
         <div className="max-w-7xl mx-auto relative">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-gray-700 hover:text-red-600 transition-colors mb-6 font-medium"
-          >
-            <ChevronLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
-
           <div className="max-w-4xl">
             <h1
               className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight"
@@ -260,7 +226,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Courses Grid with Sidebar */}
-      <section className="py-12 px-6 relative min-h-[400px]">
+      <section id="courses-grid" className="py-12 px-6 relative min-h-screen">
         <div className="max-w-7xl mx-auto flex gap-8">
           {/* Category Sidebar */}
           <aside className="hidden lg:block w-72 flex-shrink-0">
@@ -284,15 +250,10 @@ export default function CoursesPage() {
                       key={category}
                       type="button"
                       onClick={() => {
-                        const scrollY = window.scrollY;
                         setSelectedCategory(category);
-                        requestAnimationFrame(() => {
-                          window.scrollTo({
-                            top: scrollY,
-                            left: 0,
-                            behavior: "instant",
-                          });
-                        });
+                        document
+                          .getElementById("courses-grid")
+                          ?.scrollIntoView({ behavior: "smooth" });
                       }}
                       className={`w-full flex items-center justify-between gap-2 px-6 py-3.5 text-[15px] font-medium transition-all text-left ${
                         selectedCategory === category
@@ -357,14 +318,39 @@ export default function CoursesPage() {
                         {course.description}
                       </p>
 
-                      <div className="flex items-center gap-4 mb-6 text-sm text-gray-500">
-                        <div className="flex items-center gap-1.5">
-                          <Clock className="w-4 h-4 text-red-600" />
-                          <span>{course.duration}</span>
+                      <div className="flex items-start gap-6 mb-6 text-sm text-slate-500 font-medium">
+                        <div className="flex items-start gap-2">
+                          <Clock
+                            className="w-4 h-4 text-red-600 mt-0.5"
+                            strokeWidth={2}
+                          />
+                          <span className="leading-tight">
+                            {course.duration.split(" ").map((part, i) => (
+                              <span key={i} className="block">
+                                {part}
+                              </span>
+                            ))}
+                          </span>
                         </div>
-                        <div className="flex items-center gap-1.5">
-                          <Award className="w-4 h-4 text-red-600" />
-                          <span>{course.level}</span>
+                        <div className="flex items-start gap-2">
+                          <Award
+                            className="w-4 h-4 text-red-600 mt-0.5"
+                            strokeWidth={2}
+                          />
+                          <span className="leading-tight">
+                            {course.level.includes(" to ") ? (
+                              <>
+                                <span className="block">
+                                  {course.level.split(" to ")[0]} to
+                                </span>
+                                <span className="block">
+                                  {course.level.split(" to ")[1]}
+                                </span>
+                              </>
+                            ) : (
+                              <span className="block">{course.level}</span>
+                            )}
+                          </span>
                         </div>
                       </div>
 

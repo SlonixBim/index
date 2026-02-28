@@ -33,7 +33,7 @@ export const courses: Course[] = [
       "A comprehensive full stack web development course covering frontend (HTML5, CSS3, JavaScript ES6+, React), backend (Node.js, Express), databases (MySQL, MongoDB), REST APIs, and deployment. Build real-world projects and launch a professional portfolio.",
     rating: 4.8,
     students: 9240,
-    instructor: "Karthik Rajan, Full Stack Web Developer",
+    instructor: "KANISHMA",
     imageUrl:
       "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80",
     whatYouWillLearn: [
@@ -100,7 +100,7 @@ export const courses: Course[] = [
       "Become a full-stack Java developer with expertise in Spring Boot, Hibernate, React, and microservices architecture. Build production-ready enterprise applications.",
     rating: 4.7,
     students: 6340,
-    instructor: "Vikram Singh, Senior Java Architect",
+    instructor: "SACHIN",
     imageUrl:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
     whatYouWillLearn: [
@@ -176,7 +176,7 @@ export const courses: Course[] = [
       "Learn Python from scratch and build real-world applications. Cover web development, data analysis, automation, and more with hands-on projects.",
     rating: 4.9,
     students: 8920,
-    instructor: "Dr. Sarah Johnson, Python Developer",
+    instructor: "SACHIN",
     imageUrl:
       "https://images.unsplash.com/photo-1649180556628-9ba704115795?w=800&q=80",
     whatYouWillLearn: [
@@ -261,7 +261,7 @@ export const courses: Course[] = [
       "Learn AI and machine learning from fundamentals to advanced deep learning. Work with TensorFlow, PyTorch, and build real AI applications.",
     rating: 4.9,
     students: 4890,
-    instructor: "Dr. Arun Kumar, AI Researcher",
+    instructor: "KANISHMA",
     imageUrl:
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80",
     whatYouWillLearn: [
@@ -342,7 +342,7 @@ export const courses: Course[] = [
       "Master data analytics with Python, SQL, Excel, and business intelligence tools. Learn to extract insights from data and create compelling visualizations.",
     rating: 4.7,
     students: 5640,
-    instructor: "Priya Menon, Data Analyst",
+    instructor: "JANANI",
     imageUrl:
       "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
     whatYouWillLearn: [
@@ -418,7 +418,7 @@ export const courses: Course[] = [
       "Master the MERN stack and build full-stack JavaScript applications. Learn MongoDB, Express.js, React, and Node.js with real-world projects.",
     rating: 4.8,
     students: 7560,
-    instructor: "Neha Desai, Full Stack Developer",
+    instructor: "KANISHMA",
     imageUrl:
       "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&q=80",
     whatYouWillLearn: [
@@ -499,7 +499,7 @@ export const courses: Course[] = [
       "Learn to design mechanical parts and assemblies using SolidWorks, the industry-leading CAD software. This comprehensive course covers everything from basic sketching to advanced surfacing and simulation.",
     rating: 4.7,
     students: 3250,
-    instructor: "Rajesh Kumar, Mechanical Design Expert",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80",
     whatYouWillLearn: [
@@ -584,7 +584,7 @@ export const courses: Course[] = [
       "Master CATIA V5, the powerful CAD/CAM/CAE software used in automotive, aerospace, and industrial design. Learn surface modeling, assembly design, and advanced engineering techniques.",
     rating: 4.6,
     students: 2180,
-    instructor: "Priya Sharma, CATIA Specialist",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=800&q=80",
     whatYouWillLearn: [
@@ -670,7 +670,7 @@ export const courses: Course[] = [
       "Become proficient in AutoCAD, the world's leading CAD software for 2D drafting and 3D modeling. Perfect for architects, engineers, and designers.",
     rating: 4.8,
     students: 5420,
-    instructor: "Amit Patel, AutoCAD Certified Professional",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80",
     whatYouWillLearn: [
@@ -756,7 +756,7 @@ export const courses: Course[] = [
       "Master UI/UX design principles and tools. Learn user research, wireframing, prototyping, and visual design with Figma.",
     rating: 4.8,
     students: 5230,
-    instructor: "Kavya Reddy, UX Design Lead",
+    instructor: "YASHWANTH",
     imageUrl:
       "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=800&q=80",
     whatYouWillLearn: [
@@ -837,7 +837,7 @@ export const courses: Course[] = [
       "Introduction to structural engineering, covering loads, stresses, and basic design principles for steel and concrete structures.",
     rating: 4.5,
     students: 1200,
-    instructor: "David Miller, Structural Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80",
     whatYouWillLearn: [
@@ -867,9 +867,9 @@ export const courses: Course[] = [
       "Comprehensive guide to HVAC design, including psychrometrics, heat load calculation, and equipment selection.",
     rating: 4.6,
     students: 950,
-    instructor: "Sarah Chen, HVAC Specialist",
+    instructor: "LOKESH KUMAR",
     imageUrl:
-      "https://images.unsplash.com/photo-1558618047-3d07a7c5f8e8?w=800&q=80",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
     whatYouWillLearn: [
       "Heat load calculations",
       "Psychrometric analysis",
@@ -900,7 +900,7 @@ export const courses: Course[] = [
       "This AutoCAD course is tailored for EEE/ECE students and professionals, focusing on drawing electrical schematics, wiring diagrams, panel layouts, and PCB design documentation using AutoCAD Electrical.",
     rating: 4.6,
     students: 3870,
-    instructor: "Senthil Kumar, Electrical Design Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1601132359864-c974e79890ac?w=800&q=80",
     whatYouWillLearn: [
@@ -967,7 +967,7 @@ export const courses: Course[] = [
       "Master embedded systems from hardware fundamentals to firmware development. Learn to program ARM microcontrollers, interface peripherals, and work with RTOS for real-world applications.",
     rating: 4.8,
     students: 3120,
-    instructor: "Suresh Babu, Embedded Systems Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80",
     whatYouWillLearn: [
@@ -1039,7 +1039,7 @@ export const courses: Course[] = [
       "Comprehensive VLSI design course covering digital logic, CMOS design, RTL coding in Verilog/VHDL, synthesis, and physical design flow used in semiconductor industry.",
     rating: 4.7,
     students: 1850,
-    instructor: "Dr. Ramesh Naidu, VLSI Design Specialist",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&q=80",
     whatYouWillLearn: [
@@ -1113,9 +1113,9 @@ export const courses: Course[] = [
       "End-to-end IoT development covering hardware programming, wireless connectivity (WiFi, MQTT, BLE), cloud integration (AWS IoT, Firebase), and data visualization for smart applications.",
     rating: 4.9,
     students: 4250,
-    instructor: "Karthik Subramanian, IoT Solutions Architect",
+    instructor: "LOKESH KUMAR",
     imageUrl:
-      "https://images.unsplash.com/photo-1558618048-fbd3b9c5f37c?w=800&q=80",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
     whatYouWillLearn: [
       "Program ESP32/ESP8266 for IoT applications",
       "Implement MQTT, HTTP, and WebSocket protocols",
@@ -1187,7 +1187,7 @@ export const courses: Course[] = [
       "Hands-on robotics program covering mechanical design, motor control, sensor fusion, computer vision, and ROS (Robot Operating System) for building intelligent autonomous robots.",
     rating: 4.8,
     students: 2640,
-    instructor: "Anand Krishnamurthy, Robotics Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=800&q=80",
     whatYouWillLearn: [
@@ -1261,7 +1261,7 @@ export const courses: Course[] = [
       "Comprehensive PLC programming course covering Ladder Logic, FBD, Structured Text, SCADA integration, and hands-on projects with Siemens/Allen-Bradley PLCs used in industrial automation.",
     rating: 4.7,
     students: 2100,
-    instructor: "Vijay Prakash, Automation Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800&q=80",
     whatYouWillLearn: [
@@ -1333,7 +1333,7 @@ export const courses: Course[] = [
       "Industry-standard ETAP software training for power system analysis including load flow, short circuit analysis, motor starting, arc flash, and protection coordination used in power utilities and industries.",
     rating: 4.6,
     students: 980,
-    instructor: "Deepak Rajan, Power Systems Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
     whatYouWillLearn: [
@@ -1401,9 +1401,9 @@ export const courses: Course[] = [
       "E-BASE is a practical electrical design foundation program covering wiring diagrams, single-line diagrams, panel layout, cable sizing, and electrical safety standards for aspiring electrical engineers.",
     rating: 4.5,
     students: 1450,
-    instructor: "Muthu Kumar, Electrical Design Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
-      "https://images.unsplash.com/photo-1621905251189-08b45249ff78?w=800&q=80",
+      "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=800&q=80",
     whatYouWillLearn: [
       "Read and draw single-line diagrams",
       "Design electrical panels and switchboards",
@@ -1469,7 +1469,7 @@ export const courses: Course[] = [
       "Dialux is the industry-standard lighting design software. This course covers room modelling, luminaire selection, lux level calculations, emergency lighting, and generating professional reports for architects and electrical engineers.",
     rating: 4.6,
     students: 870,
-    instructor: "Preethi Selvam, Lighting Design Consultant",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=800&q=80",
     whatYouWillLearn: [
@@ -1536,7 +1536,7 @@ export const courses: Course[] = [
       "Master full-stack development with Python. Learn Django REST Framework, Flask, React frontend integration, PostgreSQL databases, and deploy production-ready applications on the cloud.",
     rating: 4.8,
     students: 5120,
-    instructor: "Arvind Nair, Full Stack Python Developer",
+    instructor: "SACHIN",
     imageUrl:
       "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&q=80",
     whatYouWillLearn: [
@@ -1604,7 +1604,7 @@ export const courses: Course[] = [
       "Comprehensive PHP development course covering core PHP, Laravel framework, MySQL database design, Vue.js frontend, RESTful APIs, and full-stack deployment for enterprise web applications.",
     rating: 4.6,
     students: 3480,
-    instructor: "Manoj Pillai, PHP Laravel Expert",
+    instructor: "KANISHMA",
     imageUrl:
       "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80",
     whatYouWillLearn: [
@@ -1687,7 +1687,7 @@ export const courses: Course[] = [
       "Complete .NET full-stack course covering C#, ASP.NET Core Web API, Entity Framework Core, SQL Server, Angular/React frontend, Azure deployment, and microservices architecture.",
     rating: 4.7,
     students: 4210,
-    instructor: "Santhosh Raj, .NET Solutions Architect",
+    instructor: "KANISHMA",
     imageUrl:
       "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80",
     whatYouWillLearn: [
@@ -1768,7 +1768,7 @@ export const courses: Course[] = [
       "Practical AI tools course for professionals covering ChatGPT prompt engineering, image generation with Midjourney/DALL-E, AI coding with GitHub Copilot, Notion AI, and how to automate workflows using AI tools.",
     rating: 4.9,
     students: 7830,
-    instructor: "Priya Chandran, AI Productivity Coach",
+    instructor: "KANISHMA",
     imageUrl:
       "https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=800&q=80",
     whatYouWillLearn: [
@@ -1845,7 +1845,7 @@ export const courses: Course[] = [
       "End-to-end data science program covering Python, statistics, machine learning, deep learning, model deployment, and business intelligence to prepare you for data scientist roles.",
     rating: 4.9,
     students: 6540,
-    instructor: "Dr. Ananya Krishnan, Data Scientist",
+    instructor: "JANANI",
     imageUrl:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     whatYouWillLearn: [
@@ -1913,9 +1913,9 @@ export const courses: Course[] = [
       "Master the science and art of prompt engineering for large language models. Learn zero-shot, few-shot, chain-of-thought, and RAG techniques to get the best results from AI systems.",
     rating: 4.8,
     students: 4920,
-    instructor: "Rajan Mohan, AI Research Engineer",
+    instructor: "JANANI",
     imageUrl:
-      "https://images.unsplash.com/photo-1676299082001-b107e8a19448?w=800&q=80",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
     whatYouWillLearn: [
       "Understand how LLMs process prompts",
       "Apply zero-shot and few-shot prompting",
@@ -1978,7 +1978,7 @@ export const courses: Course[] = [
       "The complete AI application development course — integrate OpenAI/Claude APIs, build RAG applications with vector databases, create React frontends, deploy on AWS/GCP, and ship production AI products.",
     rating: 4.9,
     students: 3650,
-    instructor: "Vikram Anand, AI Full Stack Engineer",
+    instructor: "KANISHMA",
     imageUrl:
       "https://images.unsplash.com/photo-1685478237595-f452cb125f27?w=800&q=80",
     whatYouWillLearn: [
@@ -2059,7 +2059,7 @@ export const courses: Course[] = [
       "Complete C programming course covering syntax, data structures, pointers, memory management, and file handling. Ideal for engineering students and beginners building a strong programming foundation.",
     rating: 4.7,
     students: 8920,
-    instructor: "Balaji Subramaniam, Systems Programmer",
+    instructor: "SACHIN",
     imageUrl:
       "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
     whatYouWillLearn: [
@@ -2126,7 +2126,7 @@ export const courses: Course[] = [
       "Comprehensive C++ course covering OOP, templates, STL containers, algorithms, memory management, and modern C++17/20 features for systems programming and competitive coding.",
     rating: 4.7,
     students: 6310,
-    instructor: "Arun Selvakumar, Software Engineer",
+    instructor: "SACHIN",
     imageUrl:
       "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=800&q=80",
     whatYouWillLearn: [
@@ -2193,7 +2193,7 @@ export const courses: Course[] = [
       "Core Java programming course covering Java syntax, OOP principles, Collections Framework, exception handling, multithreading, JDBC, and JavaFX for building desktop and console applications.",
     rating: 4.7,
     students: 7240,
-    instructor: "Meena Raghavendra, Java Developer",
+    instructor: "SACHIN",
     imageUrl:
       "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&q=80",
     whatYouWillLearn: [
@@ -2265,7 +2265,7 @@ export const courses: Course[] = [
       "This AutoCAD course is designed for mechanical engineering students and professionals. Master 2D mechanical drafting, orthographic projections, tolerance and GD&T annotations, and produce professional engineering drawing sets as per IS/ISO standards.",
     rating: 4.7,
     students: 5230,
-    instructor: "Suresh Prabhu, Mechanical Design Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80",
     whatYouWillLearn: [
@@ -2333,7 +2333,7 @@ export const courses: Course[] = [
       "CREO Parametric is a leading CAD software used across aerospace, automotive, and manufacturing industries. This course covers part modeling, assembly design, sheet metal, and drawing creation for real-world engineering applications.",
     rating: 4.6,
     students: 3120,
-    instructor: "Arjun Mehta, Mechanical Design Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
     whatYouWillLearn: [
@@ -2396,7 +2396,7 @@ export const courses: Course[] = [
       "STAAD Pro is the industry-standard structural analysis and design software used by civil and structural engineers worldwide. Learn to model, analyze, and design structures including buildings, bridges, and industrial frames.",
     rating: 4.5,
     students: 2740,
-    instructor: "Deepak Nair, Structural Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80",
     whatYouWillLearn: [
@@ -2464,7 +2464,7 @@ export const courses: Course[] = [
       "This AutoCAD course is tailored for civil engineering students and professionals. Learn to create site layout plans, road cross-sections, contour drawings, drainage layouts, and full construction document sets using AutoCAD Civil tools.",
     rating: 4.6,
     students: 4120,
-    instructor: "Ramesh Sundaram, Civil Design Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=800&q=80",
     whatYouWillLearn: [
@@ -2532,7 +2532,7 @@ export const courses: Course[] = [
       "SketchUp is widely used by architects, interior designers, and civil engineers for quick 3D concept modeling and visualization. This course covers everything from basic modeling to rendering and presenting design ideas to clients.",
     rating: 4.6,
     students: 4210,
-    instructor: "Priya Anand, Architectural Designer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
     whatYouWillLearn: [
@@ -2600,7 +2600,7 @@ export const courses: Course[] = [
       "Autodesk Revit is the leading BIM (Building Information Modeling) software for architects. This course covers architectural modeling, families, sheets, schedules, and collaborative workflows used in the AEC industry.",
     rating: 4.7,
     students: 3890,
-    instructor: "Kavitha Rajan, BIM Specialist",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1481253127861-534498168948?w=800&q=80",
     whatYouWillLearn: [
@@ -2668,7 +2668,7 @@ export const courses: Course[] = [
       "Microsoft Project is the go-to tool for project managers in the construction and engineering industry. This course covers creating project plans, Gantt charts, resource allocation, and tracking project progress effectively.",
     rating: 4.5,
     students: 2560,
-    instructor: "Suresh Babu, Project Management Consultant",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?w=800&q=80",
     whatYouWillLearn: [
@@ -2739,7 +2739,7 @@ export const courses: Course[] = [
       "AutoCAD is the backbone of BIM documentation. This course covers 2D drafting fundamentals, creating drawing sets for architectural and MEP disciplines, linking DWG files with Revit, and producing coordinated BIM deliverables using AutoCAD.",
     rating: 4.6,
     students: 4580,
-    instructor: "Pradeep Mohan, BIM Drafting Specialist",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80",
     whatYouWillLearn: [
@@ -2806,7 +2806,7 @@ export const courses: Course[] = [
       "Revit MEP enables engineers to design and document mechanical, electrical, and plumbing systems within a fully coordinated BIM environment. Learn duct routing, pipe systems, electrical panels, and clash detection workflows.",
     rating: 4.7,
     students: 2980,
-    instructor: "Ramesh Iyer, MEP BIM Engineer",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
     whatYouWillLearn: [
@@ -2873,7 +2873,7 @@ export const courses: Course[] = [
       "Navisworks is the industry standard for BIM project review and coordination. This course covers model aggregation, clash detection, TimeLiner 4D scheduling, quantity takeoffs, and producing coordination reports for construction projects.",
     rating: 4.6,
     students: 2340,
-    instructor: "Vinoth Kumar, BIM Coordinator",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
     whatYouWillLearn: [
@@ -2940,7 +2940,7 @@ export const courses: Course[] = [
       "Scan to BIM is a growing field in the AEC industry where point cloud data captured by laser scanners is used to create precise BIM models. This course covers point cloud processing, registration, and modeling in Revit and AutoCAD.",
     rating: 4.5,
     students: 1870,
-    instructor: "Nithya Subramaniam, BIM Specialist",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?w=800&q=80",
     whatYouWillLearn: [
@@ -3007,7 +3007,7 @@ export const courses: Course[] = [
       "BIM 360 (now Autodesk Construction Cloud) is the platform for managing construction projects in the cloud. This course covers document management, design collaboration, field management, and project reporting using BIM 360.",
     rating: 4.6,
     students: 2150,
-    instructor: "Arun Prakash, Construction Technology Consultant",
+    instructor: "LOKESH KUMAR",
     imageUrl:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
     whatYouWillLearn: [
@@ -3078,7 +3078,7 @@ export const courses: Course[] = [
       "This comprehensive HR course equips you with the skills to manage human capital effectively. Learn talent acquisition, onboarding, performance appraisal, payroll processing, and Indian labor law compliance for corporate HR roles.",
     rating: 4.6,
     students: 4120,
-    instructor: "Meenakshi Raj, HR Business Partner",
+    instructor: "GOWRI",
     imageUrl:
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
     whatYouWillLearn: [
@@ -3145,7 +3145,7 @@ export const courses: Course[] = [
       "This course covers core accounting principles, financial statements, GST filing, and hands-on Tally ERP 9 / TallyPrime operations. Ideal for commerce students and professionals pursuing accounting, finance, and taxation careers.",
     rating: 4.7,
     students: 5840,
-    instructor: "Subramaniam Pillai, CA & Finance Trainer",
+    instructor: "GOWRI",
     imageUrl:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     whatYouWillLearn: [
@@ -3212,7 +3212,7 @@ export const courses: Course[] = [
       "A complete digital marketing course covering search engine optimization, social media strategy, Google Ads, Meta Ads, email marketing, content marketing, and web analytics. Build a strong portfolio and prepare for Google certifications.",
     rating: 4.8,
     students: 6730,
-    instructor: "Kavya Krishnan, Digital Marketing Manager",
+    instructor: "GOWRI",
     imageUrl:
       "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80",
     whatYouWillLearn: [
@@ -3279,7 +3279,7 @@ export const courses: Course[] = [
       "Business Analytics bridges the gap between data and decision-making. This course covers data analysis with Excel, dashboard creation in Power BI, SQL for data querying, and statistical techniques to solve real business problems.",
     rating: 4.7,
     students: 4560,
-    instructor: "Harish Chandran, Business Intelligence Analyst",
+    instructor: "GOWRI",
     imageUrl:
       "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80",
     whatYouWillLearn: [
