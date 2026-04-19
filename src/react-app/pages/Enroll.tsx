@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
+
+const PHONE_NUMBER = "+91 8431752365";
 import {
   User,
   Mail,
@@ -89,8 +91,8 @@ export default function EnrollPage() {
       ? `Enroll in ${course.title} at Slonix Solutions. ${course.duration} hands-on training program. Fill the form and our team will contact you within 24 hours.`
       : "Enroll in an engineering course at Slonix Solutions today.",
     canonical: course
-      ? `https://slonix.in/enroll/${course.id}`
-      : "https://slonix.in/enroll",
+      ? `https://slonixsolutions.in/enroll/${course.id}`
+      : "https://slonixsolutions.in/enroll",
   });
 
   const [formData, setFormData] = useState<FormData>({
@@ -1083,10 +1085,10 @@ export default function EnrollPage() {
                     style={{ color: "#f14625" }}
                   />
                   <a
-                    href="tel:+919080211696"
+                    href={`tel:${PHONE_NUMBER.replace(/\s/g, "")}`}
                     className="hover:text-white transition-colors"
                   >
-                    +91 90802 11696
+                    {PHONE_NUMBER}
                   </a>
                 </li>
                 <li className="text-gray-400 text-sm flex items-start gap-2">

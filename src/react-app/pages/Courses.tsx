@@ -20,7 +20,7 @@ export default function CoursesPage() {
     title: "All Courses | Slonix Solutions — Engineering Training Academy",
     description:
       "Browse all engineering training courses at Slonix Solutions — SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack, Python and more. Enroll today.",
-    canonical: "https://slonix.in/courses",
+    canonical: "https://slonixsolutions.in/courses",
   });
 
   const [searchQuery, setSearchQuery] = useState("");
@@ -64,24 +64,30 @@ export default function CoursesPage() {
     });
   }, [searchQuery, selectedCategory]);
 
-  const logoUrl = "/logo.jpeg";
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/90 border-b border-red-200/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img
-              src={logoUrl}
-              alt="Slonix Solutions"
-              className="h-10 w-auto object-contain"
-            />
+            <span
+              className="text-2xl md:text-4xl font-black tracking-tight"
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                background: "linear-gradient(135deg, #f14625, #ff8c42)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                fontWeight: 900,
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Slonix
+            </span>
           </Link>
           <div className="hidden md:flex items-center gap-8 text-sm">
             <Link
               to="/"
-              className="px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-red-500/50 transition-all"
+              className="px-6 py-2.5 bg-black text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-black/50 transition-all"
             >
               Back to Home
             </Link>
@@ -105,7 +111,7 @@ export default function CoursesPage() {
             >
               Our{" "}
               <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                Projects
+                Programs
               </span>
             </h1>
 

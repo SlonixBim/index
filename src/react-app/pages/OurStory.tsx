@@ -71,7 +71,7 @@ export default function OurStoryPage() {
           >
             Building the Future
             <br />
-            of Engineering{" "}
+            of Technology{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #f14625, #ff8c42)",
@@ -109,21 +109,7 @@ export default function OurStoryPage() {
                 From a Classroom Dream to a Movement
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Slonix Solutions was born out of a deeply personal frustration.
-                Our founders — practicing engineers and educators — saw
-                firsthand how traditional education was failing to keep pace
-                with the demands of modern industry. Students were graduating
-                with theoretical knowledge but lacking the hands-on skills
-                employers actually needed.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                So we asked ourselves: what if we could bridge that gap? What if
-                every student could learn the exact tools, techniques, and
-                workflows used in real engineering teams — CATIA, SolidWorks,
-                MATLAB, Python, and more?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                That question became our mission. And Slonix Solutions was born.
+                Slonix Solutions was founded with a clear vision to transform learning for the modern world. Our founders—practicing engineers and educators—recognized that traditional education was not keeping pace with evolving industry demands. While students gained strong theoretical knowledge, they often lacked the practical, hands-on skills required in real-world roles. Slonix Solutions aims to bridge this gap by delivering industry-relevant, skill-focused learning experiences that prepare individuals for meaningful careers.
               </p>
             </div>
             <div
@@ -221,10 +207,7 @@ export default function OurStoryPage() {
                   Our Vision
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-lg max-w-xl">
-                  To become India's most trusted engineering education platform
-                  — where every student, regardless of background, can gain the
-                  practical skills needed to launch a successful career in
-                  engineering and technology.
+                  At SLONIX, our vision is to be a leading EdTech and E-Learning provider that equips students and professionals with industry-ready skills. We aim to bridge the gap between academic learning and real-world demands by creating confident, skilled, and career-ready individuals.
                 </p>
               </div>
             </div>
@@ -329,12 +312,7 @@ export default function OurStoryPage() {
                     Our Mission
                   </h3>
                   <p className="text-gray-400 leading-relaxed text-lg">
-                    To empower aspiring engineers with industry-relevant skills
-                    through hands-on, project-based training. We bridge the gap
-                    between academic learning and real-world engineering demands
-                    by providing comprehensive courses in CAD, CAE, programming,
-                    and emerging technologies — taught by professionals who've
-                    worked in the field.
+                    Our mission is to deliver high-quality, practical training through mentor-led programs, hands-on projects, and flexible e-learning solutions. We focus on aligning our courses with industry needs to improve employability and support long-term career growth.
                   </p>
                 </div>
               </div>
@@ -469,7 +447,7 @@ export default function OurStoryPage() {
                 icon: Target,
                 title: "Proven Results",
                 description:
-                  "With 100+ successful placements and counting, our track record speaks for itself. Our students go on to work at top engineering firms and tech companies.",
+                  "With 100+ successful placements and counting, our track record speaks for itself. Our students go on to work at top tech firms and leading companies.",
               },
             ].map((item, i) => (
               <div

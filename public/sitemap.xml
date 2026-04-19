@@ -7,7 +7,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://slonix.in/</loc>
+    <loc>https://slonixsolutions.in/</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -15,7 +15,7 @@
 
   <!-- All Courses Listing -->
   <url>
-    <loc>https://slonix.in/courses</loc>
+    <loc>https://slonixsolutions.in/courses</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -23,7 +23,7 @@
 
   <!-- Our Story -->
   <url>
-    <loc>https://slonix.in/our-story</loc>
+    <loc>https://slonixsolutions.in/our-story</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -31,7 +31,7 @@
 
   <!-- Enrollment (General) -->
   <url>
-    <loc>https://slonix.in/enroll</loc>
+    <loc>https://slonixsolutions.in/enroll</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -39,7 +39,7 @@
 
   <!-- Privacy Policy -->
   <url>
-    <loc>https://slonix.in/privacy-policy</loc>
+    <loc>https://slonixsolutions.in/privacy-policy</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -47,7 +47,7 @@
 
   <!-- Terms and Conditions -->
   <url>
-    <loc>https://slonix.in/terms-and-conditions</loc>
+    <loc>https://slonixsolutions.in/terms-and-conditions</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -56,70 +56,70 @@
   <!-- ===== IT PROGRAMS ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/full-stack-webdev</loc>
+    <loc>https://slonixsolutions.in/courses/full-stack-webdev</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/full-stack-java</loc>
+    <loc>https://slonixsolutions.in/courses/full-stack-java</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/python-programming</loc>
+    <loc>https://slonixsolutions.in/courses/python-programming</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/ai-machine-learning</loc>
+    <loc>https://slonixsolutions.in/courses/ai-machine-learning</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/data-analytics</loc>
+    <loc>https://slonixsolutions.in/courses/data-analytics</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/mern-stack</loc>
+    <loc>https://slonixsolutions.in/courses/mern-stack</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/full-stack-python</loc>
+    <loc>https://slonixsolutions.in/courses/full-stack-python</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/full-stack-php</loc>
+    <loc>https://slonixsolutions.in/courses/full-stack-php</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/full-stack-dotnet</loc>
+    <loc>https://slonixsolutions.in/courses/full-stack-dotnet</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/ui-ux-design</loc>
+    <loc>https://slonixsolutions.in/courses/ui-ux-design</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -128,28 +128,28 @@
   <!-- ===== AI & DATA SCIENCE ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/ai-tools</loc>
+    <loc>https://slonixsolutions.in/courses/ai-tools</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/data-science</loc>
+    <loc>https://slonixsolutions.in/courses/data-science</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/prompt-engineering</loc>
+    <loc>https://slonixsolutions.in/courses/prompt-engineering</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/ai-full-stack</loc>
+    <loc>https://slonixsolutions.in/courses/ai-full-stack</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -158,21 +158,21 @@
   <!-- ===== PROGRAMMING FUNDAMENTALS ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/c-programming</loc>
+    <loc>https://slonixsolutions.in/courses/c-programming</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/cpp-programming</loc>
+    <loc>https://slonixsolutions.in/courses/cpp-programming</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/java-programming</loc>
+    <loc>https://slonixsolutions.in/courses/java-programming</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -181,35 +181,35 @@
   <!-- ===== MECHANICAL / CAD DESIGN ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/solidworks-mechanical-design</loc>
+    <loc>https://slonixsolutions.in/courses/solidworks-mechanical-design</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/catia-product-engineering</loc>
+    <loc>https://slonixsolutions.in/courses/catia-product-engineering</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/autocad-mastery</loc>
+    <loc>https://slonixsolutions.in/courses/autocad-mastery</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/autocad-mechanical</loc>
+    <loc>https://slonixsolutions.in/courses/autocad-mechanical</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/creo-parametric</loc>
+    <loc>https://slonixsolutions.in/courses/creo-parametric</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -218,42 +218,42 @@
   <!-- ===== CIVIL / STRUCTURAL ENGINEERING ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/structural-engineering</loc>
+    <loc>https://slonixsolutions.in/courses/structural-engineering</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/staad-pro</loc>
+    <loc>https://slonixsolutions.in/courses/staad-pro</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/autocad-civil</loc>
+    <loc>https://slonixsolutions.in/courses/autocad-civil</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/sketchup</loc>
+    <loc>https://slonixsolutions.in/courses/sketchup</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/revit-arch</loc>
+    <loc>https://slonixsolutions.in/courses/revit-arch</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/microsoft-project</loc>
+    <loc>https://slonixsolutions.in/courses/microsoft-project</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -262,35 +262,35 @@
   <!-- ===== BIM (BUILDING INFORMATION MODELING) ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/autocad-bim</loc>
+    <loc>https://slonixsolutions.in/courses/autocad-bim</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/revit-mep</loc>
+    <loc>https://slonixsolutions.in/courses/revit-mep</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/navisworks</loc>
+    <loc>https://slonixsolutions.in/courses/navisworks</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/scan-to-bim</loc>
+    <loc>https://slonixsolutions.in/courses/scan-to-bim</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/bim-360</loc>
+    <loc>https://slonixsolutions.in/courses/bim-360</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -299,35 +299,35 @@
   <!-- ===== MEP / HVAC / ELECTRICAL ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/hvac-design</loc>
+    <loc>https://slonixsolutions.in/courses/hvac-design</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/autocad-eee-ece</loc>
+    <loc>https://slonixsolutions.in/courses/autocad-eee-ece</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/e-tap</loc>
+    <loc>https://slonixsolutions.in/courses/e-tap</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/e-base</loc>
+    <loc>https://slonixsolutions.in/courses/e-base</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/dialux</loc>
+    <loc>https://slonixsolutions.in/courses/dialux</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -336,35 +336,35 @@
   <!-- ===== EMBEDDED / ELECTRONICS ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/embedded-systems</loc>
+    <loc>https://slonixsolutions.in/courses/embedded-systems</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/vlsi-design</loc>
+    <loc>https://slonixsolutions.in/courses/vlsi-design</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/iot</loc>
+    <loc>https://slonixsolutions.in/courses/iot</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/robotics</loc>
+    <loc>https://slonixsolutions.in/courses/robotics</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/plc-programming</loc>
+    <loc>https://slonixsolutions.in/courses/plc-programming</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -373,28 +373,28 @@
   <!-- ===== BUSINESS & MANAGEMENT ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/hr-management</loc>
+    <loc>https://slonixsolutions.in/courses/hr-management</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/finance-tally</loc>
+    <loc>https://slonixsolutions.in/courses/finance-tally</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/digital-marketing</loc>
+    <loc>https://slonixsolutions.in/courses/digital-marketing</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/business-analytics</loc>
+    <loc>https://slonixsolutions.in/courses/business-analytics</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -403,28 +403,28 @@
   <!-- ===== LANGUAGES ===== -->
 
   <url>
-    <loc>https://slonix.in/courses/french</loc>
+    <loc>https://slonixsolutions.in/courses/french</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/german</loc>
+    <loc>https://slonixsolutions.in/courses/german</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/english</loc>
+    <loc>https://slonixsolutions.in/courses/english</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://slonix.in/courses/japanese</loc>
+    <loc>https://slonixsolutions.in/courses/japanese</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

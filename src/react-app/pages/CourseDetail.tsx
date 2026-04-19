@@ -30,8 +30,8 @@ export default function CourseDetailPage() {
       ? `${course.description} Enroll in ${course.title} at Slonix Solutions. ${course.duration} program, ${course.level}. Get placed with hands-on training.`
       : "Explore engineering courses at Slonix Solutions.",
     canonical: course
-      ? `https://slonix.in/courses/${course.id}`
-      : "https://slonix.in/courses",
+      ? `https://slonixsolutions.in/courses/${course.id}`
+      : "https://slonixsolutions.in/courses",
   });
 
   useEffect(() => {
@@ -72,26 +72,32 @@ export default function CourseDetailPage() {
     );
   }
 
-  const logoUrl = "/logo.jpeg";
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/90 border-b border-red-200/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img
-              src={logoUrl}
-              alt="Slonix Solutions"
-              className="h-10 w-auto object-contain"
-            />
+            <span
+              className="text-2xl md:text-4xl font-black tracking-tight"
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                background: "linear-gradient(135deg, #f14625, #ff8c42)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                fontWeight: 900,
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Slonix
+            </span>
           </Link>
           <div className="hidden md:flex items-center gap-8 text-sm">
             <Link
-              to="/"
-              className="px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-red-500/50 transition-all"
+              to="/courses"
+              className="px-6 py-2.5 bg-black text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-black/50 transition-all"
             >
-              Back to Home
+              Back to Courses
             </Link>
           </div>
         </div>
@@ -248,18 +254,18 @@ export default function CourseDetailPage() {
                       >
                         <button
                           onClick={() => toggleModule(index)}
-                          className={`w-full p-5 bg-gradient-to-r ${course.gradient} bg-opacity-5 hover:bg-opacity-10 transition-all text-left`}
+                          className="w-full p-5 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 transition-all text-left"
                         >
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
                               <ChevronDown
-                                className={`w-5 h-5 text-red-600 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                                className={`w-5 h-5 text-white transition-transform ${isExpanded ? "rotate-180" : ""}`}
                               />
-                              <h3 className="font-bold text-gray-900 text-lg">
+                              <h3 className="font-bold text-white text-lg">
                                 {module.module}
                               </h3>
                             </div>
-                            <BookOpen className="w-5 h-5 text-red-600" />
+                            <BookOpen className="w-5 h-5 text-white" />
                           </div>
                         </button>
                         {isExpanded && (

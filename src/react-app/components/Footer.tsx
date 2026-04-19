@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const logoUrl = "/logo.jpeg";
+const PHONE_NUMBER = "+91 8431752365";
 
 export default function Footer() {
   return (
@@ -189,10 +190,10 @@ export default function Footer() {
                   style={{ color: "#f14625" }}
                 />
                 <a
-                  href="tel:+919080211696"
+                  href={`tel:${PHONE_NUMBER.replace(/\s/g, "")}`}
                   className="hover:text-white transition-colors"
                 >
-                  +91 90802 11696
+                  {PHONE_NUMBER}
                 </a>
               </li>
               <li className="text-gray-400 text-sm flex items-start gap-2">

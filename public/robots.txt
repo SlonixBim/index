@@ -1,4 +1,4 @@
-# Slonix Solutions — https://slonix.in
+# Slonix Solutions — https://slonixsolutions.in
 # Robots exclusion protocol
 
 User-agent: *
@@ -7,4 +7,4 @@ Disallow: /api/
 Disallow: /enroll/
 
 # Sitemap
-Sitemap: https://slonix.in/sitemap.xml
+Sitemap: https://slonixsolutions.in/sitemap.xml

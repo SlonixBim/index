@@ -6,46 +6,57 @@ import Footer from "@/react-app/components/Footer";
 import HeroSection from "@/react-app/components/HeroSection";
 import { courses } from "@/data/courses";
 import powerImg from "@/photos/power.jpg";
+import aimlImg from "@/photos/aiml.jpg";
+import dataScienceImg from "@/photos/Data-Science-Course.webp";
+import autocadImg from "@/photos/autocad.jpg";
+import digitalMarketingImg from "@/photos/digital marketing.jpg";
+import krishnaKumarImg from "@/photos/testimonials/krishna kumar.jpeg";
+import preveenImg from "@/photos/testimonials/preveen.jpeg";
+import yogadahrshiniImg from "@/photos/testimonials/yogadahrshini.jpeg";
+import adhithyaImg from "@/photos/testimonials/adhitya.jpeg";
+import abhikshaImg from "@/photos/testimonials/abishka.jpeg";
+
+const PHONE_NUMBER = "+91 8431752365";
 
 const testimonials = [
   {
-    text: "Slonix completely transformed how I approach engineering problems. The hands-on projects gave me real-world confidence I couldn't find anywhere else.",
-    name: "Arjun Mehta",
-    role: "Embedded Systems Engineer",
+    text: "Data Analytics training helped me understand Excel, SQL, and visualization tools clearly. Very practical and career-focused.",
+    name: "KRISHNA KUMAR B",
+    role: "DATA ANALYTICS",
     date: "2 days ago",
-    initials: "AM",
+    image: krishnaKumarImg,
     accent: "#f14625",
   },
   {
-    text: "The instructors here are genuinely invested in your success. I landed my first job within 3 weeks of completing the embedded systems course.",
-    name: "Priya Nair",
-    role: "IoT Developer",
+    text: "Really good UI/UX course. Easy to understand, practical sessions, and helpful mentors. It gave me confidence to start working on real projects.",
+    name: "PRAVEEN S",
+    role: "UI/UX",
     date: "5 days ago",
-    initials: "PN",
+    image: preveenImg,
     accent: "#14b8a6",
   },
   {
-    text: "Best decision I made for my career. The curriculum is industry-relevant and the placement support is exceptional. Highly recommend Slonix!",
-    name: "Karthik Rajan",
-    role: "Electronics Engineer",
+    text: "Excellent embedded systems course with clear explanations and hands-on learning. The practical sessions and supportive mentors made complex concepts easy to grasp. It gave me the confidence to start building real-world projects.",
+    name: "YOGADHARSHINI K",
+    role: "EMBEDDED SYSTEMS",
     date: "1 week ago",
-    initials: "KR",
+    image: yogadahrshiniImg,
     accent: "#8b5cf6",
   },
   {
-    text: "I was skeptical at first, but the quality of training blew me away. The 1-on-1 mentoring sessions alone are worth every rupee spent.",
-    name: "Divya Sharma",
-    role: "VLSI Design Intern",
+    text: "Enrolled in the Full Stack program and had a great experience. The live projects and doubt-clearing sessions were very helpful.",
+    name: "ADHITHYA R",
+    role: "FULLSTACK WEB DEVELOPMENT",
     date: "2 weeks ago",
-    initials: "DS",
+    image: adhithyaImg,
     accent: "#f59e0b",
   },
   {
-    text: "From zero coding knowledge to building my own IoT project — Slonix made it possible in just 3 months. Incredible teaching methodology.",
-    name: "Rohit Patel",
-    role: "Final Year B.E. Student",
+    text: "I highly recommend the Data Science course at SLONIX SOLUTIONS. The curriculum, projects, and guidance were all excellent.",
+    name: "ABHIKSHA D",
+    role: "DATA SCIENCE",
     date: "3 weeks ago",
-    initials: "RP",
+    image: abhikshaImg,
     accent: "#3b82f6",
   },
 ];
@@ -203,14 +214,22 @@ function TestimonialsSection() {
                     </p>
                     <div className="border-t border-gray-100" />
                     <div className="flex items-center gap-3">
-                      <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 shadow-sm"
-                        style={{
-                          background: `linear-gradient(135deg, ${t.accent}, ${t.accent}bb)`,
-                        }}
-                      >
-                        {t.initials}
-                      </div>
+                      {t.image ? (
+                        <img
+                          src={t.image}
+                          alt={t.name}
+                          className="w-10 h-10 rounded-full object-cover flex-shrink-0 shadow-sm"
+                        />
+                      ) : (
+                        <div
+                          className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 shadow-sm"
+                          style={{
+                            background: `linear-gradient(135deg, ${t.accent}, ${t.accent}bb)`,
+                          }}
+                        >
+                          {t.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                        </div>
+                      )}
                       <div className="min-w-0">
                         <p className="text-sm font-bold text-gray-900 leading-tight">
                           {t.name}
@@ -358,14 +377,22 @@ function TestimonialsSection() {
                     </p>
                     <div className="border-t border-gray-100" />
                     <div className="flex items-center gap-3">
-                      <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 ring-2 ring-white shadow-sm"
-                        style={{
-                          background: `linear-gradient(135deg, ${t.accent}, ${t.accent}bb)`,
-                        }}
-                      >
-                        {t.initials}
-                      </div>
+                      {t.image ? (
+                        <img
+                          src={t.image}
+                          alt={t.name}
+                          className="w-10 h-10 rounded-full object-cover flex-shrink-0 ring-2 ring-white shadow-sm"
+                        />
+                      ) : (
+                        <div
+                          className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 ring-2 ring-white shadow-sm"
+                          style={{
+                            background: `linear-gradient(135deg, ${t.accent}, ${t.accent}bb)`,
+                          }}
+                        >
+                          {t.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                        </div>
+                      )}
                       <div className="min-w-0">
                         <p className="text-sm font-bold text-gray-900 leading-tight truncate">
                           {t.name}
@@ -394,12 +421,125 @@ function TestimonialsSection() {
     </section>
   );
 }
+
+// ════════════ Animated Stats Counter ════════════
+function AnimatedCounter({
+  value,
+  suffix = "",
+  duration = 2000,
+  format,
+}: {
+  value: number;
+  suffix?: string;
+  duration?: number;
+  format?: "k";
+}) {
+  const [count, setCount] = useState(1);
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let startTime: number | null = null;
+    const step = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      // Ease-out cubic
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const currentValue = Math.floor(1 + easeOut * (value - 1));
+      setCount(currentValue);
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        setCount(value);
+      }
+    };
+
+    requestAnimationFrame(step);
+  }, [isVisible, value, duration]);
+
+  // Format display value
+  const displayValue = format === "k" && count >= 1000
+    ? (count / 1000).toFixed(0) + "k"
+    : count;
+
+  return (
+    <span ref={ref}>
+      {displayValue}
+      {suffix}
+    </span>
+  );
+}
+
+function StatsSection() {
+  const stats = [
+    { value: 1000, suffix: "+", label: "Learners", duration: 2000 },
+    { value: 2, suffix: "+", label: "years of experience", duration: 1500 },
+    { value: 500, suffix: "+", label: "Live sessions Delivered", duration: 2000 },
+    { value: 40, suffix: "+", label: "Courses", duration: 1800 },
+  ];
+
+  return (
+    <section
+      className="py-12 sm:py-16 px-4 sm:px-6"
+      style={{ background: "#faf5ef" }}
+    >
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+          {stats.map((stat) => (
+            <div key={stat.label} className="text-center animate-fade-in-up">
+              <p
+                className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-1"
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                <AnimatedCounter
+                  value={stat.value}
+                  suffix={stat.suffix}
+                  duration={stat.duration}
+                />
+              </p>
+              <p
+                className="text-sm sm:text-base text-gray-500"
+                style={{ fontFamily: "'Inter', sans-serif" }}
+              >
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function HomePage() {
   useSEO({
     title: "Slonix Solutions | Engineering Training Academy in India",
     description:
       "Industry-ready engineering training in SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack & Python. Hands-on courses with placement support in Bengaluru.",
-    canonical: "https://slonix.in/",
+    canonical: "https://slonixsolutions.in/",
   });
 
   const [formData, setFormData] = useState({
@@ -464,40 +604,8 @@ export default function HomePage() {
       {/* ════════════ Hero Section Component ════════════ */}
       <HeroSection />
 
-      {/* ════════════ Stats Bar ════════════ */}
-      <section
-        className="py-12 sm:py-16 px-4 sm:px-6"
-        style={{ background: "#faf5ef" }}
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
-            {[
-              { value: "2K+", label: "Students" },
-              { value: "2+", label: "Years of Experience" },
-              { value: "500+", label: "Live Sessions Delivered" },
-              { value: "47+", label: "Brand Partners" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p
-                  className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-1"
-                  style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
-                    letterSpacing: "-0.02em",
-                  }}
-                >
-                  {stat.value}
-                </p>
-                <p
-                  className="text-sm sm:text-base text-gray-500"
-                  style={{ fontFamily: "'Inter', sans-serif" }}
-                >
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ════════════ Stats Bar with Animated Counters ════════════ */}
+      <StatsSection />
 
       {/* ════════════ Company Logos Marquee ════════════ */}
       <section
@@ -580,7 +688,12 @@ export default function HomePage() {
 
           {/* Course cards grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-            {courses.slice(0, 4).map((course, index) => (
+            {[
+              { id: "aiml", title: "AIML", category: "Artificial Intelligence & Machine Learning", imageUrl: aimlImg, bestseller: true },
+              { id: "data-science", title: "Data Science", category: "Data Analytics & Visualization", imageUrl: dataScienceImg, bestseller: false },
+              { id: "autocad", title: "AutoCAD", category: "Engineering Design & Drafting", imageUrl: autocadImg, bestseller: false },
+              { id: "digital-marketing", title: "Digital Marketing", category: "Marketing & Growth", imageUrl: digitalMarketingImg, bestseller: true },
+            ].map((course, index) => (
               <Link
                 key={course.id}
                 to={`/courses/${course.id}`}
@@ -594,11 +707,14 @@ export default function HomePage() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
-                  {/* Best seller badge on first and last */}
-                  {(index === 0 || index === 3) && (
+                  {/* Best seller badge */}
+                  {course.bestseller && (
                     <span
-                      className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold text-gray-900"
-                      style={{ background: "#ffd700" }}
+                      className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold shadow-md"
+                      style={{
+                        backgroundColor: "#ffffff",
+                        color: "#f14625",
+                      }}
                     >
                       BEST SELLER
                     </span>
@@ -670,11 +786,8 @@ export default function HomePage() {
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
               style={{ fontFamily: "Space Grotesk, sans-serif" }}
             >
-              How It Works
+              Achieve Career Excellence in Four Simple Steps.
             </h2>
-            <p className="text-xl text-gray-600">
-              Your path to engineering excellence in four simple steps
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -683,7 +796,7 @@ export default function HomePage() {
                 step: "01",
                 title: "Choose Your Course",
                 description:
-                  "Select based on your career goal and engineering domain",
+                  "Pick the path aligned with your career goals and expertise",
               },
               {
                 step: "02",
@@ -741,7 +854,7 @@ export default function HomePage() {
               className="text-2xl text-gray-900 font-bold mb-6"
               style={{ fontFamily: "Space Grotesk, sans-serif" }}
             >
-              Your engineering career starts with skills. Start today.
+              Strong Careers Starts with right skills. Start today
             </p>
             <Link
               to="/courses"
@@ -904,10 +1017,10 @@ export default function HomePage() {
                       className="text-white font-bold text-sm"
                       style={{ fontFamily: "Space Grotesk, sans-serif" }}
                     >
-                      Placements
+                      Projects
                     </p>
                     <p className="text-gray-400 text-xs mt-1">
-                      Success stories & counting
+                      Empowering the Next Generation
                     </p>
                   </div>
                 </div>
@@ -918,203 +1031,201 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 px-6 relative bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-            {/* Left Column — Info */}
-            <div>
-              <h2
-                className="text-5xl md:text-6xl font-black text-gray-900 leading-[1.1] mb-6"
-                style={{ fontFamily: "Space Grotesk, sans-serif" }}
-              >
-                Get in —<br />
-                touch with us
-              </h2>
+      <section id="contact" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          {/* Heading */}
+          <div className="text-center mb-8 md:mb-12">
+            <h2
+              className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-[1.1] mb-4 md:mb-6"
+              style={{ fontFamily: "Space Grotesk, sans-serif" }}
+            >
+              Get in —<br />
+              touch with us
+            </h2>
 
-              <p className="text-gray-500 leading-relaxed mb-10 max-w-md">
-                We're here to help! Whether you have a question about our
-                courses, need assistance with your account, or want to provide
-                feedback, our team is ready to assist you.
-              </p>
+            <p className="text-gray-500 leading-relaxed max-w-md mx-auto text-sm md:text-base">
+              We're here to help! Whether you have a question about our
+              courses, need assistance with your account, or want to provide
+              feedback, our team is ready to assist you.
+            </p>
+          </div>
 
-              <div className="space-y-6">
-                {/* Email */}
+          {/* Contact Form */}
+          <div className="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 shadow-sm border border-gray-100">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
+              {/* First / Last Name Row */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">Email:</p>
-                  <a
-                    href="mailto:slonixbim.team@gmail.com"
-                    className="text-gray-900 font-bold text-lg hover:underline"
-                    style={{ fontFamily: "Space Grotesk, sans-serif" }}
-                  >
-                    slonixbim.team@gmail.com
-                  </a>
-                </div>
-
-                {/* Phone */}
-                <div>
-                  <p className="text-gray-400 text-sm mb-1">Phone:</p>
-                  <a
-                    href="tel:+919080211696"
-                    className="text-gray-900 font-bold text-xl hover:underline"
-                    style={{ fontFamily: "Space Grotesk, sans-serif" }}
-                  >
-                    +91 90802 11696
-                  </a>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Available Monday to Friday, 9 AM - 6 PM IST
-                  </p>
-                </div>
-
-                {/* Address */}
-                <div>
-                  <p className="text-gray-400 text-sm mb-1">Address:</p>
-                  <p
-                    className="text-gray-900 font-semibold text-sm leading-relaxed"
-                    style={{ fontFamily: "Space Grotesk, sans-serif" }}
-                  >
-                    Hustlehub Tech Park, Somasundarapalya Main Rd,
-                    <br />
-                    HSR Layout, Bengaluru, Karnataka 560102
-                  </p>
-                </div>
-              </div>
-
-              {/* Live Chat Button */}
-              <div className="mt-10">
-                <a
-                  href="https://wa.me/919080211696?text=Hi%20Slonix%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20courses%20and%20training%20programs.%20Could%20you%20please%20share%20the%20details%3F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg"
-                  style={{ background: "#0a0a0a" }}
-                >
-                  Live Chat
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-
-            {/* Right Column — Form */}
-            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-              <form onSubmit={handleSubmit} className="space-y-5">
-                {/* First / Last Name Row */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-gray-500 text-sm mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Enter your first name..."
-                      required
-                      className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-sm"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-gray-500 text-sm mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Enter your last name..."
-                      className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-sm"
-                    />
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div>
-                  <label className="block text-gray-500 text-sm mb-2">
-                    Email
+                  <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                    First Name
                   </label>
                   <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
+                    type="text"
+                    name="name"
+                    value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Enter your email address..."
+                    placeholder="Enter your first name..."
                     required
-                    className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-sm"
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
                   />
                 </div>
-
-                {/* Course Selection */}
                 <div>
-                  <label className="block text-gray-500 text-sm mb-2">
-                    Interested Course
+                  <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                    Last Name
                   </label>
-                  <select
-                    name="course"
-                    value={formData.course}
-                    onChange={handleInputChange}
-                    aria-label="Select a course"
-                    title="Select a course"
-                    className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 text-sm"
-                  >
-                    <option value="">Select a course (optional)</option>
-                    {courses.map((course) => (
-                      <option key={course.id} value={course.title}>
-                        {course.title}
-                      </option>
-                    ))}
-                  </select>
+                  <input
+                    type="text"
+                    placeholder="Enter your last name..."
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
+                  />
                 </div>
+              </div>
 
-                {/* Phone Number */}
-                <div>
-                  <label className="block text-gray-500 text-sm mb-2">
-                    Phone Number
-                  </label>
-                  <div className="flex gap-2">
-                    <div className="flex items-center gap-2 px-4 py-3.5 rounded-xl border border-gray-200 bg-gray-50">
-                      <span className="text-lg">🇮🇳</span>
-                      <span className="text-gray-700 font-medium text-sm">
-                        +91
-                      </span>
-                    </div>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      placeholder="Enter your phone number..."
-                      className="flex-1 px-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-sm"
-                    />
+              {/* Email */}
+              <div>
+                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Enter your email address..."
+                  required
+                  className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
+                />
+              </div>
+
+              {/* Course Selection */}
+              <div>
+                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                  Interested Course
+                </label>
+                <select
+                  name="course"
+                  value={formData.course}
+                  onChange={handleInputChange}
+                  aria-label="Select a course"
+                  title="Select a course"
+                  className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 text-xs md:text-sm"
+                >
+                  <option value="">Select a course (optional)</option>
+                  {courses.map((course) => (
+                    <option key={course.id} value={course.title}>
+                      {course.title}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Phone Number */}
+              <div>
+                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                  Phone Number
+                </label>
+                <div className="flex gap-2">
+                  <div className="flex items-center gap-2 px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-gray-50 flex-shrink-0">
+                    <span className="text-base md:text-lg">🇮🇳</span>
+                    <span className="text-gray-700 font-medium text-xs md:text-sm">
+                      +91
+                    </span>
                   </div>
-                </div>
-
-                {/* Message */}
-                <div>
-                  <label className="block text-gray-500 text-sm mb-2">
-                    How can we help you?
-                  </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleInputChange}
-                    placeholder="Enter your message..."
-                    required
-                    rows={5}
-                    className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-sm resize-none"
+                    placeholder="Enter your phone number..."
+                    className="flex-1 px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm min-w-0"
                   />
                 </div>
+              </div>
 
-                {/* Submit */}
-                <div className="flex justify-end">
-                  <button
-                    type="submit"
-                    className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg"
-                    style={{ background: "#0a0a0a" }}
-                  >
-                    Send Message
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </div>
-              </form>
+              {/* Message */}
+              <div>
+                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                  How can we help you?
+                </label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder="Enter your message..."
+                  required
+                  rows={4}
+                  className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm resize-none"
+                />
+              </div>
+
+              {/* Submit */}
+              <div className="flex justify-end">
+                <button
+                  type="submit"
+                  className="group inline-flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3.5 rounded-full text-white font-semibold text-xs md:text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg w-full sm:w-auto justify-center"
+                  style={{ background: "#0a0a0a" }}
+                >
+                  Send Message
+                  <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* Contact Info */}
+          <div className="mt-8 md:mt-12 grid sm:grid-cols-3 gap-6 md:gap-8 text-center">
+            {/* Email */}
+            <div>
+              <p className="text-gray-400 text-xs md:text-sm mb-1">Email:</p>
+              <a
+                href="mailto:slonixbim.team@gmail.com"
+                className="text-gray-900 font-bold text-sm md:text-base hover:underline break-all"
+                style={{ fontFamily: "Space Grotesk, sans-serif" }}
+              >
+                slonixbim.team@gmail.com
+              </a>
             </div>
+
+            {/* Phone */}
+            <div>
+              <p className="text-gray-400 text-xs md:text-sm mb-1">Phone:</p>
+              <a
+                href={`tel:${PHONE_NUMBER.replace(/\s/g, "")}`}
+                className="text-gray-900 font-bold text-sm md:text-base hover:underline"
+                style={{ fontFamily: "Space Grotesk, sans-serif" }}
+              >
+                {PHONE_NUMBER}
+              </a>
+              <p className="text-gray-400 text-xs md:text-sm mt-1">
+                Mon-Fri, 9 AM - 6 PM IST
+              </p>
+            </div>
+
+            {/* Address */}
+            <div>
+              <p className="text-gray-400 text-xs md:text-sm mb-1">Address:</p>
+              <p
+                className="text-gray-900 font-semibold text-xs md:text-sm leading-relaxed"
+                style={{ fontFamily: "Space Grotesk, sans-serif" }}
+              >
+                Hustlehub Tech Park, HSR Layout<br />
+                Bengaluru, Karnataka 560102
+              </p>
+            </div>
+          </div>
+
+          {/* Live Chat Button */}
+          <div className="mt-6 md:mt-8 text-center">
+            <a
+              href={`https://wa.me/${PHONE_NUMBER.replace(/\s/g, "")}?text=Hi%20Slonix%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20courses%20and%20training%20programs.%20Could%20you%20please%20share%20the%20details%3F`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-white font-semibold text-xs md:text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg"
+              style={{ background: "#0a0a0a" }}
+            >
+              Live Chat
+              <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
+            </a>
           </div>
         </div>
       </section>

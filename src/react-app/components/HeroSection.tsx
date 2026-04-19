@@ -1,6 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-router";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router";
 import heroImg from "@/photos/hero-img.png";
+
+const PHONE_NUMBER = "+91 8431752365";
 
 // ─────────────────────────────────────────────────────────────
 //  FourPointStar – Decorative sparkle SVG used around the hero
@@ -77,34 +79,184 @@ function ReviewBadge({
 }
 
 // ─────────────────────────────────────────────────────────────
+//  Smooth scroll to hash anchor helper
+// ─────────────────────────────────────────────────────────────
+function useHashScroll() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        // Offset for fixed navbar (72px height + some padding)
+        const offset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [hash]);
+}
+
+// ─────────────────────────────────────────────────────────────
 //  HeroSection – Complete Navbar + Hero (Edtech-inspired)
 // ─────────────────────────────────────────────────────────────
 export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
+  // Enable smooth scroll for hash navigation
+  useHashScroll();
+
+  // Track scroll position for mobile navbar transformation (only on mobile <768px)
+  useEffect(() => {
+    const handleScroll = () => {
+      const isMobile = window.innerWidth < 768;
+      setIsScrolled(isMobile && window.scrollY > 20);
+    };
+
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 768;
+      if (!isMobile) {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleResize);
+    handleScroll(); // Check initial state
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+      document.body.style.top = `-${window.scrollY}px`;
+    } else {
+      const scrollY = document.body.style.top;
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
+      if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+      }
+    }
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
+    };
+  }, [mobileMenuOpen]);
 
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "Courses", href: "/courses" },
     { label: "Our Story", href: "/our-story" },
-    { label: "About us", href: "#about" },
-    { label: "Contact us", href: "#contact" },
+    { label: "About us", href: "#about", isHash: true },
+    { label: "Contact us", href: "#contact", isHash: true },
   ];
+
+  // Helper to get proper nav URL (handles hash links on current page vs different page)
+  const getNavUrl = (link: { href: string; isHash?: boolean }) => {
+    if (link.isHash) {
+      // If we're on home page, use hash directly; otherwise go to home with hash
+      return location.pathname === "/" ? link.href : `/${link.href}`;
+    }
+    return link.href;
+  };
+
+  // Handle hash link click for same-page smooth scroll
+  const handleHashClick = (e: React.MouseEvent, href: string) => {
+    if (location.pathname === "/" && href.startsWith("#")) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        const offset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+
+        // Update URL without full page reload
+        window.history.pushState(null, "", href);
+      }
+    }
+  };
+
+  // Scroll to top when clicking Home while already on home page
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      // Clear any hash from URL
+      if (window.location.hash) {
+        window.history.pushState(null, "", "/");
+      }
+    }
+  };
 
   return (
     <div className="hero-section-root" style={{ background: "#faf5ef" }}>
       {/* ════════════ NAVBAR ════════════ */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100/80">
+      {/* Navbar Container - iOS-style floating pill animation */}
+      <div
+        className="fixed top-0 left-0 right-0 z-50"
+        style={{
+          padding: isScrolled ? "12px 12px 0" : "0",
+          transition: "padding 0.15s ease-out",
+        }}
+      >
+        <nav
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.95)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            borderRadius: isScrolled ? "16px" : "0px",
+            boxShadow: isScrolled
+              ? "0 4px 20px rgba(0, 0, 0, 0.1)"
+              : "none",
+            borderBottom: isScrolled ? "none" : "1px solid rgba(243, 244, 246, 0.8)",
+            transition: "all 0.15s ease-out",
+            willChange: "border-radius, box-shadow",
+          }}
+        >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 sm:h-[72px]">
+          <div className="flex items-center justify-between h-14 sm:h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center flex-shrink-0">
+            <Link
+              to="/"
+              onClick={handleHomeClick}
+              className="flex items-center flex-shrink-0"
+            >
               <span
-                className="text-2xl md:text-3xl font-black tracking-tight"
+                className="text-2xl md:text-4xl font-black tracking-tight"
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
                   background: "linear-gradient(135deg, #f14625, #ff8c42)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
+                  fontWeight: 900,
+                  letterSpacing: "-0.03em",
                 }}
               >
                 Slonix
@@ -116,7 +268,14 @@ export default function HeroSection() {
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
-                  to={link.href.startsWith("#") ? "/" : link.href}
+                  to={getNavUrl(link)}
+                  onClick={(e) => {
+                    if (link.href === "/") {
+                      handleHomeClick(e);
+                    } else if (link.isHash) {
+                      handleHashClick(e, link.href);
+                    }
+                  }}
                   className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
                 >
                   {link.label}
@@ -174,33 +333,169 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Mobile dropdown */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-3 flex flex-col gap-1 shadow-lg">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                to={link.href.startsWith("#") ? "/" : link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <a
-              href="#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="mt-2 px-4 py-3 rounded-full bg-gray-900 text-white text-sm font-semibold text-center hover:bg-gray-800 transition-all"
-            >
-              Let's Get Started
-            </a>
-          </div>
-        )}
       </nav>
+      </div>
+
+      {/* Mobile Full-Screen Menu Overlay - Outside nav to avoid z-index issues */}
+      {mobileMenuOpen && (
+        <>
+          {/* Backdrop */}
+          <div
+            className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] animate-fade-in"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+
+          {/* Full Screen Menu Panel - Premium slide-in from right */}
+          <div
+            className="md:hidden fixed inset-y-0 right-0 w-full sm:w-[380px] z-[70] flex flex-col animate-slide-in-right"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "-10px 0 40px rgba(0,0,0,0.15)",
+            }}
+          >
+            {/* Header with close button */}
+            <div
+              className="flex items-center justify-between px-4 sm:px-6 h-14 sm:h-16 border-b flex-shrink-0"
+              style={{ borderColor: "#f3f4f6", backgroundColor: "#ffffff" }}
+            >
+              <span
+                className="text-2xl font-black tracking-tight"
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  background: "linear-gradient(135deg, #f14625, #ff8c42)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Slonix
+              </span>
+              <button
+                type="button"
+                aria-label="Close menu"
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 rounded-full text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-all"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            {/* Centered Navigation Content */}
+            <div
+              className="flex-1 flex flex-col items-center justify-center px-6 py-8 overflow-y-auto"
+              style={{ backgroundColor: "#ffffff" }}
+            >
+              <nav className="flex flex-col items-start gap-1 w-full">
+                {navLinks.map((link, index) => (
+                  <Link
+                    key={link.label}
+                    to={getNavUrl(link)}
+                    onClick={(e) => {
+                      setMobileMenuOpen(false);
+                      if (link.href === "/") {
+                        setTimeout(() => handleHomeClick(e), 150);
+                      } else if (link.isHash) {
+                        setTimeout(() => handleHashClick(e, link.href), 150);
+                      }
+                    }}
+                    className="w-full px-2 py-4 text-2xl sm:text-3xl font-bold text-gray-900 hover:text-red-600 hover:bg-red-50 rounded-xl transition-all duration-300 animate-slide-in-item"
+                    style={{
+                      fontFamily: "'Space Grotesk', sans-serif",
+                      animationDelay: `${0.1 + index * 0.08}s`,
+                      animationFillMode: "both",
+                    }}
+                  >
+                    <span className="flex items-center gap-4">
+                      <span
+                        className="w-1.5 h-1.5 rounded-full bg-red-500"
+                        style={{ animationDelay: `${0.2 + index * 0.08}s` }}
+                      />
+                      {link.label}
+                    </span>
+                  </Link>
+                ))}
+              </nav>
+
+              {/* CTA Button */}
+              <Link
+                to={location.pathname === "/" ? "#contact" : "/#contact"}
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  setTimeout(() => handleHashClick(e, "#contact"), 150);
+                }}
+                className="w-full mt-8 px-8 py-4 rounded-xl text-white text-center text-lg font-semibold hover:bg-red-600 hover:shadow-xl transition-all duration-300 animate-slide-in-item"
+                style={{
+                  backgroundColor: "#111827",
+                  animationDelay: `${0.1 + navLinks.length * 0.08}s`,
+                  animationFillMode: "both",
+                }}
+              >
+                Let's Get Started
+                <svg
+                  className="w-5 h-5 inline-block ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Footer Info - Horizontal layout with Email us | Call us */}
+            <div
+              className="px-6 py-5 border-t flex-shrink-0 animate-fade-in"
+              style={{ borderColor: "#f3f4f6", backgroundColor: "#ffffff" }}
+            >
+              <div className="flex items-center justify-center gap-4">
+                {/* Email us - Left side */}
+                <a
+                  href="mailto:slonixbim.team@gmail.com"
+                  className="text-sm font-medium hover:text-red-600 transition-colors"
+                  style={{ color: "#6b7280" }}
+                >
+                  Email us
+                </a>
+
+                {/* Center divider line */}
+                <div
+                  className="w-px h-6"
+                  style={{ backgroundColor: "#e5e7eb" }}
+                />
+
+                {/* Call us - Right side */}
+                <a
+                  href={`tel:${PHONE_NUMBER.replace(/\s/g, "")}`}
+                  className="text-sm font-medium hover:text-red-600 transition-colors"
+                  style={{ color: "#6b7280" }}
+                >
+                  Call us
+                </a>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
 
       {/* ════════════ HERO ════════════ */}
       <section
-        className="pt-28 md:pt-32 pb-10 sm:pb-16 md:pb-20 overflow-hidden relative"
+        className="pt-20 md:pt-24 pb-10 sm:pb-16 md:pb-20 overflow-hidden relative"
         style={{ background: "#faf5ef" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -271,22 +566,6 @@ export default function HeroSection() {
                 </a>
               </div>
 
-              {/* Star rating text */}
-              <div className="animate-fade-in-up delay-400 flex items-center gap-2 justify-center lg:justify-start">
-                <svg
-                  className="w-3.5 h-3.5 text-gray-800"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                </svg>
-                <span
-                  className="text-sm text-gray-600"
-                  style={{ fontFamily: "'Inter', sans-serif" }}
-                >
-                  1800+ Review with 5star rating
-                </span>
-              </div>
             </div>
 
             {/* ─── Right: Image + Decorations ─── */}
