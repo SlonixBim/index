@@ -1032,200 +1032,202 @@ export default function HomePage() {
 
       {/* Contact Section */}
       <section id="contact" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          {/* Heading */}
-          <div className="text-center mb-8 md:mb-12">
-            <h2
-              className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-[1.1] mb-4 md:mb-6"
-              style={{ fontFamily: "Space Grotesk, sans-serif" }}
-            >
-              Get in —<br />
-              touch with us
-            </h2>
+        <div className="max-w-5xl lg:max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-start">
+            {/* Left Column — Info */}
+            <div>
+              <h2
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] mb-4 md:mb-6"
+                style={{ fontFamily: "Space Grotesk, sans-serif" }}
+              >
+                Get in —<br />
+                touch with us
+              </h2>
 
-            <p className="text-gray-500 leading-relaxed max-w-md mx-auto text-sm md:text-base">
-              We're here to help! Whether you have a question about our
-              courses, need assistance with your account, or want to provide
-              feedback, our team is ready to assist you.
-            </p>
-          </div>
+              <p className="text-gray-500 leading-relaxed mb-6 md:mb-10 max-w-md text-sm md:text-base">
+                We're here to help! Whether you have a question about our
+                courses, need assistance with your account, or want to provide
+                feedback, our team is ready to assist you.
+              </p>
 
-          {/* Contact Form */}
-          <div className="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 shadow-sm border border-gray-100">
-            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
-              {/* First / Last Name Row */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+              <div className="space-y-4 md:space-y-6">
+                {/* Email */}
+                <div>
+                  <p className="text-gray-400 text-xs md:text-sm mb-1">Email:</p>
+                  <a
+                    href="mailto:slonixbim.team@gmail.com"
+                    className="text-gray-900 font-bold text-base md:text-lg hover:underline break-all"
+                    style={{ fontFamily: "Space Grotesk, sans-serif" }}
+                  >
+                    slonixbim.team@gmail.com
+                  </a>
+                </div>
+
+                {/* Phone */}
+                <div>
+                  <p className="text-gray-400 text-xs md:text-sm mb-1">Phone:</p>
+                  <a
+                    href={`tel:${PHONE_NUMBER.replace(/\s/g, "")}`}
+                    className="text-gray-900 font-bold text-base md:text-xl hover:underline"
+                    style={{ fontFamily: "Space Grotesk, sans-serif" }}
+                  >
+                    {PHONE_NUMBER}
+                  </a>
+                  <p className="text-gray-400 text-xs md:text-sm mt-1">
+                    Available Monday to Friday, 9 AM - 6 PM IST
+                  </p>
+                </div>
+
+                {/* Address */}
+                <div>
+                  <p className="text-gray-400 text-xs md:text-sm mb-1">Address:</p>
+                  <p
+                    className="text-gray-900 font-semibold text-xs md:text-sm leading-relaxed"
+                    style={{ fontFamily: "Space Grotesk, sans-serif" }}
+                  >
+                    Hustlehub Tech Park, Somasundarapalya Main Rd,
+                    <br />
+                    HSR Layout, Bengaluru, Karnataka 560102
+                  </p>
+                </div>
+              </div>
+
+              {/* Live Chat Button */}
+              <div className="mt-6 md:mt-10">
+                <a
+                  href={`https://wa.me/${PHONE_NUMBER.replace(/\s/g, "")}?text=Hi%20Slonix%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20courses%20and%20training%20programs.%20Could%20you%20please%20share%20the%20details%3F`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-white font-semibold text-xs md:text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg w-full sm:w-auto justify-center"
+                  style={{ background: "#0a0a0a" }}
+                >
+                  Live Chat
+                  <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column — Form */}
+            <div className="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 shadow-sm border border-gray-100">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
+                {/* First / Last Name Row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                  <div>
+                    <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      placeholder="Enter your first name..."
+                      required
+                      className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter your last name..."
+                      className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
+                    />
+                  </div>
+                </div>
+
+                {/* Email */}
                 <div>
                   <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
-                    First Name
+                    Email
                   </label>
                   <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
+                    type="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="Enter your first name..."
+                    placeholder="Enter your email address..."
                     required
                     className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
                   />
                 </div>
+
+                {/* Course Selection */}
                 <div>
                   <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
-                    Last Name
+                    Interested Course
                   </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your last name..."
-                    className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
-                  />
-                </div>
-              </div>
-
-              {/* Email */}
-              <div>
-                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="Enter your email address..."
-                  required
-                  className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm"
-                />
-              </div>
-
-              {/* Course Selection */}
-              <div>
-                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
-                  Interested Course
-                </label>
-                <select
-                  name="course"
-                  value={formData.course}
-                  onChange={handleInputChange}
-                  aria-label="Select a course"
-                  title="Select a course"
-                  className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 text-xs md:text-sm"
-                >
-                  <option value="">Select a course (optional)</option>
-                  {courses.map((course) => (
-                    <option key={course.id} value={course.title}>
-                      {course.title}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Phone Number */}
-              <div>
-                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
-                  Phone Number
-                </label>
-                <div className="flex gap-2">
-                  <div className="flex items-center gap-2 px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-gray-50 flex-shrink-0">
-                    <span className="text-base md:text-lg">🇮🇳</span>
-                    <span className="text-gray-700 font-medium text-xs md:text-sm">
-                      +91
-                    </span>
-                  </div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
+                  <select
+                    name="course"
+                    value={formData.course}
                     onChange={handleInputChange}
-                    placeholder="Enter your phone number..."
-                    className="flex-1 px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm min-w-0"
+                    aria-label="Select a course"
+                    title="Select a course"
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 text-xs md:text-sm"
+                  >
+                    <option value="">Select a course (optional)</option>
+                    {courses.map((course) => (
+                      <option key={course.id} value={course.title}>
+                        {course.title}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Phone Number */}
+                <div>
+                  <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                    Phone Number
+                  </label>
+                  <div className="flex gap-2">
+                    <div className="flex items-center gap-2 px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-gray-50 flex-shrink-0">
+                      <span className="text-base md:text-lg">🇮🇳</span>
+                      <span className="text-gray-700 font-medium text-xs md:text-sm">
+                        +91
+                      </span>
+                    </div>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      placeholder="Enter your phone number..."
+                      className="flex-1 px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm min-w-0"
+                    />
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
+                    How can we help you?
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Enter your message..."
+                    required
+                    rows={4}
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm resize-none"
                   />
                 </div>
-              </div>
 
-              {/* Message */}
-              <div>
-                <label className="block text-gray-500 text-xs md:text-sm mb-1.5 md:mb-2">
-                  How can we help you?
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Enter your message..."
-                  required
-                  rows={4}
-                  className="w-full px-3 md:px-4 py-2.5 md:py-3.5 rounded-xl border border-gray-200 bg-white focus:border-gray-900 focus:outline-none transition-colors text-gray-900 placeholder-gray-300 text-xs md:text-sm resize-none"
-                />
-              </div>
-
-              {/* Submit */}
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="group inline-flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3.5 rounded-full text-white font-semibold text-xs md:text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg w-full sm:w-auto justify-center"
-                  style={{ background: "#0a0a0a" }}
-                >
-                  Send Message
-                  <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            </form>
-          </div>
-
-          {/* Contact Info */}
-          <div className="mt-8 md:mt-12 grid sm:grid-cols-3 gap-6 md:gap-8 text-center">
-            {/* Email */}
-            <div>
-              <p className="text-gray-400 text-xs md:text-sm mb-1">Email:</p>
-              <a
-                href="mailto:slonixbim.team@gmail.com"
-                className="text-gray-900 font-bold text-sm md:text-base hover:underline break-all"
-                style={{ fontFamily: "Space Grotesk, sans-serif" }}
-              >
-                slonixbim.team@gmail.com
-              </a>
+                {/* Submit */}
+                <div className="flex justify-end">
+                  <button
+                    type="submit"
+                    className="group inline-flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3.5 rounded-full text-white font-semibold text-xs md:text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg w-full sm:w-auto justify-center"
+                    style={{ background: "#0a0a0a" }}
+                  >
+                    Send Message
+                    <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </form>
             </div>
-
-            {/* Phone */}
-            <div>
-              <p className="text-gray-400 text-xs md:text-sm mb-1">Phone:</p>
-              <a
-                href={`tel:${PHONE_NUMBER.replace(/\s/g, "")}`}
-                className="text-gray-900 font-bold text-sm md:text-base hover:underline"
-                style={{ fontFamily: "Space Grotesk, sans-serif" }}
-              >
-                {PHONE_NUMBER}
-              </a>
-              <p className="text-gray-400 text-xs md:text-sm mt-1">
-                Mon-Fri, 9 AM - 6 PM IST
-              </p>
-            </div>
-
-            {/* Address */}
-            <div>
-              <p className="text-gray-400 text-xs md:text-sm mb-1">Address:</p>
-              <p
-                className="text-gray-900 font-semibold text-xs md:text-sm leading-relaxed"
-                style={{ fontFamily: "Space Grotesk, sans-serif" }}
-              >
-                Hustlehub Tech Park, HSR Layout<br />
-                Bengaluru, Karnataka 560102
-              </p>
-            </div>
-          </div>
-
-          {/* Live Chat Button */}
-          <div className="mt-6 md:mt-8 text-center">
-            <a
-              href={`https://wa.me/${PHONE_NUMBER.replace(/\s/g, "")}?text=Hi%20Slonix%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20courses%20and%20training%20programs.%20Could%20you%20please%20share%20the%20details%3F`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-white font-semibold text-xs md:text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg"
-              style={{ background: "#0a0a0a" }}
-            >
-              Live Chat
-              <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4" />
-            </a>
           </div>
         </div>
       </section>
