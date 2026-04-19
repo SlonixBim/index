@@ -9,7 +9,7 @@
       "destination": "/api/:path*"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api|assets|favicon|manifest).*)",
       "destination": "/index.html"
     }
   ],
