@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 39,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1481253127861-534498168948?w=800&q=80",
   "whatYouWillLearn": [
     "Create complete architectural BIM models",
     "Design walls, floors, roofs, and staircases",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic architectural knowledge helpful",
     "No prior Revit experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1481253127861-534498168948?w=800&q=80"
 }

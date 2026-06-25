@@ -3,7 +3,7 @@ backend:
   repo: SlonixBim/index
   branch: main
 
-logo_url: "https://raw.githubusercontent.com/SlonixBim/index/main/public/favicon.ico"
+logo_url: "/logo.jpeg"
 media_folder: "public/assets"
 public_folder: "/assets"
 
@@ -27,7 +27,7 @@ collections:
       - { label: "Rating", name: "rating", widget: "number", value_type: "float", default: 4.8 }
       - { label: "Students", name: "students", widget: "number", value_type: "int", default: 0 }
       - { label: "Instructor", name: "instructor", widget: "string" }
-      - { label: "Image URL", name: "imageUrl", widget: "string", hint: "URL or uploaded image path" }
+      - { label: "Course Image", name: "image", widget: "image", hint: "Upload an image or paste a URL to show on the course card" }
       - { label: "What You Will Learn", name: "whatYouWillLearn", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
       - { label: "Prerequisites", name: "prerequisites", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
       - label: "Curriculum Modules"

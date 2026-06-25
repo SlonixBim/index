@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 41,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
   "whatYouWillLearn": [
     "Model power systems in ETAP",
     "Perform load flow analysis",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Electrical engineering fundamentals",
     "Basic power systems knowledge"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80"
 }

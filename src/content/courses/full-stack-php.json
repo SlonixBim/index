@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 3480,
   "instructor": "KANISHMA",
-  "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80",
   "whatYouWillLearn": [
     "Master PHP fundamentals and OOP",
     "Build applications with Laravel framework",
@@ -78,5 +77,6 @@
   "prerequisites": [
     "Basic HTML/CSS",
     "Fundamental programming concepts"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80"
 }

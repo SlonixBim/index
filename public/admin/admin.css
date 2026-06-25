@@ -7,6 +7,17 @@ body, #nc-root {
   background: linear-gradient(135deg, #fffcfb 0%, #fff 100%) !important;
 }
 
+/* Force ALL logos to be small on the login page and header */
+img[src*="logo"],
+[class*="IconWrapper"] img {
+  max-width: 120px !important;
+  max-height: 120px !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  border-radius: 12px !important;
+  display: inline-block !important;
+}
+
 /* Custom FAANG-Level Header (Glassmorphism) */
 [class*="AppHeader-header"], 
 header[class*="header"] {
@@ -16,11 +27,28 @@ header[class*="header"] {
   box-shadow: 0 4px 20px -2px rgba(241, 70, 37, 0.05) !important;
 }
 
-/* Header Text Logo (if logo_url fails or while loading) */
+/* Ensure the logo and text show up together in the header */
 [class*="AppHeader-header"] a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+}
+
+[class*="AppHeader-header"] a::after {
+  content: "Slonix CMS" !important;
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 900 !important;
+  font-size: 20px !important;
   color: #111 !important;
+  background: linear-gradient(135deg, #f14625, #ff8c42) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Hide the default span if it exists to avoid duplication */
+[class*="AppHeader-header"] a span {
+  display: none !important;
 }
 
 /* Sidebar styling */

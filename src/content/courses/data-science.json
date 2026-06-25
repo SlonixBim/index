@@ -10,7 +10,6 @@
   "rating": 4.9,
   "students": 61,
   "instructor": "JANANI",
-  "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
   "whatYouWillLearn": [
     "Perform exploratory data analysis with Python",
     "Build and evaluate ML models",
@@ -78,5 +77,6 @@
   "prerequisites": [
     "Python programming basics",
     "Basic statistics knowledge"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
 }

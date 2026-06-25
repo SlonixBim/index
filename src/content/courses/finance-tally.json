@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 32,
   "instructor": "GOWRI",
-  "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
   "whatYouWillLearn": [
     "Apply accounting fundamentals and double-entry system",
     "Create financial statements: P&L, Balance Sheet",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic math skills",
     "Commerce background helpful but not required"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80"
 }

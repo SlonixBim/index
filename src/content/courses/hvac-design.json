@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 42,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
   "whatYouWillLearn": [
     "Heat load calculations",
     "Psychrometric analysis",
@@ -29,5 +28,6 @@
   ],
   "prerequisites": [
     "Mechanical Engineering degree or student status"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
 }

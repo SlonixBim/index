@@ -10,7 +10,6 @@
   "rating": 4.8,
   "students": 47,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80",
   "whatYouWillLearn": [
     "Program ARM/AVR microcontrollers in C",
     "Interface sensors, actuators, and displays",
@@ -69,5 +68,6 @@
   "prerequisites": [
     "Basic electronics knowledge",
     "C programming fundamentals"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80"
 }

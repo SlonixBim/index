@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 88,
   "instructor": "JANANI",
-  "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
   "whatYouWillLearn": [
     "Perform exploratory data analysis",
     "Write complex SQL queries",
@@ -79,5 +78,6 @@
     "Basic Excel knowledge",
     "Basic math skills",
     "Analytical mindset"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80"
 }

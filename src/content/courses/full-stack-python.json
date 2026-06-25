@@ -10,7 +10,6 @@
   "rating": 4.8,
   "students": 57,
   "instructor": "SACHIN",
-  "imageUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&q=80",
   "whatYouWillLearn": [
     "Build REST APIs with Django and Flask",
     "Create dynamic frontends with React",
@@ -78,5 +77,6 @@
   "prerequisites": [
     "Python basics",
     "Basic web development knowledge"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&q=80"
 }

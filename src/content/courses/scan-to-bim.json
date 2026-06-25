@@ -10,7 +10,6 @@
   "rating": 4.5,
   "students": 35,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?w=800&q=80",
   "whatYouWillLearn": [
     "Understand 3D laser scanning technology",
     "Process and register point cloud data",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic Revit or AutoCAD knowledge",
     "Interest in as-built documentation"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?w=800&q=80"
 }

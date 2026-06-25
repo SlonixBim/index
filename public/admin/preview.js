@@ -12,6 +12,7 @@ const CoursePreview = createClass({
     const category = entry.getIn(['data', 'category']) || 'Category';
     const duration = entry.getIn(['data', 'duration']) || 'Duration';
     const level = entry.getIn(['data', 'level']) || 'Level';
+    const image = entry.getIn(['data', 'image']) || '';
     const fullDescription = this.props.widgetFor('fullDescription');
     
     // Create the hero banner
@@ -26,7 +27,11 @@ const CoursePreview = createClass({
           h('div', { className: 'flex items-center gap-2 bg-black/20 px-4 py-2 rounded-lg' }, '⏱ ', duration),
           h('div', { className: 'flex items-center gap-2 bg-black/20 px-4 py-2 rounded-lg' }, '📈 ', level)
         )
-      )
+      ),
+      image ? h('img', { 
+        src: image,
+        className: 'absolute top-0 right-0 w-1/2 h-full object-cover opacity-20 mix-blend-overlay'
+      }) : null
     );
 
     // Create the content section

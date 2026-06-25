@@ -10,7 +10,6 @@
   "rating": 4.8,
   "students": 58,
   "instructor": "KANISHMA",
-  "imageUrl": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&q=80",
   "whatYouWillLearn": [
     "Build complete web applications with MERN",
     "Create RESTful APIs with Node.js and Express",
@@ -79,5 +78,6 @@
     "HTML, CSS, JavaScript knowledge",
     "Basic programming concepts",
     "Command line familiarity"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&q=80"
 }

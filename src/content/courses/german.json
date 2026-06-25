@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 2870,
   "instructor": "Klaus Werner, Certified Goethe Institute Trainer",
-  "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80",
   "whatYouWillLearn": [
     "Speak and understand German in daily situations",
     "Master German grammar including cases and genders",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "No prior German knowledge required",
     "Basic literacy in any language"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80"
 }

@@ -10,7 +10,6 @@
   "rating": 4.8,
   "students": 62,
   "instructor": "Ananya Krishnan, English Language & Soft Skills Trainer",
-  "imageUrl": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
   "whatYouWillLearn": [
     "Speak fluent English with confidence",
     "Write professional emails, reports, and letters",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic understanding of English alphabets",
     "Suitable for all levels"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80"
 }

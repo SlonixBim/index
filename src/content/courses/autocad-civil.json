@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 37,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=800&q=80",
   "whatYouWillLearn": [
     "Draw site plans and layout drawings",
     "Create road cross-sections and alignments",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic civil engineering knowledge",
     "No prior AutoCAD experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=800&q=80"
 }

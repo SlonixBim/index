@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 31,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80",
   "whatYouWillLearn": [
     "Create accurate 2D architectural drawings in AutoCAD",
     "Set up drawing templates for BIM projects",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "No prior AutoCAD experience needed",
     "Basic architectural or engineering knowledge helpful"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80"
 }

@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 64,
   "instructor": "SACHIN",
-  "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&q=80",
   "whatYouWillLearn": [
     "Write Java programs using OOP principles",
     "Use Java Collections Framework",
@@ -69,5 +68,6 @@
   "prerequisites": [
     "No prior Java experience required",
     "Basic programming concepts helpful"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&q=80"
 }

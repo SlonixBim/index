@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 53,
   "instructor": "KANISHMA",
-  "imageUrl": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80",
   "whatYouWillLearn": [
     "Master C# and object-oriented programming",
     "Build Web APIs with ASP.NET Core",
@@ -78,5 +77,6 @@
   "prerequisites": [
     "Basic programming knowledge",
     "Understanding of web concepts"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80"
 }

@@ -10,7 +10,6 @@
   "rating": 4.8,
   "students": 2640,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=800&q=80",
   "whatYouWillLearn": [
     "Understand robot kinematics and dynamics",
     "Program motor controllers and servo drives",
@@ -69,5 +68,6 @@
   "prerequisites": [
     "Python or C++ basics",
     "Basic electronics knowledge"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=800&q=80"
 }

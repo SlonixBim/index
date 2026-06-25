@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 54,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80",
   "whatYouWillLearn": [
     "Create precise 2D mechanical part drawings",
     "Apply orthographic and isometric projections",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic mechanical engineering knowledge",
     "No prior AutoCAD experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80"
 }

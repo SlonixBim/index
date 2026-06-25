@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 52,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=800&q=80",
   "whatYouWillLearn": [
     "Navigate CATIA V5 interface and workbenches",
     "Create complex surface models",
@@ -79,5 +78,6 @@
     "Basic CAD knowledge",
     "Understanding of engineering drawings",
     "Mechanical aptitude"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=800&q=80"
 }

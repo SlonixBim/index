@@ -163,8 +163,8 @@ export default function CourseDetailPage() {
             <div className="lg:sticky lg:top-24">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-red-100">
                 <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={course.imageUrl}
+                  <img 
+                    src={course.image}
                     alt={course.title}
                     className="w-full h-full object-cover"
                   />

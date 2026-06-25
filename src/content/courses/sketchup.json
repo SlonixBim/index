@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 53,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
   "whatYouWillLearn": [
     "Build 3D models of buildings and interiors",
     "Use push/pull and follow-me tools effectively",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "No prior experience required",
     "Basic design interest helpful"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80"
 }

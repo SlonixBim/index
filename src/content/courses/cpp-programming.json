@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 63,
   "instructor": "SACHIN",
-  "imageUrl": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=800&q=80",
   "whatYouWillLearn": [
     "Master C++ syntax and OOP principles",
     "Use STL containers and algorithms",
@@ -69,5 +68,6 @@
   "prerequisites": [
     "C programming basics or equivalent",
     "Basic programming concepts"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=800&q=80"
 }

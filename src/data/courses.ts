@@ -10,13 +10,13 @@ export interface Course {
   rating: number;
   students: number;
   instructor: string;
+  image: string;
   whatYouWillLearn: string[];
   curriculum: {
     module: string;
     topics: string[];
   }[];
   prerequisites: string[];
-  imageUrl: string;
 }
 
 // Dynamically import all JSON files from the courses content directory

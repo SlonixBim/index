@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 40,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=800&q=80",
   "whatYouWillLearn": [
     "Model rooms and buildings in Dialux",
     "Select and place luminaires from manufacturer databases",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "No prior experience required",
     "Basic computer skills"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=800&q=80"
 }

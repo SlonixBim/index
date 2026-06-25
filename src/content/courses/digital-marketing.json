@@ -10,7 +10,6 @@
   "rating": 4.8,
   "students": 85,
   "instructor": "GOWRI",
-  "imageUrl": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80",
   "whatYouWillLearn": [
     "Optimize websites for search engines (SEO)",
     "Run Google Ads and Meta Ads campaigns",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic internet and computer skills",
     "No prior marketing experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80"
 }

@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 47,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
   "whatYouWillLearn": [
     "Create 3D parametric part models in CREO",
     "Design and manage complex assemblies",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic mechanical engineering knowledge",
     "No prior CREO experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
 }

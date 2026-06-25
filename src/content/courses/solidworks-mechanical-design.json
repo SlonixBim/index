@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 48,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80",
   "whatYouWillLearn": [
     "Create 3D parts and assemblies in SolidWorks",
     "Master parametric modeling and design intent",
@@ -79,5 +78,6 @@
     "Basic computer skills",
     "Understanding of mechanical concepts",
     "No prior CAD experience required"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
 }

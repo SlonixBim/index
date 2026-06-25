@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 33,
   "instructor": "GOWRI",
-  "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80",
   "whatYouWillLearn": [
     "Analyze business data using advanced Excel",
     "Build interactive dashboards in Power BI",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic Excel knowledge",
     "No programming experience required"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80"
 }

@@ -10,7 +10,6 @@
   "rating": 4.5,
   "students": 45,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80",
   "whatYouWillLearn": [
     "Understand types of structural loads",
     "Basic stress and strain analysis",
@@ -31,5 +30,6 @@
   "prerequisites": [
     "Basic Physics",
     "Mathematics"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80"
 }

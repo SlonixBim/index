@@ -10,7 +10,6 @@
   "rating": 4.9,
   "students": 62,
   "instructor": "SACHIN",
-  "imageUrl": "https://images.unsplash.com/photo-1649180556628-9ba704115795?w=800&q=80",
   "whatYouWillLearn": [
     "Write clean, efficient Python code",
     "Build web applications with Django/Flask",
@@ -78,5 +77,6 @@
   "prerequisites": [
     "Basic programming concepts helpful but not required",
     "Computer with Python installed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1649180556628-9ba704115795?w=800&q=80"
 }

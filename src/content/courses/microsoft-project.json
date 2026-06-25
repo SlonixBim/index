@@ -10,7 +10,6 @@
   "rating": 4.5,
   "students": 30,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?w=800&q=80",
   "whatYouWillLearn": [
     "Create and manage project schedules",
     "Build Gantt charts for construction timelines",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic computer skills",
     "No prior project management software experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?w=800&q=80"
 }

@@ -10,7 +10,6 @@
   "rating": 4.9,
   "students": 50,
   "instructor": "KANISHMA",
-  "imageUrl": "https://images.unsplash.com/photo-1685478237595-f452cb125f27?w=800&q=80",
   "whatYouWillLearn": [
     "Integrate OpenAI, Claude, and Gemini APIs",
     "Build RAG applications with Pinecone/Weaviate",
@@ -78,5 +77,6 @@
   "prerequisites": [
     "Python & JavaScript knowledge",
     "Basic web development experience"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1685478237595-f452cb125f27?w=800&q=80"
 }

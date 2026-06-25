@@ -689,10 +689,10 @@ export default function HomePage() {
           {/* Course cards grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
             {[
-              { id: "aiml", title: "AIML", category: "Artificial Intelligence & Machine Learning", imageUrl: aimlImg, bestseller: true },
-              { id: "data-science", title: "Data Science", category: "Data Analytics & Visualization", imageUrl: dataScienceImg, bestseller: false },
-              { id: "autocad", title: "AutoCAD", category: "Engineering Design & Drafting", imageUrl: autocadImg, bestseller: false },
-              { id: "digital-marketing", title: "Digital Marketing", category: "Marketing & Growth", imageUrl: digitalMarketingImg, bestseller: true },
+              { id: "aiml", title: "AIML", category: "Artificial Intelligence & Machine Learning", image: aimlImg, bestseller: true },
+              { id: "data-science", title: "Data Science", category: "Data Analytics & Visualization", image: dataScienceImg, bestseller: false },
+              { id: "autocad", title: "AutoCAD", category: "Engineering Design & Drafting", image: autocadImg, bestseller: false },
+              { id: "digital-marketing", title: "Digital Marketing", category: "Marketing & Growth", image: digitalMarketingImg, bestseller: true },
             ].map((course, index) => (
               <Link
                 key={course.id}
@@ -702,7 +702,7 @@ export default function HomePage() {
                 {/* Image container */}
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={course.imageUrl}
+                    src={course.image}
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"

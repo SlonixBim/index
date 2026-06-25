@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 36,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
   "whatYouWillLearn": [
     "Aggregate multi-discipline BIM models",
     "Run clash detection and manage clash reports",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic BIM or Revit knowledge helpful",
     "No prior Navisworks experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
 }

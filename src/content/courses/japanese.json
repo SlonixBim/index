@@ -10,7 +10,6 @@
   "rating": 4.7,
   "students": 2430,
   "instructor": "Yuki Tanaka, Certified JLPT Trainer",
-  "imageUrl": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80",
   "whatYouWillLearn": [
     "Read and write Hiragana and Katakana scripts",
     "Learn 100+ essential Kanji characters",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "No prior Japanese knowledge required",
     "Patience for learning a new script system"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80"
 }

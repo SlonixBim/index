@@ -10,7 +10,6 @@
   "rating": 4.8,
   "students": 65,
   "instructor": "KANISHMA",
-  "imageUrl": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80",
   "whatYouWillLearn": [
     "Build responsive websites with HTML5 and CSS3",
     "Write modern JavaScript and ES6+ features",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic computer skills",
     "No prior programming experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80"
 }

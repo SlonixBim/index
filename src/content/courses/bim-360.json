@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 34,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
   "whatYouWillLearn": [
     "Set up and manage BIM 360 projects",
     "Control document workflows and approvals",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic computer skills",
     "Familiarity with Revit or AutoCAD helpful"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
 }

@@ -10,7 +10,6 @@
   "rating": 4.6,
   "students": 56,
   "instructor": "LOKESH KUMAR",
-  "imageUrl": "https://images.unsplash.com/photo-1601132359864-c974e79890ac?w=800&q=80",
   "whatYouWillLearn": [
     "Draw electrical schematics and wiring diagrams",
     "Create panel layouts and single-line diagrams",
@@ -60,5 +59,6 @@
   "prerequisites": [
     "Basic electrical engineering knowledge",
     "No prior AutoCAD experience needed"
-  ]
+  ],
+  "image": "https://images.unsplash.com/photo-1601132359864-c974e79890ac?w=800&q=80"
 }
