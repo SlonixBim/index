@@ -56,23 +56,30 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 /**
  * Renders an HTML page that sends the auth result back to the
  * parent CMS window via postMessage, then closes the popup.
+ * Uses a <script> block with a JSON blob to avoid quote-escaping bugs.
  */
 function renderMessage(status: string, content: object) {
+  // Safely encode the JSON content as a base64 string to avoid
+  // any quote/escaping issues inside the inline <script> tag.
+  const jsonStr = JSON.stringify(content);
+  const base64 = Buffer.from(jsonStr).toString("base64");
+
   return `<!DOCTYPE html>
 <html>
   <head><title>CMS Authentication</title></head>
   <body>
     <script>
       (function() {
-        function sendMessage(message) {
-          var authorizeMessage = "authorizing:github";
-          if (window.opener) {
-            window.opener.postMessage(authorizeMessage, "*");
-            window.opener.postMessage(message, "*");
-            window.close();
-          }
+        var status = "${status}";
+        var content = JSON.parse(atob("${base64}"));
+        var contentStr = JSON.stringify(content);
+        var message = "authorization:github:" + status + ":" + contentStr;
+
+        if (window.opener) {
+          window.opener.postMessage("authorizing:github", "*");
+          window.opener.postMessage(message, "*");
         }
-        sendMessage("authorization:github:${status}:${JSON.stringify(content)}");
+        setTimeout(function() { window.close(); }, 500);
       })();
     </script>
     <p>Authenticating with GitHub... This window should close automatically.</p>
