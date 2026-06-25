@@ -110,7 +110,7 @@ export default function CourseDetailPage() {
 
         <div className="max-w-7xl mx-auto relative">
           <div className="grid lg:grid-cols-3 gap-12 items-start">
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 order-2 lg:order-1">
               <div className="inline-block px-3 py-1 rounded-full bg-red-600/20 text-red-300 text-xs font-medium mb-4 border border-red-500/30">
                 {course.category}
               </div>
@@ -160,7 +160,7 @@ export default function CourseDetailPage() {
             </div>
 
             {/* Enrollment Card */}
-            <div className="lg:sticky lg:top-24">
+            <div className="lg:sticky lg:top-24 order-1 lg:order-2">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-red-100">
                 <div className="relative aspect-video overflow-hidden">
                   <img 

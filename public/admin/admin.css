@@ -91,21 +91,49 @@ a[class*="Button-button-primary"]:hover {
 
 /* Cards (Courses list) */
 [class*="Card-card"] {
+  display: flex !important;
+  flex-direction: column !important;
   background: white !important;
   border: 1px solid rgba(0, 0, 0, 0.05) !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 24px -6px rgba(0, 0, 0, 0.04) !important;
   transition: all 0.2s ease !important;
+  padding: 0 !important; /* Remove default padding to make image full width */
+  overflow: hidden !important;
 }
+
 [class*="Card-card"]:hover {
   transform: translateY(-4px) !important;
   box-shadow: 0 12px 32px -8px rgba(241, 70, 37, 0.15) !important;
   border-color: rgba(241, 70, 37, 0.2) !important;
 }
-[class*="Card-card"] h2 {
+
+/* The first element is usually the title in Decap CMS */
+[class*="Card-card"] > *:first-child {
+  order: 2 !important;
+  padding: 20px !important;
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 700 !important;
   color: #111 !important;
+  margin: 0 !important;
+}
+
+/* The second element is the image wrapper */
+[class*="Card-card"] > *:nth-child(2) {
+  order: 1 !important;
+  height: 180px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Ensure the image inside the wrapper fills it perfectly */
+[class*="Card-card"] img, 
+[class*="Card-card"] [class*="image"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
 }
 
 /* Editor Pane */
