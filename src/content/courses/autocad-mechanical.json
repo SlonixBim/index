@@ -1,15 +1,8 @@
 {
-  "id": "autocad-mechanical",
-  "title": "AutoCAD for Mechanical Engineering",
-  "category": "Mechanical Engineering",
+  "level": "Beginner to Intermediate",
+  "fullDescription": "This AutoCAD course is designed for mechanical engineering students and professionals. Master 2D mechanical drafting, orthographic projections, tolerance and GD&T annotations, and produce professional engineering drawing sets as per IS/ISO standards.",
   "gradient": "from-red-700 to-orange-500",
   "duration": "12 weeks",
-  "level": "Beginner to Intermediate",
-  "description": "Learn AutoCAD for mechanical engineering — 2D drafting, part drawings, GD&T, and assembly documentation.",
-  "fullDescription": "This AutoCAD course is designed for mechanical engineering students and professionals. Master 2D mechanical drafting, orthographic projections, tolerance and GD&T annotations, and produce professional engineering drawing sets as per IS/ISO standards.",
-  "rating": 4.7,
-  "students": 54,
-  "instructor": "LOKESH KUMAR",
   "whatYouWillLearn": [
     "Create precise 2D mechanical part drawings",
     "Apply orthographic and isometric projections",
@@ -18,6 +11,8 @@
     "Use blocks and attributes for standard parts",
     "Generate drawing sheets per IS/ISO standards"
   ],
+  "students": 54,
+  "title": "AutoCAD for Mechanical Engineering",
   "curriculum": [
     {
       "module": "Module 1: AutoCAD Foundations",
@@ -56,9 +51,14 @@
       ]
     }
   ],
+  "id": "autocad-mechanical",
+  "image": "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80",
+  "description": "Learn AutoCAD for mechanical engineering — 2D drafting, part drawings, GD&T, and assembly documentation.",
   "prerequisites": [
     "Basic mechanical engineering knowledge",
     "No prior AutoCAD experience needed"
   ],
-  "image": "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80"
+  "instructor": "LOKESH KUMAR",
+  "rating": 4.8,
+  "category": "Mechanical Engineering"
 }
