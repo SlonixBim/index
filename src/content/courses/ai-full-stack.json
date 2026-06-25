@@ -1,0 +1,82 @@
+{
+  "id": "ai-full-stack",
+  "title": "AI Full Stack Development",
+  "category": "IT Programs",
+  "gradient": "from-red-600 to-purple-600",
+  "duration": "12 weeks",
+  "level": "Intermediate to Advanced",
+  "description": "Build full-stack AI-powered applications with LLM APIs, vector databases, React, and cloud deployment.",
+  "fullDescription": "The complete AI application development course — integrate OpenAI/Claude APIs, build RAG applications with vector databases, create React frontends, deploy on AWS/GCP, and ship production AI products.",
+  "rating": 4.9,
+  "students": 50,
+  "instructor": "KANISHMA",
+  "imageUrl": "https://images.unsplash.com/photo-1685478237595-f452cb125f27?w=800&q=80",
+  "whatYouWillLearn": [
+    "Integrate OpenAI, Claude, and Gemini APIs",
+    "Build RAG applications with Pinecone/Weaviate",
+    "Create AI-powered React frontends",
+    "Build LangChain/LlamaIndex pipelines",
+    "Deploy AI apps on AWS and GCP",
+    "Ship production-ready AI SaaS products"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: LLM APIs",
+      "topics": [
+        "OpenAI API",
+        "Claude API",
+        "Streaming responses",
+        "Function calling"
+      ]
+    },
+    {
+      "module": "Module 2: Vector Databases & RAG",
+      "topics": [
+        "Embeddings",
+        "Pinecone setup",
+        "RAG pipeline",
+        "Semantic search"
+      ]
+    },
+    {
+      "module": "Module 3: LangChain & LlamaIndex",
+      "topics": [
+        "Chains & agents",
+        "Memory modules",
+        "Document loaders",
+        "Custom tools"
+      ]
+    },
+    {
+      "module": "Module 4: AI Frontend",
+      "topics": [
+        "React + AI SDK",
+        "Streaming UI",
+        "Chat interfaces",
+        "File upload & parsing"
+      ]
+    },
+    {
+      "module": "Module 5: Backend & APIs",
+      "topics": [
+        "FastAPI",
+        "WebSockets",
+        "Auth & rate limiting",
+        "Database integration"
+      ]
+    },
+    {
+      "module": "Module 6: Deployment & Scaling",
+      "topics": [
+        "Docker",
+        "AWS Lambda",
+        "Monitoring",
+        "Cost optimization"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Python & JavaScript knowledge",
+    "Basic web development experience"
+  ]
+}

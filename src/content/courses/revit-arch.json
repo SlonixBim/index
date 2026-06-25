@@ -1,0 +1,64 @@
+{
+  "id": "revit-arch",
+  "title": "Revit - ARCH",
+  "category": "BIM",
+  "gradient": "from-orange-600 to-amber-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Master Autodesk Revit for BIM-based architectural design, documentation, and collaboration.",
+  "fullDescription": "Autodesk Revit is the leading BIM (Building Information Modeling) software for architects. This course covers architectural modeling, families, sheets, schedules, and collaborative workflows used in the AEC industry.",
+  "rating": 4.7,
+  "students": 39,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1481253127861-534498168948?w=800&q=80",
+  "whatYouWillLearn": [
+    "Create complete architectural BIM models",
+    "Design walls, floors, roofs, and staircases",
+    "Build and customize Revit families",
+    "Generate construction documentation and sheets",
+    "Create schedules and quantity take-offs",
+    "Collaborate using worksharing and linked models"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Revit Fundamentals",
+      "topics": [
+        "BIM concepts",
+        "Interface & views",
+        "Levels & grids",
+        "Walls & floors"
+      ]
+    },
+    {
+      "module": "Module 2: Architectural Elements",
+      "topics": [
+        "Doors & windows",
+        "Roofs & ceilings",
+        "Stairs & railings",
+        "Curtain walls"
+      ]
+    },
+    {
+      "module": "Module 3: Families & Schedules",
+      "topics": [
+        "System families",
+        "Loadable families",
+        "Schedules",
+        "Tags & annotations"
+      ]
+    },
+    {
+      "module": "Module 4: Documentation & Sheets",
+      "topics": [
+        "Floor plan sheets",
+        "Sections & elevations",
+        "Title blocks",
+        "Printing & export"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic architectural knowledge helpful",
+    "No prior Revit experience needed"
+  ]
+}

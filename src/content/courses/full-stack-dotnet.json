@@ -1,0 +1,82 @@
+{
+  "id": "full-stack-dotnet",
+  "title": "Full Stack .NET Development",
+  "category": "IT Programs",
+  "gradient": "from-violet-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Build enterprise applications with C#, ASP.NET Core, Entity Framework, and Angular or React.",
+  "fullDescription": "Complete .NET full-stack course covering C#, ASP.NET Core Web API, Entity Framework Core, SQL Server, Angular/React frontend, Azure deployment, and microservices architecture.",
+  "rating": 4.7,
+  "students": 53,
+  "instructor": "KANISHMA",
+  "imageUrl": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80",
+  "whatYouWillLearn": [
+    "Master C# and object-oriented programming",
+    "Build Web APIs with ASP.NET Core",
+    "Use Entity Framework Core for data access",
+    "Create frontends with Angular or React",
+    "Implement Identity & JWT authentication",
+    "Deploy on Microsoft Azure"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: C# Fundamentals",
+      "topics": [
+        "Syntax & types",
+        "OOP principles",
+        "LINQ",
+        "Async/await"
+      ]
+    },
+    {
+      "module": "Module 2: ASP.NET Core",
+      "topics": [
+        "MVC pattern",
+        "Web API",
+        "Middleware",
+        "Dependency injection"
+      ]
+    },
+    {
+      "module": "Module 3: Entity Framework Core",
+      "topics": [
+        "Code-first migrations",
+        "CRUD operations",
+        "Relationships",
+        "Query optimization"
+      ]
+    },
+    {
+      "module": "Module 4: Frontend",
+      "topics": [
+        "Angular components",
+        "Services & RxJS",
+        "HTTP client",
+        "Material UI"
+      ]
+    },
+    {
+      "module": "Module 5: Auth & Security",
+      "topics": [
+        "ASP.NET Identity",
+        "JWT tokens",
+        "Role-based auth",
+        "HTTPS & CORS"
+      ]
+    },
+    {
+      "module": "Module 6: Azure Deployment",
+      "topics": [
+        "App Service",
+        "Azure SQL",
+        "Azure DevOps",
+        "Application Insights"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic programming knowledge",
+    "Understanding of web concepts"
+  ]
+}

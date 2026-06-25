@@ -1,0 +1,73 @@
+{
+  "id": "vlsi-design",
+  "title": "VLSI Design",
+  "category": "EEE/ECE",
+  "gradient": "from-purple-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Intermediate to Advanced",
+  "description": "Learn VLSI chip design, CMOS circuits, and HDL programming for semiconductor applications.",
+  "fullDescription": "Comprehensive VLSI design course covering digital logic, CMOS design, RTL coding in Verilog/VHDL, synthesis, and physical design flow used in semiconductor industry.",
+  "rating": 4.7,
+  "students": 44,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&q=80",
+  "whatYouWillLearn": [
+    "Design combinational and sequential circuits",
+    "Write RTL code in Verilog/VHDL",
+    "Perform logic synthesis and optimization",
+    "Understand CMOS transistor-level design",
+    "Simulate designs using industry EDA tools",
+    "Learn physical design and timing analysis"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Digital Logic Design",
+      "topics": [
+        "Boolean algebra",
+        "Combinational circuits",
+        "Sequential circuits",
+        "State machines"
+      ]
+    },
+    {
+      "module": "Module 2: Verilog HDL",
+      "topics": [
+        "Data types & operators",
+        "Behavioral modeling",
+        "Structural modeling",
+        "Testbenches"
+      ]
+    },
+    {
+      "module": "Module 3: CMOS Design",
+      "topics": [
+        "MOSFET characteristics",
+        "CMOS inverter",
+        "Logic gates",
+        "Pass transistor logic"
+      ]
+    },
+    {
+      "module": "Module 4: Synthesis & STA",
+      "topics": [
+        "Logic synthesis",
+        "Timing constraints",
+        "Setup/hold analysis",
+        "Clock domain crossing"
+      ]
+    },
+    {
+      "module": "Module 5: Physical Design",
+      "topics": [
+        "Floorplanning",
+        "Placement & routing",
+        "DRC & LVS",
+        "Tape-out flow"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic electronics",
+    "Digital electronics fundamentals"
+  ]
+}

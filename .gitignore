@@ -21,3 +21,4 @@ worker-configuration.d.ts
 !tsconfig.json
 !wrangler.json
 !vercel.json
+!src/content/**/*.json

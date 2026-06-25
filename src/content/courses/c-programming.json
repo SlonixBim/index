@@ -1,0 +1,73 @@
+{
+  "id": "c-programming",
+  "title": "C Programming",
+  "category": "IT Programs",
+  "gradient": "from-gray-700 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Master C programming fundamentals — the foundation of all modern programming languages.",
+  "fullDescription": "Complete C programming course covering syntax, data structures, pointers, memory management, and file handling. Ideal for engineering students and beginners building a strong programming foundation.",
+  "rating": 4.7,
+  "students": 62,
+  "instructor": "SACHIN",
+  "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+  "whatYouWillLearn": [
+    "Write C programs from scratch",
+    "Understand pointers and memory management",
+    "Implement data structures in C",
+    "Work with files and I/O operations",
+    "Debug programs with GDB",
+    "Build mini projects in C"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: C Fundamentals",
+      "topics": [
+        "Data types",
+        "Operators",
+        "Control flow",
+        "Functions"
+      ]
+    },
+    {
+      "module": "Module 2: Arrays & Strings",
+      "topics": [
+        "1D & 2D arrays",
+        "String operations",
+        "Searching & sorting",
+        "String library"
+      ]
+    },
+    {
+      "module": "Module 3: Pointers",
+      "topics": [
+        "Pointer basics",
+        "Pointer arithmetic",
+        "Dynamic memory",
+        "malloc & free"
+      ]
+    },
+    {
+      "module": "Module 4: Structures & Unions",
+      "topics": [
+        "struct definition",
+        "Nested structures",
+        "Unions",
+        "Typedef"
+      ]
+    },
+    {
+      "module": "Module 5: File I/O & Projects",
+      "topics": [
+        "File operations",
+        "Binary files",
+        "Mini projects",
+        "Debugging with GDB"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior programming experience required",
+    "Basic computer skills"
+  ]
+}

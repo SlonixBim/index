@@ -1,0 +1,64 @@
+{
+  "id": "autocad-eee-ece",
+  "title": "AutoCAD for EEE/ECE",
+  "category": "EEE/ECE",
+  "gradient": "from-yellow-600 to-orange-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn AutoCAD for electrical and electronics engineering — circuit diagrams, PCB layouts, and electrical schematics.",
+  "fullDescription": "This AutoCAD course is tailored for EEE/ECE students and professionals, focusing on drawing electrical schematics, wiring diagrams, panel layouts, and PCB design documentation using AutoCAD Electrical.",
+  "rating": 4.6,
+  "students": 56,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1601132359864-c974e79890ac?w=800&q=80",
+  "whatYouWillLearn": [
+    "Draw electrical schematics and wiring diagrams",
+    "Create panel layouts and single-line diagrams",
+    "Use AutoCAD Electrical symbol libraries",
+    "Generate wire numbers and component tags",
+    "Produce PCB layout documentation",
+    "Create professional electrical reports"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: AutoCAD Basics",
+      "topics": [
+        "Interface & navigation",
+        "Drawing tools",
+        "Layers & properties",
+        "Blocks & attributes"
+      ]
+    },
+    {
+      "module": "Module 2: Electrical Schematics",
+      "topics": [
+        "Schematic symbols",
+        "Wire routing",
+        "Ladder diagrams",
+        "Component tagging"
+      ]
+    },
+    {
+      "module": "Module 3: Panel & Layout Design",
+      "topics": [
+        "Panel layout drawing",
+        "Single-line diagrams",
+        "Terminal strips",
+        "Cable schedules"
+      ]
+    },
+    {
+      "module": "Module 4: Reports & Output",
+      "topics": [
+        "Bill of materials",
+        "Wire list reports",
+        "PDF export",
+        "Project documentation"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic electrical engineering knowledge",
+    "No prior AutoCAD experience needed"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "e-base",
+  "title": "E-BASE (Electrical Design Basics)",
+  "category": "EEE/ECE",
+  "gradient": "from-red-500 to-yellow-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Foundation course in electrical design covering panel design, single-line diagrams, and cable sizing.",
+  "fullDescription": "E-BASE is a practical electrical design foundation program covering wiring diagrams, single-line diagrams, panel layout, cable sizing, and electrical safety standards for aspiring electrical engineers.",
+  "rating": 4.5,
+  "students": 43,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=800&q=80",
+  "whatYouWillLearn": [
+    "Read and draw single-line diagrams",
+    "Design electrical panels and switchboards",
+    "Calculate cable sizing and voltage drops",
+    "Understand IS/IEC electrical standards",
+    "Create wiring and schematic diagrams",
+    "Apply electrical safety regulations"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Electrical Drawing Basics",
+      "topics": [
+        "SLD preparation",
+        "Schematic symbols",
+        "Wiring diagrams",
+        "AutoCAD Electrical intro"
+      ]
+    },
+    {
+      "module": "Module 2: Panel & Switchboard Design",
+      "topics": [
+        "Busbar sizing",
+        "Circuit breaker selection",
+        "Panel layout",
+        "Earthing systems"
+      ]
+    },
+    {
+      "module": "Module 3: Cable Engineering",
+      "topics": [
+        "Cable types",
+        "Sizing calculations",
+        "Voltage drop",
+        "Conduit & tray design"
+      ]
+    },
+    {
+      "module": "Module 4: Standards & Safety",
+      "topics": [
+        "IS 732",
+        "IEC 60364",
+        "Electrical safety",
+        "Inspection & testing"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic electrical concepts",
+    "No design experience required"
+  ]
+}

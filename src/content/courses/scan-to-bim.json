@@ -1,0 +1,64 @@
+{
+  "id": "scan-to-bim",
+  "title": "Scan to BIM",
+  "category": "BIM",
+  "gradient": "from-violet-700 to-purple-500",
+  "duration": "12 weeks",
+  "level": "Intermediate",
+  "description": "Learn to convert point cloud data from 3D laser scans into accurate BIM models for renovation and as-built documentation.",
+  "fullDescription": "Scan to BIM is a growing field in the AEC industry where point cloud data captured by laser scanners is used to create precise BIM models. This course covers point cloud processing, registration, and modeling in Revit and AutoCAD.",
+  "rating": 4.5,
+  "students": 35,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?w=800&q=80",
+  "whatYouWillLearn": [
+    "Understand 3D laser scanning technology",
+    "Process and register point cloud data",
+    "Import point clouds into Revit and AutoCAD",
+    "Model as-built conditions from scan data",
+    "Perform deviation analysis",
+    "Deliver LOD 200/300 as-built BIM models"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Scanning Fundamentals",
+      "topics": [
+        "Laser scanning basics",
+        "Scanner types",
+        "Field data capture",
+        "Registration"
+      ]
+    },
+    {
+      "module": "Module 2: Point Cloud Processing",
+      "topics": [
+        "ReCap Pro workflow",
+        "Noise filtering",
+        "Coordinate systems",
+        "Export formats"
+      ]
+    },
+    {
+      "module": "Module 3: Modeling in Revit",
+      "topics": [
+        "Linking point cloud",
+        "Tracing walls & floors",
+        "MEP elements",
+        "LOD standards"
+      ]
+    },
+    {
+      "module": "Module 4: Quality & Delivery",
+      "topics": [
+        "Deviation analysis",
+        "QA/QC checks",
+        "Client deliverables",
+        "Project workflows"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic Revit or AutoCAD knowledge",
+    "Interest in as-built documentation"
+  ]
+}

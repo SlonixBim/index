@@ -1,0 +1,73 @@
+{
+  "id": "iot",
+  "title": "Internet of Things (IoT)",
+  "category": "EEE/ECE",
+  "gradient": "from-teal-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Build connected IoT devices using ESP32, Raspberry Pi, cloud platforms, and real-time dashboards.",
+  "fullDescription": "End-to-end IoT development covering hardware programming, wireless connectivity (WiFi, MQTT, BLE), cloud integration (AWS IoT, Firebase), and data visualization for smart applications.",
+  "rating": 4.9,
+  "students": 59,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+  "whatYouWillLearn": [
+    "Program ESP32/ESP8266 for IoT applications",
+    "Implement MQTT, HTTP, and WebSocket protocols",
+    "Connect devices to AWS IoT and Firebase",
+    "Build real-time sensor dashboards",
+    "Implement Bluetooth Low Energy (BLE)",
+    "Design low-power IoT systems"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: IoT Fundamentals",
+      "topics": [
+        "IoT architecture",
+        "Sensors & actuators",
+        "ESP32 programming",
+        "Arduino IDE"
+      ]
+    },
+    {
+      "module": "Module 2: Wireless Connectivity",
+      "topics": [
+        "WiFi protocols",
+        "MQTT broker",
+        "BLE basics",
+        "LoRa & NB-IoT overview"
+      ]
+    },
+    {
+      "module": "Module 3: Cloud Integration",
+      "topics": [
+        "AWS IoT Core",
+        "Firebase Realtime DB",
+        "Node-RED",
+        "ThingSpeak"
+      ]
+    },
+    {
+      "module": "Module 4: Data & Dashboards",
+      "topics": [
+        "Grafana dashboards",
+        "Data logging",
+        "Alerts & notifications",
+        "Edge computing"
+      ]
+    },
+    {
+      "module": "Module 5: Industry Projects",
+      "topics": [
+        "Smart home system",
+        "Industrial monitoring",
+        "Agriculture IoT",
+        "Wearable devices"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic programming knowledge",
+    "Electronics fundamentals"
+  ]
+}

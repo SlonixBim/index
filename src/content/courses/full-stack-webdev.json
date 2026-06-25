@@ -1,0 +1,64 @@
+{
+  "id": "full-stack-webdev",
+  "title": "Full Stack Web Development",
+  "category": "IT Programs",
+  "gradient": "from-violet-600 to-purple-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Master HTML, CSS, JavaScript, React, Node.js, and databases to build complete web applications from scratch.",
+  "fullDescription": "A comprehensive full stack web development course covering frontend (HTML5, CSS3, JavaScript ES6+, React), backend (Node.js, Express), databases (MySQL, MongoDB), REST APIs, and deployment. Build real-world projects and launch a professional portfolio.",
+  "rating": 4.8,
+  "students": 65,
+  "instructor": "KANISHMA",
+  "imageUrl": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80",
+  "whatYouWillLearn": [
+    "Build responsive websites with HTML5 and CSS3",
+    "Write modern JavaScript and ES6+ features",
+    "Create dynamic UIs with React and hooks",
+    "Build REST APIs with Node.js and Express",
+    "Work with MySQL and MongoDB databases",
+    "Deploy full stack apps to the cloud"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Frontend Basics",
+      "topics": [
+        "HTML5 structure",
+        "CSS3 & Flexbox/Grid",
+        "Responsive design",
+        "Bootstrap"
+      ]
+    },
+    {
+      "module": "Module 2: JavaScript & React",
+      "topics": [
+        "JS ES6+",
+        "DOM manipulation",
+        "React components",
+        "Hooks & state management"
+      ]
+    },
+    {
+      "module": "Module 3: Backend with Node.js",
+      "topics": [
+        "Node.js basics",
+        "Express framework",
+        "REST API design",
+        "Authentication & JWT"
+      ]
+    },
+    {
+      "module": "Module 4: Databases & Deployment",
+      "topics": [
+        "MySQL & MongoDB",
+        "ORM/ODM",
+        "Git & GitHub",
+        "Deployment on Vercel/AWS"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic computer skills",
+    "No prior programming experience needed"
+  ]
+}

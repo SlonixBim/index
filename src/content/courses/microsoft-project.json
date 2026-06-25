@@ -1,0 +1,64 @@
+{
+  "id": "microsoft-project",
+  "title": "Microsoft Project",
+  "category": "BIM",
+  "gradient": "from-green-700 to-emerald-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Learn Microsoft Project for construction project scheduling, resource management, and progress tracking.",
+  "fullDescription": "Microsoft Project is the go-to tool for project managers in the construction and engineering industry. This course covers creating project plans, Gantt charts, resource allocation, and tracking project progress effectively.",
+  "rating": 4.5,
+  "students": 30,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?w=800&q=80",
+  "whatYouWillLearn": [
+    "Create and manage project schedules",
+    "Build Gantt charts for construction timelines",
+    "Assign and level resources efficiently",
+    "Track project progress vs baseline",
+    "Generate project status reports",
+    "Manage project budgets and costs"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Project Setup",
+      "topics": [
+        "Creating new project",
+        "Calendar settings",
+        "Work breakdown structure",
+        "Task dependencies"
+      ]
+    },
+    {
+      "module": "Module 2: Scheduling",
+      "topics": [
+        "Gantt chart creation",
+        "Critical path method",
+        "Milestones",
+        "Lag & lead time"
+      ]
+    },
+    {
+      "module": "Module 3: Resources",
+      "topics": [
+        "Resource sheet",
+        "Resource assignment",
+        "Resource leveling",
+        "Cost tracking"
+      ]
+    },
+    {
+      "module": "Module 4: Tracking & Reports",
+      "topics": [
+        "Setting baseline",
+        "Tracking progress",
+        "Variance analysis",
+        "Custom reports"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic computer skills",
+    "No prior project management software experience needed"
+  ]
+}

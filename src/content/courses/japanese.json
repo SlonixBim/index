@@ -1,0 +1,64 @@
+{
+  "id": "japanese",
+  "title": "Japanese Language",
+  "category": "Communication Languages",
+  "gradient": "from-red-600 to-rose-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Learn Japanese from scratch — Hiragana, Katakana, basic Kanji, grammar, and conversational Japanese.",
+  "fullDescription": "This beginner Japanese course takes you from zero to JLPT N5/N4 level. Learn Hiragana and Katakana scripts, essential Kanji, Japanese grammar patterns, and build conversational skills for travel, work, and Japanese culture enthusiasts.",
+  "rating": 4.7,
+  "students": 2430,
+  "instructor": "Yuki Tanaka, Certified JLPT Trainer",
+  "imageUrl": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80",
+  "whatYouWillLearn": [
+    "Read and write Hiragana and Katakana scripts",
+    "Learn 100+ essential Kanji characters",
+    "Construct basic Japanese sentences",
+    "Hold simple conversations in Japanese",
+    "Understand Japanese grammar patterns",
+    "Prepare for JLPT N5 certification"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Scripts (N5)",
+      "topics": [
+        "Hiragana",
+        "Katakana",
+        "Basic Kanji 50",
+        "Pronunciation rules"
+      ]
+    },
+    {
+      "module": "Module 2: Grammar Basics",
+      "topics": [
+        "Sentence structure",
+        "Particles は/が/を",
+        "Verb conjugation",
+        "Adjectives"
+      ]
+    },
+    {
+      "module": "Module 3: Conversations",
+      "topics": [
+        "Greetings",
+        "Shopping & directions",
+        "Time & numbers",
+        "Daily routines"
+      ]
+    },
+    {
+      "module": "Module 4: JLPT Prep",
+      "topics": [
+        "N5 vocabulary list",
+        "Reading practice",
+        "Listening drills",
+        "Mock tests"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior Japanese knowledge required",
+    "Patience for learning a new script system"
+  ]
+}

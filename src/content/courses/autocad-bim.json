@@ -1,0 +1,64 @@
+{
+  "id": "autocad-bim",
+  "title": "AutoCAD for BIM",
+  "category": "BIM",
+  "gradient": "from-red-600 to-rose-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Master AutoCAD as a foundation for BIM workflows — 2D drafting, DWG coordination, and integration with Revit.",
+  "fullDescription": "AutoCAD is the backbone of BIM documentation. This course covers 2D drafting fundamentals, creating drawing sets for architectural and MEP disciplines, linking DWG files with Revit, and producing coordinated BIM deliverables using AutoCAD.",
+  "rating": 4.6,
+  "students": 31,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80",
+  "whatYouWillLearn": [
+    "Create accurate 2D architectural drawings in AutoCAD",
+    "Set up drawing templates for BIM projects",
+    "Link and reference DWG files across disciplines",
+    "Use AutoCAD with Revit for BIM coordination",
+    "Produce floor plans, sections, and elevations",
+    "Generate professional drawing sets for construction"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: AutoCAD for BIM Setup",
+      "topics": [
+        "Interface & workspace",
+        "Layer standards (AIA/ISO)",
+        "Blocks & xrefs",
+        "Template setup"
+      ]
+    },
+    {
+      "module": "Module 2: Architectural Drawings",
+      "topics": [
+        "Floor plans",
+        "Sections & elevations",
+        "Details & schedules",
+        "Annotation standards"
+      ]
+    },
+    {
+      "module": "Module 3: BIM Coordination",
+      "topics": [
+        "DWG linking in Revit",
+        "Xref management",
+        "Clash coordination",
+        "BIM drawing standards"
+      ]
+    },
+    {
+      "module": "Module 4: Output & Deliverables",
+      "topics": [
+        "Sheet setup",
+        "Plot styles",
+        "PDF/DWG deliverables",
+        "BIM handover docs"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior AutoCAD experience needed",
+    "Basic architectural or engineering knowledge helpful"
+  ]
+}

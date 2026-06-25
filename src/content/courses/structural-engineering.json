@@ -1,0 +1,35 @@
+{
+  "id": "structural-engineering",
+  "title": "Structural Engineering Basics",
+  "category": "Civil Engineering",
+  "gradient": "from-blue-600 to-blue-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Learn the fundamentals of structural analysis and design for buildings.",
+  "fullDescription": "Introduction to structural engineering, covering loads, stresses, and basic design principles for steel and concrete structures.",
+  "rating": 4.5,
+  "students": 45,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80",
+  "whatYouWillLearn": [
+    "Understand types of structural loads",
+    "Basic stress and strain analysis",
+    "Introduction to building codes",
+    "Simple frame and truss design"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Load Analysis",
+      "topics": [
+        "Dead loads",
+        "Live loads",
+        "Wind loads",
+        "Snow loads"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic Physics",
+    "Mathematics"
+  ]
+}

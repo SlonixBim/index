@@ -1,0 +1,83 @@
+{
+  "id": "ui-ux-design",
+  "title": "UI/UX Design Mastery",
+  "category": "Design",
+  "gradient": "from-red-500 to-red-400",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Design beautiful and intuitive user experiences with Figma and design principles.",
+  "fullDescription": "Master UI/UX design principles and tools. Learn user research, wireframing, prototyping, and visual design with Figma.",
+  "rating": 4.8,
+  "students": 54,
+  "instructor": "YASHWANTH",
+  "imageUrl": "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=800&q=80",
+  "whatYouWillLearn": [
+    "Conduct user research and create personas",
+    "Design wireframes and prototypes",
+    "Master Figma design tool",
+    "Apply visual design principles",
+    "Create responsive designs",
+    "Build design systems"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: UX Fundamentals",
+      "topics": [
+        "Design thinking",
+        "User research methods",
+        "Personas",
+        "User journeys"
+      ]
+    },
+    {
+      "module": "Module 2: Information Architecture",
+      "topics": [
+        "Site mapping",
+        "Navigation design",
+        "Content strategy",
+        "Card sorting"
+      ]
+    },
+    {
+      "module": "Module 3: Wireframing",
+      "topics": [
+        "Low-fidelity wireframes",
+        "User flows",
+        "Interaction design",
+        "Usability testing"
+      ]
+    },
+    {
+      "module": "Module 4: Visual Design",
+      "topics": [
+        "Color theory",
+        "Typography",
+        "Layout principles",
+        "Design systems"
+      ]
+    },
+    {
+      "module": "Module 5: Figma Mastery",
+      "topics": [
+        "Components",
+        "Auto-layout",
+        "Variants",
+        "Prototyping"
+      ]
+    },
+    {
+      "module": "Module 6: Portfolio & Career",
+      "topics": [
+        "Case studies",
+        "Presentation skills",
+        "Design critiques",
+        "Job preparation"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior design experience required",
+    "Basic computer skills",
+    "Creative mindset"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "mern-stack",
+  "title": "MERN Stack Development",
+  "category": "IT Programs",
+  "gradient": "from-red-500 to-red-400",
+  "duration": "12 weeks",
+  "level": "Intermediate to Advanced",
+  "description": "Build modern web applications with MongoDB, Express, React, and Node.js.",
+  "fullDescription": "Master the MERN stack and build full-stack JavaScript applications. Learn MongoDB, Express.js, React, and Node.js with real-world projects.",
+  "rating": 4.8,
+  "students": 58,
+  "instructor": "KANISHMA",
+  "imageUrl": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&q=80",
+  "whatYouWillLearn": [
+    "Build complete web applications with MERN",
+    "Create RESTful APIs with Node.js and Express",
+    "Design NoSQL databases with MongoDB",
+    "Develop dynamic UIs with React",
+    "Implement authentication and authorization",
+    "Deploy applications to the cloud"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: JavaScript Mastery",
+      "topics": [
+        "ES6+ features",
+        "Async programming",
+        "Promises",
+        "Arrow functions"
+      ]
+    },
+    {
+      "module": "Module 2: Node.js & Express",
+      "topics": [
+        "Node.js fundamentals",
+        "Express routing",
+        "Middleware",
+        "Error handling"
+      ]
+    },
+    {
+      "module": "Module 3: MongoDB",
+      "topics": [
+        "NoSQL concepts",
+        "CRUD operations",
+        "Aggregation",
+        "Mongoose ODM"
+      ]
+    },
+    {
+      "module": "Module 4: React Development",
+      "topics": [
+        "Components",
+        "Hooks",
+        "State management",
+        "React Router"
+      ]
+    },
+    {
+      "module": "Module 5: Full Stack Integration",
+      "topics": [
+        "REST APIs",
+        "Authentication with JWT",
+        "File uploads",
+        "Real-time features"
+      ]
+    },
+    {
+      "module": "Module 6: Deployment",
+      "topics": [
+        "Cloud platforms",
+        "Environment variables",
+        "Production builds",
+        "Monitoring"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "HTML, CSS, JavaScript knowledge",
+    "Basic programming concepts",
+    "Command line familiarity"
+  ]
+}

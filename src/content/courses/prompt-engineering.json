@@ -1,0 +1,64 @@
+{
+  "id": "prompt-engineering",
+  "title": "Prompt Engineering",
+  "category": "IT Programs",
+  "gradient": "from-rose-600 to-orange-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn to craft high-quality prompts for LLMs like GPT-4, Claude, and Gemini for real-world use cases.",
+  "fullDescription": "Master the science and art of prompt engineering for large language models. Learn zero-shot, few-shot, chain-of-thought, and RAG techniques to get the best results from AI systems.",
+  "rating": 4.8,
+  "students": 49,
+  "instructor": "JANANI",
+  "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+  "whatYouWillLearn": [
+    "Understand how LLMs process prompts",
+    "Apply zero-shot and few-shot prompting",
+    "Use chain-of-thought reasoning techniques",
+    "Build RAG (Retrieval Augmented Generation) pipelines",
+    "Fine-tune prompts for code, writing, and analysis",
+    "Evaluate and iterate prompt quality"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: LLM Fundamentals",
+      "topics": [
+        "How LLMs work",
+        "Tokenization",
+        "Context windows",
+        "Model comparison"
+      ]
+    },
+    {
+      "module": "Module 2: Prompting Techniques",
+      "topics": [
+        "Zero-shot",
+        "Few-shot",
+        "Chain-of-thought",
+        "ReAct prompting"
+      ]
+    },
+    {
+      "module": "Module 3: Advanced Techniques",
+      "topics": [
+        "RAG pipelines",
+        "Agent prompting",
+        "Tool use",
+        "Structured outputs"
+      ]
+    },
+    {
+      "module": "Module 4: Real-World Applications",
+      "topics": [
+        "Code generation",
+        "Content writing",
+        "Data extraction",
+        "Evaluation frameworks"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic understanding of AI concepts",
+    "No coding required"
+  ]
+}

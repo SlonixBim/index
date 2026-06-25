@@ -1,0 +1,82 @@
+{
+  "id": "data-science",
+  "title": "Data Science",
+  "category": "IT Programs",
+  "gradient": "from-cyan-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Intermediate to Advanced",
+  "description": "Master data science with Python, machine learning, statistical analysis, and real-world projects.",
+  "fullDescription": "End-to-end data science program covering Python, statistics, machine learning, deep learning, model deployment, and business intelligence to prepare you for data scientist roles.",
+  "rating": 4.9,
+  "students": 61,
+  "instructor": "JANANI",
+  "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+  "whatYouWillLearn": [
+    "Perform exploratory data analysis with Python",
+    "Build and evaluate ML models",
+    "Apply deep learning with TensorFlow",
+    "Create compelling data visualizations",
+    "Deploy ML models to production",
+    "Work on end-to-end data science projects"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Python for Data Science",
+      "topics": [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn"
+      ]
+    },
+    {
+      "module": "Module 2: Statistics & Probability",
+      "topics": [
+        "Descriptive stats",
+        "Hypothesis testing",
+        "Probability distributions",
+        "Bayesian thinking"
+      ]
+    },
+    {
+      "module": "Module 3: Machine Learning",
+      "topics": [
+        "Supervised learning",
+        "Unsupervised learning",
+        "Model evaluation",
+        "Feature engineering"
+      ]
+    },
+    {
+      "module": "Module 4: Deep Learning",
+      "topics": [
+        "Neural networks",
+        "CNNs",
+        "RNNs",
+        "Transfer learning"
+      ]
+    },
+    {
+      "module": "Module 5: NLP",
+      "topics": [
+        "Text preprocessing",
+        "Sentiment analysis",
+        "Transformers",
+        "BERT & GPT"
+      ]
+    },
+    {
+      "module": "Module 6: MLOps & Deployment",
+      "topics": [
+        "Flask API",
+        "Docker",
+        "MLflow",
+        "AWS SageMaker"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Python programming basics",
+    "Basic statistics knowledge"
+  ]
+}

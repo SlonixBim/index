@@ -1,0 +1,64 @@
+{
+  "id": "autocad-civil",
+  "title": "AutoCAD for Civil Engineering",
+  "category": "Civil Engineering",
+  "gradient": "from-red-600 to-orange-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn AutoCAD for civil engineering — site plans, road layouts, drainage, and construction drawings.",
+  "fullDescription": "This AutoCAD course is tailored for civil engineering students and professionals. Learn to create site layout plans, road cross-sections, contour drawings, drainage layouts, and full construction document sets using AutoCAD Civil tools.",
+  "rating": 4.6,
+  "students": 37,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=800&q=80",
+  "whatYouWillLearn": [
+    "Draw site plans and layout drawings",
+    "Create road cross-sections and alignments",
+    "Design drainage and utility layouts",
+    "Produce contour and grading plans",
+    "Generate construction documentation sets",
+    "Apply civil engineering standards to drawings"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: AutoCAD Basics",
+      "topics": [
+        "Interface & navigation",
+        "Drawing tools",
+        "Layers & linetypes",
+        "Blocks & references"
+      ]
+    },
+    {
+      "module": "Module 2: Civil Drawing Types",
+      "topics": [
+        "Site layout plans",
+        "Road cross-sections",
+        "Contour mapping",
+        "North point & scales"
+      ]
+    },
+    {
+      "module": "Module 3: Drainage & Utilities",
+      "topics": [
+        "Drainage layout",
+        "Utility line drawing",
+        "Manhole symbols",
+        "Pipe schedules"
+      ]
+    },
+    {
+      "module": "Module 4: Documentation",
+      "topics": [
+        "Title block setup",
+        "Dimensioning & annotation",
+        "Plot setup",
+        "PDF & DWG export"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic civil engineering knowledge",
+    "No prior AutoCAD experience needed"
+  ]
+}

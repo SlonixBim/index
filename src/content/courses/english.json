@@ -1,0 +1,64 @@
+{
+  "id": "english",
+  "title": "English Communication",
+  "category": "Communication Languages",
+  "gradient": "from-green-600 to-teal-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Build confident spoken and written English skills for professional, academic, and everyday communication.",
+  "fullDescription": "This English communication course focuses on developing fluency, grammar accuracy, professional writing, and presentation skills. Covers business English, interview preparation, group discussions, and email etiquette for career readiness.",
+  "rating": 4.8,
+  "students": 62,
+  "instructor": "Ananya Krishnan, English Language & Soft Skills Trainer",
+  "imageUrl": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+  "whatYouWillLearn": [
+    "Speak fluent English with confidence",
+    "Write professional emails, reports, and letters",
+    "Master English grammar and vocabulary",
+    "Perform well in interviews and group discussions",
+    "Develop public speaking and presentation skills",
+    "Understand American and British English accents"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Grammar & Vocabulary",
+      "topics": [
+        "Tenses & verb forms",
+        "Articles & prepositions",
+        "Word building",
+        "Common errors"
+      ]
+    },
+    {
+      "module": "Module 2: Spoken English",
+      "topics": [
+        "Pronunciation & accent",
+        "Conversation skills",
+        "Active listening",
+        "Telephone English"
+      ]
+    },
+    {
+      "module": "Module 3: Business Writing",
+      "topics": [
+        "Email writing",
+        "Report writing",
+        "Resume & cover letter",
+        "Meeting minutes"
+      ]
+    },
+    {
+      "module": "Module 4: Professional Skills",
+      "topics": [
+        "Interview preparation",
+        "Group discussion",
+        "Presentation skills",
+        "Public speaking"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic understanding of English alphabets",
+    "Suitable for all levels"
+  ]
+}

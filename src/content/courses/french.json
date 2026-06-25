@@ -1,0 +1,64 @@
+{
+  "id": "french",
+  "title": "French Language",
+  "category": "Communication Languages",
+  "gradient": "from-blue-600 to-indigo-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn French from scratch — speaking, reading, writing, and grammar for everyday and professional use.",
+  "fullDescription": "This French language course takes you from absolute beginner to conversational fluency (A1–B1 level). Covers pronunciation, grammar, vocabulary, reading comprehension, and spoken French for travel, work, and higher education abroad.",
+  "rating": 4.7,
+  "students": 3240,
+  "instructor": "Sophie Dubois, Certified French Language Trainer",
+  "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+  "whatYouWillLearn": [
+    "Speak French confidently in everyday situations",
+    "Read and write in French accurately",
+    "Master French grammar and sentence structure",
+    "Build a vocabulary of 2000+ French words",
+    "Understand French culture and etiquette",
+    "Prepare for DELF A1/A2 certification"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Foundations (A1)",
+      "topics": [
+        "Alphabet & pronunciation",
+        "Greetings & introductions",
+        "Numbers & colors",
+        "Basic sentences"
+      ]
+    },
+    {
+      "module": "Module 2: Everyday French (A2)",
+      "topics": [
+        "Family & relationships",
+        "Shopping & food",
+        "Time & dates",
+        "Past tense basics"
+      ]
+    },
+    {
+      "module": "Module 3: Intermediate (B1)",
+      "topics": [
+        "Future & conditional",
+        "Professional vocabulary",
+        "Reading passages",
+        "Writing emails"
+      ]
+    },
+    {
+      "module": "Module 4: Fluency Building",
+      "topics": [
+        "Conversation practice",
+        "Listening exercises",
+        "Cultural context",
+        "DELF exam prep"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior French knowledge required",
+    "Basic English literacy helpful"
+  ]
+}

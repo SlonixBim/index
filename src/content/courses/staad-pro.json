@@ -1,0 +1,64 @@
+{
+  "id": "staad-pro",
+  "title": "STAAD Pro",
+  "category": "Mechanical Engineering",
+  "gradient": "from-indigo-700 to-indigo-500",
+  "duration": "12 weeks",
+  "level": "Intermediate",
+  "description": "Master STAAD Pro for structural analysis and design of steel, concrete, and timber structures.",
+  "fullDescription": "STAAD Pro is the industry-standard structural analysis and design software used by civil and structural engineers worldwide. Learn to model, analyze, and design structures including buildings, bridges, and industrial frames.",
+  "rating": 4.5,
+  "students": 46,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80",
+  "whatYouWillLearn": [
+    "Model 2D and 3D structural frames in STAAD Pro",
+    "Apply loads: dead, live, wind, seismic",
+    "Run linear and dynamic analysis",
+    "Design steel and RCC members",
+    "Interpret analysis results and reports",
+    "Generate professional structural reports"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: STAAD Basics",
+      "topics": [
+        "Interface overview",
+        "Node & beam creation",
+        "Material properties",
+        "Section assignment"
+      ]
+    },
+    {
+      "module": "Module 2: Load Cases",
+      "topics": [
+        "Dead & live loads",
+        "Wind load IS codes",
+        "Seismic analysis",
+        "Load combinations"
+      ]
+    },
+    {
+      "module": "Module 3: Analysis",
+      "topics": [
+        "Linear static analysis",
+        "Dynamic analysis",
+        "Result interpretation",
+        "Displacement checks"
+      ]
+    },
+    {
+      "module": "Module 4: Design & Reports",
+      "topics": [
+        "Steel design IS 800",
+        "RCC design IS 456",
+        "Foundation design",
+        "Report generation"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic structural engineering concepts",
+    "Familiarity with IS codes helpful"
+  ]
+}

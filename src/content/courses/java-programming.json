@@ -1,0 +1,73 @@
+{
+  "id": "java-programming",
+  "title": "JAVA Programming",
+  "category": "IT Programs",
+  "gradient": "from-orange-700 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn Java from scratch — OOP, collections, exception handling, and build real-world console and GUI apps.",
+  "fullDescription": "Core Java programming course covering Java syntax, OOP principles, Collections Framework, exception handling, multithreading, JDBC, and JavaFX for building desktop and console applications.",
+  "rating": 4.7,
+  "students": 64,
+  "instructor": "SACHIN",
+  "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&q=80",
+  "whatYouWillLearn": [
+    "Write Java programs using OOP principles",
+    "Use Java Collections Framework",
+    "Handle exceptions and errors gracefully",
+    "Implement multithreading and concurrency",
+    "Connect to databases with JDBC",
+    "Build simple GUI apps with JavaFX"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Java Fundamentals",
+      "topics": [
+        "Syntax & data types",
+        "Control flow",
+        "Methods",
+        "Arrays"
+      ]
+    },
+    {
+      "module": "Module 2: OOP in Java",
+      "topics": [
+        "Classes & objects",
+        "Inheritance",
+        "Interfaces",
+        "Abstract classes"
+      ]
+    },
+    {
+      "module": "Module 3: Collections & Generics",
+      "topics": [
+        "ArrayList & LinkedList",
+        "HashMap & HashSet",
+        "Generics",
+        "Iterators"
+      ]
+    },
+    {
+      "module": "Module 4: Advanced Java",
+      "topics": [
+        "Exception handling",
+        "Multithreading",
+        "Lambda expressions",
+        "Streams API"
+      ]
+    },
+    {
+      "module": "Module 5: JDBC & Projects",
+      "topics": [
+        "JDBC connection",
+        "CRUD operations",
+        "JavaFX basics",
+        "Mini projects"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior Java experience required",
+    "Basic programming concepts helpful"
+  ]
+}

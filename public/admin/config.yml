@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: SlonixBim/index
+  branch: main
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "courses"
+    label: "Courses"
+    folder: "src/content/courses"
+    create: true
+    slug: "{{id}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Course ID", name: "id", widget: "string", hint: "Unique slug for the course (e.g., aiml, autocad-mastery)" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["IT Programs", "Engineering Tools", "Design", "Business"] }
+      - { label: "Gradient", name: "gradient", widget: "string", default: "from-blue-600 to-blue-500", hint: "Tailwind gradient classes" }
+      - { label: "Duration", name: "duration", widget: "string", default: "12 weeks" }
+      - { label: "Level", name: "level", widget: "string", default: "Beginner to Advanced" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Full Description", name: "fullDescription", widget: "markdown" }
+      - { label: "Rating", name: "rating", widget: "number", value_type: "float", default: 4.8 }
+      - { label: "Students", name: "students", widget: "number", value_type: "int", default: 0 }
+      - { label: "Instructor", name: "instructor", widget: "string" }
+      - { label: "Image URL", name: "imageUrl", widget: "string", hint: "URL or uploaded image path" }
+      - { label: "What You Will Learn", name: "whatYouWillLearn", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+      - { label: "Prerequisites", name: "prerequisites", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+      - label: "Curriculum Modules"
+        name: "curriculum"
+        widget: "list"
+        fields:
+          - { label: "Module Name", name: "module", widget: "string" }
+          - { label: "Topics", name: "topics", widget: "list", field: { label: "Topic", name: "topic", widget: "string" } }

@@ -1,0 +1,64 @@
+{
+  "id": "hr-management",
+  "title": "Human Resources Management (HR)",
+  "category": "Management",
+  "gradient": "from-rose-600 to-pink-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Master HR fundamentals including recruitment, payroll, performance management, and labor laws.",
+  "fullDescription": "This comprehensive HR course equips you with the skills to manage human capital effectively. Learn talent acquisition, onboarding, performance appraisal, payroll processing, and Indian labor law compliance for corporate HR roles.",
+  "rating": 4.6,
+  "students": 37,
+  "instructor": "GOWRI",
+  "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
+  "whatYouWillLearn": [
+    "Manage end-to-end recruitment and onboarding",
+    "Process payroll and manage employee benefits",
+    "Conduct performance appraisals and reviews",
+    "Handle employee relations and grievances",
+    "Understand Indian labor laws and compliance",
+    "Use HRMS software for day-to-day operations"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: HR Fundamentals",
+      "topics": [
+        "HR roles & functions",
+        "Org structure",
+        "Job analysis",
+        "HR policies"
+      ]
+    },
+    {
+      "module": "Module 2: Recruitment & Onboarding",
+      "topics": [
+        "Sourcing strategies",
+        "Interview techniques",
+        "Offer management",
+        "Onboarding process"
+      ]
+    },
+    {
+      "module": "Module 3: Payroll & Benefits",
+      "topics": [
+        "Salary structure",
+        "PF & ESI",
+        "Income tax basics",
+        "Leave management"
+      ]
+    },
+    {
+      "module": "Module 4: Performance & Compliance",
+      "topics": [
+        "KRA/KPI setting",
+        "Appraisal methods",
+        "Labor laws",
+        "HRMS tools"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior HR experience required",
+    "Basic English communication skills"
+  ]
+}

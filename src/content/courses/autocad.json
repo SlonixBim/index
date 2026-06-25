@@ -1,0 +1,83 @@
+{
+  "id": "autocad",
+  "title": "AutoCAD Mastery",
+  "category": "Engineering Tools",
+  "gradient": "from-red-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Complete AutoCAD training from basic 2D drafting to advanced 3D modeling.",
+  "fullDescription": "Become proficient in AutoCAD, the world's leading CAD software for 2D drafting and 3D modeling. Perfect for architects, engineers, and designers.",
+  "rating": 4.8,
+  "students": 92,
+  "instructor": "LOKESH KUMAR",
+  "imageUrl": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80",
+  "whatYouWillLearn": [
+    "Master 2D drafting and annotation",
+    "Create precise technical drawings",
+    "Work with layers, blocks, and attributes",
+    "Develop 3D solid models",
+    "Generate section views and details",
+    "Customize AutoCAD for productivity"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: AutoCAD Basics",
+      "topics": [
+        "Interface navigation",
+        "Drawing commands",
+        "Modification tools",
+        "Object properties"
+      ]
+    },
+    {
+      "module": "Module 2: Precision Drawing",
+      "topics": [
+        "Coordinate systems",
+        "Object snaps",
+        "Polar tracking",
+        "Dynamic input"
+      ]
+    },
+    {
+      "module": "Module 3: Advanced 2D",
+      "topics": [
+        "Layers and linetypes",
+        "Blocks and attributes",
+        "Hatching patterns",
+        "Text and dimensions"
+      ]
+    },
+    {
+      "module": "Module 4: 3D Modeling",
+      "topics": [
+        "3D workspace",
+        "Solid primitives",
+        "Boolean operations",
+        "Surface modeling"
+      ]
+    },
+    {
+      "module": "Module 5: Layout & Plotting",
+      "topics": [
+        "Paper space layouts",
+        "Viewports",
+        "Plot styles",
+        "PDF export"
+      ]
+    },
+    {
+      "module": "Module 6: Productivity Tools",
+      "topics": [
+        "Tool palettes",
+        "Quick select",
+        "Design center",
+        "Custom templates"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic computer skills",
+    "Windows operating system familiarity",
+    "No prior CAD experience needed"
+  ]
+}

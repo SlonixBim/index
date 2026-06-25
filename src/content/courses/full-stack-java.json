@@ -1,0 +1,83 @@
+{
+  "id": "full-stack-java",
+  "title": "Full Stack Java Development",
+  "category": "IT Programs",
+  "gradient": "from-red-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Build enterprise applications with Java, Spring Boot, and modern frameworks.",
+  "fullDescription": "Become a full-stack Java developer with expertise in Spring Boot, Hibernate, React, and microservices architecture. Build production-ready enterprise applications.",
+  "rating": 4.7,
+  "students": 55,
+  "instructor": "SACHIN",
+  "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
+  "whatYouWillLearn": [
+    "Master Java programming fundamentals",
+    "Build REST APIs with Spring Boot",
+    "Implement database operations with Hibernate",
+    "Create responsive frontends with React",
+    "Deploy microservices architecture",
+    "Write unit and integration tests"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Java Fundamentals",
+      "topics": [
+        "OOP concepts",
+        "Collections framework",
+        "Exception handling",
+        "Multithreading"
+      ]
+    },
+    {
+      "module": "Module 2: Spring Framework",
+      "topics": [
+        "Dependency injection",
+        "Spring Boot",
+        "Spring MVC",
+        "Spring Security"
+      ]
+    },
+    {
+      "module": "Module 3: Database & ORM",
+      "topics": [
+        "SQL basics",
+        "JDBC",
+        "Hibernate",
+        "JPA repositories"
+      ]
+    },
+    {
+      "module": "Module 4: Frontend Development",
+      "topics": [
+        "HTML/CSS/JavaScript",
+        "React basics",
+        "State management",
+        "API integration"
+      ]
+    },
+    {
+      "module": "Module 5: Microservices",
+      "topics": [
+        "Service architecture",
+        "Spring Cloud",
+        "API gateway",
+        "Service discovery"
+      ]
+    },
+    {
+      "module": "Module 6: Testing & Deployment",
+      "topics": [
+        "JUnit testing",
+        "Mockito",
+        "Docker",
+        "CI/CD pipelines"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic programming knowledge",
+    "Understanding of web technologies",
+    "Familiarity with databases helpful"
+  ]
+}

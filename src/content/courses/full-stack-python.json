@@ -1,0 +1,82 @@
+{
+  "id": "full-stack-python",
+  "title": "Full Stack Python Development",
+  "category": "IT Programs",
+  "gradient": "from-blue-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Build end-to-end web applications using Python, Django/Flask, React, and PostgreSQL.",
+  "fullDescription": "Master full-stack development with Python. Learn Django REST Framework, Flask, React frontend integration, PostgreSQL databases, and deploy production-ready applications on the cloud.",
+  "rating": 4.8,
+  "students": 57,
+  "instructor": "SACHIN",
+  "imageUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&q=80",
+  "whatYouWillLearn": [
+    "Build REST APIs with Django and Flask",
+    "Create dynamic frontends with React",
+    "Design PostgreSQL and MongoDB databases",
+    "Implement JWT authentication",
+    "Deploy apps with Docker and AWS",
+    "Write unit and integration tests"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Python Advanced",
+      "topics": [
+        "OOP",
+        "Decorators",
+        "Generators",
+        "Async programming"
+      ]
+    },
+    {
+      "module": "Module 2: Django Framework",
+      "topics": [
+        "Models & ORM",
+        "Views & URLs",
+        "Django REST Framework",
+        "Authentication"
+      ]
+    },
+    {
+      "module": "Module 3: Flask",
+      "topics": [
+        "Blueprints",
+        "SQLAlchemy",
+        "Flask-JWT",
+        "API design"
+      ]
+    },
+    {
+      "module": "Module 4: React Frontend",
+      "topics": [
+        "Components & hooks",
+        "Redux Toolkit",
+        "Axios",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "module": "Module 5: Databases",
+      "topics": [
+        "PostgreSQL",
+        "Redis caching",
+        "Migrations",
+        "Query optimization"
+      ]
+    },
+    {
+      "module": "Module 6: Deployment",
+      "topics": [
+        "Docker",
+        "AWS EC2/RDS",
+        "Nginx",
+        "CI/CD with GitHub Actions"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Python basics",
+    "Basic web development knowledge"
+  ]
+}
