@@ -249,7 +249,7 @@ export const courses: Course[] = [
     ],
   },
   {
-    id: "ai-machine-learning",
+    id: "aiml",
     title: "AI Mastery Suite",
     category: "IT Programs",
     gradient: "from-red-600 to-red-500",
@@ -658,7 +658,7 @@ export const courses: Course[] = [
     ],
   },
   {
-    id: "autocad-mastery",
+    id: "autocad",
     title: "AutoCAD Mastery",
     category: "Engineering Tools",
     gradient: "from-red-600 to-red-500",

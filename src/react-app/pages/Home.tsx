@@ -536,7 +536,7 @@ function StatsSection() {
 
 export default function HomePage() {
   useSEO({
-    title: "Slonix Solutions | Engineering Training Academy in India",
+    title: "Slonix Solutions | Building Skills for the Real world",
     description:
       "Industry-ready engineering training in SolidWorks, CATIA, AutoCAD, BIM, PLC/SCADA, Full Stack & Python. Hands-on courses with placement support in Bengaluru.",
     canonical: "https://slonixsolutions.in/",
