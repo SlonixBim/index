@@ -1,15 +1,8 @@
 {
-  "id": "digital-marketing",
-  "title": "Digital Marketing",
-  "category": "Management",
+  "level": "Beginner to Intermediate",
+  "fullDescription": "A complete digital marketing course covering search engine optimization, social media strategy, Google Ads, Meta Ads, email marketing, content marketing, and web analytics. Build a strong portfolio and prepare for Google certifications.",
   "gradient": "from-orange-600 to-yellow-500",
   "duration": "12 weeks",
-  "level": "Beginner to Intermediate",
-  "description": "Master SEO, social media marketing, Google Ads, email marketing, and analytics to grow businesses online.",
-  "fullDescription": "A complete digital marketing course covering search engine optimization, social media strategy, Google Ads, Meta Ads, email marketing, content marketing, and web analytics. Build a strong portfolio and prepare for Google certifications.",
-  "rating": 4.8,
-  "students": 85,
-  "instructor": "GOWRI",
   "whatYouWillLearn": [
     "Optimize websites for search engines (SEO)",
     "Run Google Ads and Meta Ads campaigns",
@@ -18,6 +11,8 @@
     "Analyze performance with Google Analytics",
     "Build a digital marketing portfolio"
   ],
+  "students": 85,
+  "title": "Digital Marketing",
   "curriculum": [
     {
       "module": "Module 1: SEO & Content",
@@ -56,9 +51,14 @@
       ]
     }
   ],
+  "id": "digital-marketing",
+  "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80",
+  "description": "Master SEO, social media marketing, Google Ads, email marketing, and analytics to grow businesses online.",
   "prerequisites": [
     "Basic internet and computer skills",
     "No prior marketing experience needed"
   ],
-  "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80"
+  "instructor": "GOWRI",
+  "rating": 4.7,
+  "category": "Management"
 }
