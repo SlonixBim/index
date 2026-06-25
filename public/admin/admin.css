@@ -1,168 +1,325 @@
-/* Import Slonix Fonts */
+/* ═══════════════════════════════════════════════════════════════
+   SLONIX CMS — FAANG-Level Premium Dashboard Theme v2
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;900&display=swap');
 
-/* Apply base font to everything in CMS */
+/* ── Base ── */
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
 body, #nc-root {
-  font-family: 'Inter', sans-serif !important;
-  background: linear-gradient(135deg, #fffcfb 0%, #fff 100%) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  background: #f8f9fb !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
-/* Force ALL logos to be small on the login page and header */
+/* ── Logo ── */
 img[src*="logo"],
-[class*="IconWrapper"] img {
-  max-width: 120px !important;
-  max-height: 120px !important;
+[class*="IconWrapper"] img,
+[class*="AuthenticationPage"] img {
+  max-width: 100px !important;
+  max-height: 100px !important;
   object-fit: contain !important;
-  margin: 0 auto !important;
-  border-radius: 12px !important;
-  display: inline-block !important;
+  border-radius: 14px !important;
 }
 
-/* Custom FAANG-Level Header (Glassmorphism) */
-[class*="AppHeader-header"], 
-header[class*="header"] {
-  background: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: blur(12px) !important;
-  border-bottom: 1px solid rgba(241, 70, 37, 0.1) !important;
-  box-shadow: 0 4px 20px -2px rgba(241, 70, 37, 0.05) !important;
+/* ── Header ── */
+[class*="AppHeader"],
+header {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
 }
 
-/* Ensure the logo and text show up together in the header */
-[class*="AppHeader-header"] a {
+[class*="AppHeader"] a[href] {
   display: flex !important;
   align-items: center !important;
-  gap: 12px !important;
+  gap: 10px !important;
   text-decoration: none !important;
 }
 
-[class*="AppHeader-header"] a::after {
+[class*="AppHeader"] a[href]::after {
   content: "Slonix CMS" !important;
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 900 !important;
-  font-size: 20px !important;
-  color: #111 !important;
-  background: linear-gradient(135deg, #f14625, #ff8c42) !important;
+  font-size: 18px !important;
+  background: linear-gradient(135deg, #f14625, #ff6b35) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 
-/* Hide the default span if it exists to avoid duplication */
-[class*="AppHeader-header"] a span {
+[class*="AppHeader"] a span {
   display: none !important;
 }
 
-/* Sidebar styling */
-[class*="CollectionPage-sidebar"] {
-  background: transparent !important;
-  border-right: none !important;
-}
-[class*="CollectionPage-sidebar"] h2 {
+/* ── Sidebar ── */
+[class*="Sidebar"] h2,
+[class*="sidebar"] h2 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 700 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #444 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: #888 !important;
 }
+
+a[class*="active"],
+[class*="NavLink-active"],
 [class*="SidebarNavLink-active"] {
-  background: linear-gradient(135deg, #f14625, #ff8c42) !important;
+  background: linear-gradient(135deg, #f14625, #ff6b35) !important;
   color: white !important;
   border-radius: 8px !important;
   border-left: none !important;
-  box-shadow: 0 4px 12px rgba(241, 70, 37, 0.2) !important;
+  box-shadow: 0 4px 14px rgba(241, 70, 37, 0.25) !important;
+  font-weight: 600 !important;
 }
 
-/* Primary Buttons */
-button[class*="Button-button-primary"],
-a[class*="Button-button-primary"] {
-  background: linear-gradient(135deg, #f14625, #ff8c42) !important;
+/* ── Primary Buttons (NO animation) ── */
+button[class*="primary"],
+a[class*="primary"] {
+  background: linear-gradient(135deg, #f14625, #ff6b35) !important;
   color: white !important;
   border: none !important;
-  border-radius: 8px !important;
-  font-family: 'Space Grotesk', sans-serif !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 12px rgba(241, 70, 37, 0.3) !important;
-  transition: all 0.2s ease !important;
-}
-button[class*="Button-button-primary"]:hover,
-a[class*="Button-button-primary"]:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 16px rgba(241, 70, 37, 0.4) !important;
+  border-radius: 10px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(241, 70, 37, 0.3) !important;
 }
 
-/* Cards (Courses list) */
-[class*="Card-card"] {
+/* ══════════════════════════════════════════════════════════════
+   COURSE CARDS — Bulletproof Image-Top Layout
+   Uses flex order to safely push image up.
+   NO animations. Clean and professional.
+   ══════════════════════════════════════════════════════════════ */
+
+/* Card container */
+div[class*="Card"],
+[class*="ListCard"],
+[class*="EntryCard"] {
   display: flex !important;
   flex-direction: column !important;
-  background: white !important;
-  border: 1px solid rgba(0, 0, 0, 0.05) !important;
-  border-radius: 12px !important;
-  box-shadow: 0 4px 24px -6px rgba(0, 0, 0, 0.04) !important;
-  transition: all 0.2s ease !important;
-  padding: 0 !important; /* Remove default padding to make image full width */
+  border-radius: 14px !important;
   overflow: hidden !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  background: white !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06) !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-[class*="Card-card"]:hover {
-  transform: translateY(-4px) !important;
-  box-shadow: 0 12px 32px -8px rgba(241, 70, 37, 0.15) !important;
+div[class*="Card"]:hover,
+[class*="ListCard"]:hover,
+[class*="EntryCard"]:hover {
+  box-shadow: 0 4px 20px rgba(241, 70, 37, 0.12) !important;
   border-color: rgba(241, 70, 37, 0.2) !important;
 }
 
-/* The first element is usually the title in Decap CMS */
-[class*="Card-card"] > *:first-child {
+/* ── Force ALL text inside cards to be visible ── */
+div[class*="Card"] *,
+[class*="ListCard"] *,
+[class*="EntryCard"] * {
+  color: #1a1a1a !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Title area (first element in DOM, moved to bottom) */
+div[class*="Card"] > *:first-child,
+[class*="ListCard"] > *:first-child,
+[class*="EntryCard"] > *:first-child {
   order: 2 !important;
-  padding: 20px !important;
+  padding: 16px 18px !important;
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 700 !important;
-  color: #111 !important;
-  margin: 0 !important;
+  font-size: 15px !important;
+  color: #1a1a1a !important;
+  line-height: 1.4 !important;
+  min-height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: white !important;
 }
 
-/* The second element is the image wrapper */
-[class*="Card-card"] > *:nth-child(2) {
+/* Image wrapper (second element in DOM, moved to top) */
+div[class*="Card"] > *:nth-child(2),
+[class*="ListCard"] > *:nth-child(2),
+[class*="EntryCard"] > *:nth-child(2) {
   order: 1 !important;
-  height: 180px !important;
+  height: 190px !important;
   width: 100% !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
 }
 
-/* Ensure the image inside the wrapper fills it perfectly */
-[class*="Card-card"] img, 
-[class*="Card-card"] [class*="image"] {
+/* Actual images */
+div[class*="Card"] img:not([src*="logo"]),
+[class*="ListCard"] img,
+[class*="EntryCard"] img {
   width: 100% !important;
-  height: 100% !important;
+  height: 190px !important;
   object-fit: cover !important;
   border-radius: 0 !important;
+  display: block !important;
 }
 
-/* Editor Pane */
-[class*="Editor-container"] {
-  background: #fdfdfd !important;
-}
-[class*="EditorControlBar-root"] {
-  background: white !important;
-  border-radius: 12px 12px 0 0 !important;
-}
-[class*="Toolbar-toolbar"] {
-  background: white !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.02) !important;
+/* ── Collection Grid ── */
+[class*="CardsGrid"],
+[class*="Entries"] > div {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 20px !important;
 }
 
-/* Mobile Responsive Fixes */
-@media (max-width: 768px) {
-  [class*="AppHeader-header"] {
-    padding: 10px !important;
+/* ── Editor Pane ── */
+[class*="Editor-container"],
+[class*="EditorInterface"] {
+  background: #f8f9fb !important;
+}
+
+[class*="ControlPane"],
+[class*="EditorControlBar"] {
+  background: white !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+[class*="Toolbar"] {
+  background: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Form labels */
+label[class*="Label"],
+[class*="ControlLabel"] {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+}
+
+/* Form inputs */
+input[class*="Input"],
+textarea[class*="Input"],
+[class*="TextField"] input,
+[class*="TextField"] textarea {
+  border-radius: 10px !important;
+  border: 1.5px solid rgba(0, 0, 0, 0.1) !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #f14625 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(241, 70, 37, 0.1) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MOBILE RESPONSIVE
+   ══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  [class*="CardsGrid"],
+  [class*="Entries"] > div {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+    gap: 16px !important;
   }
+
+  [class*="Editor-container"],
+  [class*="EditorInterface"] {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 768px) {
+  [class*="AppHeader"] {
+    padding: 8px 12px !important;
+  }
+
+  [class*="AppHeader"] a[href]::after {
+    font-size: 15px !important;
+  }
+
+  [class*="Sidebar"],
+  [class*="sidebar"],
   [class*="CollectionPage-sidebar"] {
     display: block !important;
     width: 100% !important;
-    margin-bottom: 20px !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 16px !important;
   }
-  [class*="CollectionPage-container"] {
+
+  [class*="CollectionPage-container"],
+  [class*="Collection-container"] {
     flex-direction: column !important;
   }
-  [class*="Editor-container"] {
+
+  [class*="CardsGrid"],
+  [class*="Entries"] > div {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 0 12px !important;
+  }
+
+  /* CRITICAL: Force card title to be visible on mobile */
+  div[class*="Card"] > div:first-child,
+  [class*="ListCard"] > div:first-child,
+  [class*="EntryCard"] > div:first-child {
+    min-height: 48px !important;
+    padding: 14px 16px !important;
+    font-size: 15px !important;
+    color: #1a1a1a !important;
+    background: white !important;
+    display: flex !important;
+    align-items: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Force text visible inside cards */
+  div[class*="Card"] h2,
+  div[class*="Card"] span,
+  [class*="ListCard"] h2,
+  [class*="ListCard"] span {
+    color: #1a1a1a !important;
+    font-size: 15px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  [class*="Editor-container"],
+  [class*="EditorInterface"] {
     flex-direction: column !important;
+  }
+
+  [class*="ControlPane"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  [class*="PreviewPane"],
+  [class*="Preview-preview"] {
+    width: 100% !important;
+    min-height: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  div[class*="Card"] > div:last-child,
+  [class*="ListCard"] > div:last-child {
+    height: 180px !important;
+  }
+
+  div[class*="Card"] img:not([src*="logo"]),
+  [class*="ListCard"] img {
+    height: 180px !important;
   }
 }
