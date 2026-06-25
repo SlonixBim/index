@@ -1,0 +1,112 @@
+/* Import Slonix Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;900&display=swap');
+
+/* Apply base font to everything in CMS */
+body, #nc-root {
+  font-family: 'Inter', sans-serif !important;
+  background: linear-gradient(135deg, #fffcfb 0%, #fff 100%) !important;
+}
+
+/* Custom FAANG-Level Header (Glassmorphism) */
+[class*="AppHeader-header"], 
+header[class*="header"] {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(241, 70, 37, 0.1) !important;
+  box-shadow: 0 4px 20px -2px rgba(241, 70, 37, 0.05) !important;
+}
+
+/* Header Text Logo (if logo_url fails or while loading) */
+[class*="AppHeader-header"] a {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 900 !important;
+  color: #111 !important;
+}
+
+/* Sidebar styling */
+[class*="CollectionPage-sidebar"] {
+  background: transparent !important;
+  border-right: none !important;
+}
+[class*="CollectionPage-sidebar"] h2 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #444 !important;
+}
+[class*="SidebarNavLink-active"] {
+  background: linear-gradient(135deg, #f14625, #ff8c42) !important;
+  color: white !important;
+  border-radius: 8px !important;
+  border-left: none !important;
+  box-shadow: 0 4px 12px rgba(241, 70, 37, 0.2) !important;
+}
+
+/* Primary Buttons */
+button[class*="Button-button-primary"],
+a[class*="Button-button-primary"] {
+  background: linear-gradient(135deg, #f14625, #ff8c42) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 12px rgba(241, 70, 37, 0.3) !important;
+  transition: all 0.2s ease !important;
+}
+button[class*="Button-button-primary"]:hover,
+a[class*="Button-button-primary"]:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(241, 70, 37, 0.4) !important;
+}
+
+/* Cards (Courses list) */
+[class*="Card-card"] {
+  background: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 24px -6px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.2s ease !important;
+}
+[class*="Card-card"]:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 32px -8px rgba(241, 70, 37, 0.15) !important;
+  border-color: rgba(241, 70, 37, 0.2) !important;
+}
+[class*="Card-card"] h2 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+}
+
+/* Editor Pane */
+[class*="Editor-container"] {
+  background: #fdfdfd !important;
+}
+[class*="EditorControlBar-root"] {
+  background: white !important;
+  border-radius: 12px 12px 0 0 !important;
+}
+[class*="Toolbar-toolbar"] {
+  background: white !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02) !important;
+}
+
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  [class*="AppHeader-header"] {
+    padding: 10px !important;
+  }
+  [class*="CollectionPage-sidebar"] {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  [class*="CollectionPage-container"] {
+    flex-direction: column !important;
+  }
+  [class*="Editor-container"] {
+    flex-direction: column !important;
+  }
+}

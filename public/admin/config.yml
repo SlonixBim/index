@@ -3,6 +3,7 @@ backend:
   repo: SlonixBim/index
   branch: main
 
+logo_url: "https://raw.githubusercontent.com/SlonixBim/index/main/public/favicon.ico"
 media_folder: "public/assets"
 public_folder: "/assets"
 
