@@ -1,0 +1,64 @@
+{
+  "id": "finance-tally",
+  "title": "Finance & Tally",
+  "category": "Management",
+  "gradient": "from-emerald-700 to-green-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Learn accounting fundamentals, GST, and Tally ERP 9/TallyPrime for finance and accounting roles.",
+  "fullDescription": "This course covers core accounting principles, financial statements, GST filing, and hands-on Tally ERP 9 / TallyPrime operations. Ideal for commerce students and professionals pursuing accounting, finance, and taxation careers.",
+  "rating": 4.7,
+  "students": 32,
+  "instructor": "GOWRI",
+  "whatYouWillLearn": [
+    "Apply accounting fundamentals and double-entry system",
+    "Create financial statements: P&L, Balance Sheet",
+    "Manage GST returns and e-filing",
+    "Operate Tally ERP 9 and TallyPrime",
+    "Handle accounts payable and receivable",
+    "Generate MIS reports and audit trails"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Accounting Basics",
+      "topics": [
+        "Accounting principles",
+        "Journal entries",
+        "Ledger accounts",
+        "Trial balance"
+      ]
+    },
+    {
+      "module": "Module 2: Financial Statements",
+      "topics": [
+        "P&L statement",
+        "Balance sheet",
+        "Cash flow",
+        "Ratio analysis"
+      ]
+    },
+    {
+      "module": "Module 3: GST & Taxation",
+      "topics": [
+        "GST concepts",
+        "GSTR filing",
+        "TDS basics",
+        "Income tax overview"
+      ]
+    },
+    {
+      "module": "Module 4: Tally Operations",
+      "topics": [
+        "Company setup",
+        "Voucher entry",
+        "Bank reconciliation",
+        "MIS reports"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic math skills",
+    "Commerce background helpful but not required"
+  ],
+  "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "solidworks-mechanical-design",
+  "title": "SolidWorks for Mechanical Design",
+  "category": "Engineering Tools",
+  "gradient": "from-red-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Master 3D CAD design and engineering with industry-standard SolidWorks software.",
+  "fullDescription": "Learn to design mechanical parts and assemblies using SolidWorks, the industry-leading CAD software. This comprehensive course covers everything from basic sketching to advanced surfacing and simulation.",
+  "rating": 4.7,
+  "students": 48,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Create 3D parts and assemblies in SolidWorks",
+    "Master parametric modeling and design intent",
+    "Generate detailed engineering drawings",
+    "Perform basic stress analysis and simulation",
+    "Work with sheet metal and weldment design",
+    "Create photorealistic renderings"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Introduction to SolidWorks",
+      "topics": [
+        "Interface overview",
+        "Sketch tools and constraints",
+        "Basic part modeling",
+        "File management"
+      ]
+    },
+    {
+      "module": "Module 2: Advanced Part Modeling",
+      "topics": [
+        "Revolve, sweep, and loft features",
+        "Shell and draft operations",
+        "Patterns and mirroring",
+        "Equations and design tables"
+      ]
+    },
+    {
+      "module": "Module 3: Assembly Design",
+      "topics": [
+        "Creating assemblies",
+        "Mates and constraints",
+        "Exploded views",
+        "Bill of materials"
+      ]
+    },
+    {
+      "module": "Module 4: Engineering Drawings",
+      "topics": [
+        "Drawing templates",
+        "Standard views",
+        "Dimensions and annotations",
+        "GD&T symbols"
+      ]
+    },
+    {
+      "module": "Module 5: Sheet Metal & Weldments",
+      "topics": [
+        "Sheet metal features",
+        "Flat patterns",
+        "Weldment structures",
+        "Cut lists"
+      ]
+    },
+    {
+      "module": "Module 6: Simulation & Rendering",
+      "topics": [
+        "Static analysis",
+        "Thermal studies",
+        "PhotoView 360",
+        "Material properties"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic computer skills",
+    "Understanding of mechanical concepts",
+    "No prior CAD experience required"
+  ],
+  "image": "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
+}

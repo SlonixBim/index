@@ -1,0 +1,64 @@
+{
+  "id": "revit-mep",
+  "title": "Revit - MEP",
+  "category": "BIM",
+  "gradient": "from-cyan-700 to-teal-500",
+  "duration": "12 weeks",
+  "level": "Intermediate",
+  "description": "Design mechanical, electrical, and plumbing systems using Autodesk Revit MEP for BIM-coordinated projects.",
+  "fullDescription": "Revit MEP enables engineers to design and document mechanical, electrical, and plumbing systems within a fully coordinated BIM environment. Learn duct routing, pipe systems, electrical panels, and clash detection workflows.",
+  "rating": 4.7,
+  "students": 38,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Model HVAC duct and pipe systems in Revit",
+    "Design electrical lighting and power systems",
+    "Create plumbing layouts and drainage systems",
+    "Perform clash detection with architectural models",
+    "Generate MEP coordination drawings",
+    "Produce equipment schedules and load calculations"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Revit MEP Setup",
+      "topics": [
+        "MEP templates",
+        "Linking architectural model",
+        "Levels & grids",
+        "MEP worksets"
+      ]
+    },
+    {
+      "module": "Module 2: HVAC & Piping",
+      "topics": [
+        "Duct routing",
+        "Pipe systems",
+        "Fittings & accessories",
+        "Mechanical equipment"
+      ]
+    },
+    {
+      "module": "Module 3: Electrical Systems",
+      "topics": [
+        "Lighting fixtures",
+        "Power circuits",
+        "Electrical panels",
+        "Conduit routing"
+      ]
+    },
+    {
+      "module": "Module 4: Coordination & Docs",
+      "topics": [
+        "Clash detection",
+        "Coordination views",
+        "MEP sheets",
+        "Schedules & reports"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic Revit or CAD knowledge helpful",
+    "Understanding of MEP systems recommended"
+  ],
+  "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+}

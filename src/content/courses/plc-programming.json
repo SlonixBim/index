@@ -1,0 +1,73 @@
+{
+  "id": "plc-programming",
+  "title": "PLC Programming",
+  "category": "EEE/ECE",
+  "gradient": "from-blue-700 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Master PLC programming with Ladder Logic, SCADA systems, and industrial automation for manufacturing.",
+  "fullDescription": "Comprehensive PLC programming course covering Ladder Logic, FBD, Structured Text, SCADA integration, and hands-on projects with Siemens/Allen-Bradley PLCs used in industrial automation.",
+  "rating": 4.7,
+  "students": 51,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Program PLCs using Ladder Logic and FBD",
+    "Configure Siemens S7 and Allen-Bradley PLCs",
+    "Design SCADA HMI screens",
+    "Implement industrial communication (Modbus, Profibus)",
+    "Troubleshoot PLC hardware and software faults",
+    "Automate real manufacturing processes"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: PLC Fundamentals",
+      "topics": [
+        "PLC architecture",
+        "Input/output modules",
+        "Scan cycle",
+        "Wiring basics"
+      ]
+    },
+    {
+      "module": "Module 2: Ladder Logic Programming",
+      "topics": [
+        "Contacts & coils",
+        "Timers & counters",
+        "Math functions",
+        "Comparison instructions"
+      ]
+    },
+    {
+      "module": "Module 3: Advanced Programming",
+      "topics": [
+        "Function block diagram",
+        "Structured text",
+        "Sequential function chart",
+        "Subroutines"
+      ]
+    },
+    {
+      "module": "Module 4: SCADA & HMI",
+      "topics": [
+        "HMI design",
+        "Tag configuration",
+        "Alarm management",
+        "Data logging"
+      ]
+    },
+    {
+      "module": "Module 5: Industrial Protocols",
+      "topics": [
+        "Modbus RTU/TCP",
+        "Profibus",
+        "EtherNet/IP",
+        "OPC-UA basics"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic electrical knowledge",
+    "No prior PLC experience required"
+  ],
+  "image": "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800&q=80"
+}

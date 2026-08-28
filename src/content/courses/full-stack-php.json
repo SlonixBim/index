@@ -1,0 +1,82 @@
+{
+  "id": "full-stack-php",
+  "title": "Full Stack PHP Development",
+  "category": "IT Programs",
+  "gradient": "from-indigo-600 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Build dynamic web applications with PHP, Laravel, MySQL, and Vue.js from scratch to deployment.",
+  "fullDescription": "Comprehensive PHP development course covering core PHP, Laravel framework, MySQL database design, Vue.js frontend, RESTful APIs, and full-stack deployment for enterprise web applications.",
+  "rating": 4.6,
+  "students": 3480,
+  "instructor": "KANISHMA",
+  "whatYouWillLearn": [
+    "Master PHP fundamentals and OOP",
+    "Build applications with Laravel framework",
+    "Design and manage MySQL databases",
+    "Create Vue.js frontends",
+    "Build and consume REST APIs",
+    "Deploy PHP apps on Linux servers"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: PHP Core",
+      "topics": [
+        "Syntax & data types",
+        "OOP in PHP",
+        "Sessions & cookies",
+        "File handling"
+      ]
+    },
+    {
+      "module": "Module 2: Laravel",
+      "topics": [
+        "MVC architecture",
+        "Eloquent ORM",
+        "Blade templating",
+        "Artisan CLI"
+      ]
+    },
+    {
+      "module": "Module 3: MySQL",
+      "topics": [
+        "Schema design",
+        "Complex queries",
+        "Joins & indexes",
+        "Stored procedures"
+      ]
+    },
+    {
+      "module": "Module 4: Vue.js",
+      "topics": [
+        "Composition API",
+        "Vuex/Pinia",
+        "Vue Router",
+        "Axios integration"
+      ]
+    },
+    {
+      "module": "Module 5: APIs & Auth",
+      "topics": [
+        "RESTful API design",
+        "Laravel Sanctum",
+        "OAuth 2.0",
+        "API versioning"
+      ]
+    },
+    {
+      "module": "Module 6: Deployment",
+      "topics": [
+        "Apache/Nginx config",
+        "cPanel hosting",
+        "SSL setup",
+        "Performance tuning"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic HTML/CSS",
+    "Fundamental programming concepts"
+  ],
+  "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80"
+}

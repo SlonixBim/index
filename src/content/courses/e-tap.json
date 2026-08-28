@@ -1,0 +1,64 @@
+{
+  "id": "e-tap",
+  "title": "E-TAP (Electrical Power Systems)",
+  "category": "EEE/ECE",
+  "gradient": "from-yellow-600 to-red-600",
+  "duration": "12 weeks",
+  "level": "Intermediate",
+  "description": "Analyse and design electrical power systems using ETAP software for load flow, short circuit, and protection studies.",
+  "fullDescription": "Industry-standard ETAP software training for power system analysis including load flow, short circuit analysis, motor starting, arc flash, and protection coordination used in power utilities and industries.",
+  "rating": 4.6,
+  "students": 41,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Model power systems in ETAP",
+    "Perform load flow analysis",
+    "Conduct short circuit and fault studies",
+    "Design protection coordination schemes",
+    "Run arc flash hazard analysis",
+    "Model motor starting and dynamic simulations"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: ETAP Interface & Modelling",
+      "topics": [
+        "One-line diagram",
+        "Bus & branch modelling",
+        "Equipment libraries",
+        "Load data entry"
+      ]
+    },
+    {
+      "module": "Module 2: Load Flow Analysis",
+      "topics": [
+        "Newton-Raphson method",
+        "Voltage profiles",
+        "Power factor correction",
+        "Reports"
+      ]
+    },
+    {
+      "module": "Module 3: Short Circuit Studies",
+      "topics": [
+        "ANSI & IEC methods",
+        "Fault current calculation",
+        "Equipment rating",
+        "Protective device sizing"
+      ]
+    },
+    {
+      "module": "Module 4: Protection Coordination",
+      "topics": [
+        "Relay settings",
+        "Time-current curves",
+        "Selectivity analysis",
+        "Arc flash study"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Electrical engineering fundamentals",
+    "Basic power systems knowledge"
+  ],
+  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80"
+}

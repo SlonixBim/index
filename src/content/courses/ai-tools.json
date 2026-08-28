@@ -1,0 +1,73 @@
+{
+  "id": "ai-tools",
+  "title": "AI Tools Mastery",
+  "category": "IT Programs",
+  "gradient": "from-red-500 to-pink-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Master the latest AI tools — ChatGPT, Midjourney, Copilot, Notion AI, and more for work and business.",
+  "fullDescription": "Practical AI tools course for professionals covering ChatGPT prompt engineering, image generation with Midjourney/DALL-E, AI coding with GitHub Copilot, Notion AI, and how to automate workflows using AI tools.",
+  "rating": 4.9,
+  "students": 60,
+  "instructor": "KANISHMA",
+  "whatYouWillLearn": [
+    "Write effective prompts for ChatGPT and Claude",
+    "Generate images with Midjourney and DALL-E",
+    "Accelerate coding with GitHub Copilot",
+    "Automate tasks using Zapier and Make with AI",
+    "Use Notion AI for documentation and planning",
+    "Build AI-powered workflows for business"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Prompt Engineering",
+      "topics": [
+        "Prompt structure",
+        "Chain-of-thought",
+        "Few-shot prompting",
+        "System prompts"
+      ]
+    },
+    {
+      "module": "Module 2: AI Image Generation",
+      "topics": [
+        "Midjourney basics",
+        "DALL-E 3",
+        "Stable Diffusion",
+        "Prompt styles"
+      ]
+    },
+    {
+      "module": "Module 3: AI Coding Tools",
+      "topics": [
+        "GitHub Copilot",
+        "Cursor AI",
+        "Code review with AI",
+        "Debugging workflows"
+      ]
+    },
+    {
+      "module": "Module 4: AI Productivity",
+      "topics": [
+        "Notion AI",
+        "Grammarly AI",
+        "Otter.ai transcription",
+        "AI research tools"
+      ]
+    },
+    {
+      "module": "Module 5: Automation",
+      "topics": [
+        "Zapier + ChatGPT",
+        "Make.com flows",
+        "n8n automation",
+        "AI business workflows"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No technical background required",
+    "Basic computer skills"
+  ],
+  "image": "https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=800&q=80"
+}

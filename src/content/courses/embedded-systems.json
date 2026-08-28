@@ -1,0 +1,73 @@
+{
+  "id": "embedded-systems",
+  "title": "Embedded Systems",
+  "category": "EEE/ECE",
+  "gradient": "from-red-600 to-orange-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Design and program embedded systems using microcontrollers, sensors, and real-time OS concepts.",
+  "fullDescription": "Master embedded systems from hardware fundamentals to firmware development. Learn to program ARM microcontrollers, interface peripherals, and work with RTOS for real-world applications.",
+  "rating": 4.8,
+  "students": 47,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Program ARM/AVR microcontrollers in C",
+    "Interface sensors, actuators, and displays",
+    "Implement UART, SPI, I2C communication protocols",
+    "Understand interrupt-driven programming",
+    "Work with RTOS scheduling",
+    "Debug embedded systems with oscilloscope & logic analyser"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Microcontroller Basics",
+      "topics": [
+        "Architecture overview",
+        "GPIO programming",
+        "Timers & counters",
+        "ADC/DAC"
+      ]
+    },
+    {
+      "module": "Module 2: Communication Protocols",
+      "topics": [
+        "UART",
+        "SPI",
+        "I2C",
+        "CAN bus basics"
+      ]
+    },
+    {
+      "module": "Module 3: Peripheral Interfacing",
+      "topics": [
+        "LCD & OLED displays",
+        "Keypad & switches",
+        "Motor drivers",
+        "Sensor integration"
+      ]
+    },
+    {
+      "module": "Module 4: RTOS & Interrupts",
+      "topics": [
+        "Interrupt handling",
+        "FreeRTOS basics",
+        "Task scheduling",
+        "Semaphores & queues"
+      ]
+    },
+    {
+      "module": "Module 5: Project Development",
+      "topics": [
+        "PCB design basics",
+        "Prototyping",
+        "Debugging techniques",
+        "Industry projects"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic electronics knowledge",
+    "C programming fundamentals"
+  ],
+  "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80"
+}

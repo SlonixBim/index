@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slonix CMS</title>
+    <!-- Explicitly Link Config to prevent routing errors in production -->
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <!-- Inject Custom CMS Dashboard Styling -->
+    <link rel="stylesheet" href="/admin/admin.css" />
+  </head>
+  <body>
+    
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    
+    <!-- Inject Google Fonts into the CMS Preview Pane -->
+    <script>
+      CMS.registerPreviewStyle("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;900&display=swap");
+    </script>
+    
+    <!-- Load custom preview template -->
+    <script src="/admin/preview.js"></script>
+  </body>
+</html>

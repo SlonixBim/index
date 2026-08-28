@@ -1,0 +1,64 @@
+{
+  "id": "navisworks",
+  "title": "Navisworks",
+  "category": "BIM",
+  "gradient": "from-blue-800 to-blue-600",
+  "duration": "12 weeks",
+  "level": "Intermediate",
+  "description": "Use Autodesk Navisworks for BIM coordination, clash detection, 4D simulation, and project review.",
+  "fullDescription": "Navisworks is the industry standard for BIM project review and coordination. This course covers model aggregation, clash detection, TimeLiner 4D scheduling, quantity takeoffs, and producing coordination reports for construction projects.",
+  "rating": 4.6,
+  "students": 36,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Aggregate multi-discipline BIM models",
+    "Run clash detection and manage clash reports",
+    "Create 4D construction simulations with TimeLiner",
+    "Perform quantity takeoffs with Quantification",
+    "Navigate and mark up models for review",
+    "Produce coordination and clash reports"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Navisworks Basics",
+      "topics": [
+        "Interface & navigation",
+        "Model aggregation",
+        "File formats",
+        "Section planes"
+      ]
+    },
+    {
+      "module": "Module 2: Clash Detection",
+      "topics": [
+        "Clash tests setup",
+        "Clash types",
+        "Managing results",
+        "Clash reports"
+      ]
+    },
+    {
+      "module": "Module 3: 4D Simulation",
+      "topics": [
+        "TimeLiner tool",
+        "Linking schedule",
+        "Simulation settings",
+        "Construction animation"
+      ]
+    },
+    {
+      "module": "Module 4: Quantification & Review",
+      "topics": [
+        "Quantity takeoff",
+        "Markup tools",
+        "Viewpoints",
+        "Final reports"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic BIM or Revit knowledge helpful",
+    "No prior Navisworks experience needed"
+  ],
+  "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+}

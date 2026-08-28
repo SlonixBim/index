@@ -1,0 +1,64 @@
+{
+  "id": "german",
+  "title": "German Language",
+  "category": "Communication Languages",
+  "gradient": "from-yellow-600 to-amber-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn German for travel, work, and study in Germany — grammar, vocabulary, and conversational skills.",
+  "fullDescription": "This German course covers A1 to B1 levels, teaching you to communicate confidently in German for personal, academic, and professional settings. Ideal for those planning to work or study in Germany, Austria, or Switzerland.",
+  "rating": 4.6,
+  "students": 2870,
+  "instructor": "Klaus Werner, Certified Goethe Institute Trainer",
+  "whatYouWillLearn": [
+    "Speak and understand German in daily situations",
+    "Master German grammar including cases and genders",
+    "Read German texts and newspapers",
+    "Write professional emails and letters in German",
+    "Build a vocabulary of 2000+ German words",
+    "Prepare for Goethe-Zertifikat A1/A2 exam"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: German Basics (A1)",
+      "topics": [
+        "Pronunciation",
+        "Articles & genders",
+        "Basic verbs",
+        "Everyday phrases"
+      ]
+    },
+    {
+      "module": "Module 2: Grammar Foundations (A2)",
+      "topics": [
+        "Cases: Nominative & Accusative",
+        "Prepositions",
+        "Modal verbs",
+        "Past tense (Perfekt)"
+      ]
+    },
+    {
+      "module": "Module 3: Intermediate (B1)",
+      "topics": [
+        "Dative & Genitive",
+        "Subordinate clauses",
+        "Passive voice",
+        "Professional vocabulary"
+      ]
+    },
+    {
+      "module": "Module 4: Communication Skills",
+      "topics": [
+        "Conversation practice",
+        "Listening exercises",
+        "Writing tasks",
+        "Goethe exam prep"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior German knowledge required",
+    "Basic literacy in any language"
+  ],
+  "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80"
+}

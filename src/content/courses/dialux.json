@@ -1,0 +1,64 @@
+{
+  "id": "dialux",
+  "title": "Dialux Lighting Design",
+  "category": "EEE/ECE",
+  "gradient": "from-amber-500 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Design professional indoor and outdoor lighting schemes using Dialux software with lux calculations and 3D visualisation.",
+  "fullDescription": "Dialux is the industry-standard lighting design software. This course covers room modelling, luminaire selection, lux level calculations, emergency lighting, and generating professional reports for architects and electrical engineers.",
+  "rating": 4.6,
+  "students": 40,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Model rooms and buildings in Dialux",
+    "Select and place luminaires from manufacturer databases",
+    "Calculate lux levels and uniformity ratios",
+    "Design emergency and escape route lighting",
+    "Generate professional lighting reports",
+    "Apply IS/IEC lighting standards"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Dialux Interface",
+      "topics": [
+        "Room creation",
+        "Surface properties",
+        "Import DWG plans",
+        "Viewport navigation"
+      ]
+    },
+    {
+      "module": "Module 2: Luminaire Placement",
+      "topics": [
+        "Manufacturer plug-ins",
+        "Array placement",
+        "Spot & linear fixtures",
+        "Outdoor luminaires"
+      ]
+    },
+    {
+      "module": "Module 3: Calculations & Analysis",
+      "topics": [
+        "Lux level calculation",
+        "Uniformity",
+        "Glare analysis",
+        "False colour maps"
+      ]
+    },
+    {
+      "module": "Module 4: Reporting & Standards",
+      "topics": [
+        "Report generation",
+        "IS 3646 standard",
+        "Emergency lighting",
+        "Energy efficiency"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior experience required",
+    "Basic computer skills"
+  ],
+  "image": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=800&q=80"
+}

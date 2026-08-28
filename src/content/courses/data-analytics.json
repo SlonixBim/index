@@ -1,0 +1,83 @@
+{
+  "id": "data-analytics",
+  "title": "Data Analytics",
+  "category": "IT Programs",
+  "gradient": "from-red-500 to-red-400",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Analyze data and create insights using Python, SQL, and visualization tools.",
+  "fullDescription": "Master data analytics with Python, SQL, Excel, and business intelligence tools. Learn to extract insights from data and create compelling visualizations.",
+  "rating": 4.7,
+  "students": 88,
+  "instructor": "JANANI",
+  "whatYouWillLearn": [
+    "Perform exploratory data analysis",
+    "Write complex SQL queries",
+    "Create interactive dashboards",
+    "Apply statistical analysis techniques",
+    "Build predictive models",
+    "Present data-driven insights"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Data Fundamentals",
+      "topics": [
+        "Data types",
+        "Data cleaning",
+        "Excel advanced functions",
+        "Data quality"
+      ]
+    },
+    {
+      "module": "Module 2: SQL Mastery",
+      "topics": [
+        "SELECT statements",
+        "JOINs",
+        "Subqueries",
+        "Window functions"
+      ]
+    },
+    {
+      "module": "Module 3: Python for Data",
+      "topics": [
+        "Pandas",
+        "NumPy",
+        "Data manipulation",
+        "File handling"
+      ]
+    },
+    {
+      "module": "Module 4: Visualization",
+      "topics": [
+        "Matplotlib",
+        "Seaborn",
+        "Tableau basics",
+        "Dashboard design"
+      ]
+    },
+    {
+      "module": "Module 5: Statistical Analysis",
+      "topics": [
+        "Descriptive statistics",
+        "Hypothesis testing",
+        "Correlation",
+        "Regression"
+      ]
+    },
+    {
+      "module": "Module 6: Business Intelligence",
+      "topics": [
+        "KPI development",
+        "Reporting",
+        "Business metrics",
+        "Data storytelling"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic Excel knowledge",
+    "Basic math skills",
+    "Analytical mindset"
+  ],
+  "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80"
+}

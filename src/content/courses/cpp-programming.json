@@ -1,0 +1,73 @@
+{
+  "id": "cpp-programming",
+  "title": "C++ Programming",
+  "category": "IT Programs",
+  "gradient": "from-blue-800 to-red-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn C++ from basics to object-oriented programming, STL, and competitive programming techniques.",
+  "fullDescription": "Comprehensive C++ course covering OOP, templates, STL containers, algorithms, memory management, and modern C++17/20 features for systems programming and competitive coding.",
+  "rating": 4.7,
+  "students": 63,
+  "instructor": "SACHIN",
+  "whatYouWillLearn": [
+    "Master C++ syntax and OOP principles",
+    "Use STL containers and algorithms",
+    "Implement templates and generic programming",
+    "Manage memory with smart pointers",
+    "Apply modern C++17 features",
+    "Solve competitive programming problems"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: C++ Basics",
+      "topics": [
+        "Syntax",
+        "References",
+        "Functions",
+        "Namespaces"
+      ]
+    },
+    {
+      "module": "Module 2: OOP in C++",
+      "topics": [
+        "Classes & objects",
+        "Inheritance",
+        "Polymorphism",
+        "Operator overloading"
+      ]
+    },
+    {
+      "module": "Module 3: STL",
+      "topics": [
+        "Vectors",
+        "Maps & sets",
+        "Algorithms",
+        "Iterators"
+      ]
+    },
+    {
+      "module": "Module 4: Templates & Advanced",
+      "topics": [
+        "Function templates",
+        "Class templates",
+        "Smart pointers",
+        "Move semantics"
+      ]
+    },
+    {
+      "module": "Module 5: Projects",
+      "topics": [
+        "Data structures implementation",
+        "Mini game",
+        "File system project",
+        "Competitive problems"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "C programming basics or equivalent",
+    "Basic programming concepts"
+  ],
+  "image": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=800&q=80"
+}

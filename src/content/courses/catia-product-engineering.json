@@ -1,0 +1,83 @@
+{
+  "id": "catia-product-engineering",
+  "title": "CATIA for Product Engineering",
+  "category": "Engineering Tools",
+  "gradient": "from-red-700 to-red-600",
+  "duration": "12 weeks",
+  "level": "Intermediate",
+  "description": "Learn advanced product engineering and design with CATIA V5.",
+  "fullDescription": "Master CATIA V5, the powerful CAD/CAM/CAE software used in automotive, aerospace, and industrial design. Learn surface modeling, assembly design, and advanced engineering techniques.",
+  "rating": 4.6,
+  "students": 52,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Navigate CATIA V5 interface and workbenches",
+    "Create complex surface models",
+    "Design multi-part assemblies",
+    "Generate manufacturing drawings",
+    "Perform kinematic simulations",
+    "Work with automotive design standards"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: CATIA Fundamentals",
+      "topics": [
+        "Workbench overview",
+        "Part design basics",
+        "Sketcher tools",
+        "Feature-based modeling"
+      ]
+    },
+    {
+      "module": "Module 2: Surface Modeling",
+      "topics": [
+        "Wireframe geometry",
+        "Surface creation",
+        "Blend and fillet operations",
+        "Surface analysis"
+      ]
+    },
+    {
+      "module": "Module 3: Assembly Design",
+      "topics": [
+        "Product structure",
+        "Assembly constraints",
+        "DMU kinematics",
+        "Clash detection"
+      ]
+    },
+    {
+      "module": "Module 4: Drafting",
+      "topics": [
+        "2D layout",
+        "View generation",
+        "Dimensioning standards",
+        "Title blocks"
+      ]
+    },
+    {
+      "module": "Module 5: Generative Shape Design",
+      "topics": [
+        "Advanced surfacing",
+        "Hybrid design",
+        "Power copy",
+        "Publications"
+      ]
+    },
+    {
+      "module": "Module 6: Real Projects",
+      "topics": [
+        "Automotive parts",
+        "Consumer products",
+        "Complex assemblies",
+        "Portfolio development"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic CAD knowledge",
+    "Understanding of engineering drawings",
+    "Mechanical aptitude"
+  ],
+  "image": "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=800&q=80"
+}

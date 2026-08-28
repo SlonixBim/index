@@ -1,0 +1,64 @@
+{
+  "id": "sketchup",
+  "title": "SketchUp",
+  "category": "Civil Engineering",
+  "gradient": "from-teal-600 to-cyan-500",
+  "duration": "12 weeks",
+  "level": "Beginner",
+  "description": "Learn SketchUp for 3D architectural modeling, interior design, and presentation-ready visualizations.",
+  "fullDescription": "SketchUp is widely used by architects, interior designers, and civil engineers for quick 3D concept modeling and visualization. This course covers everything from basic modeling to rendering and presenting design ideas to clients.",
+  "rating": 4.6,
+  "students": 53,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Build 3D models of buildings and interiors",
+    "Use push/pull and follow-me tools effectively",
+    "Import and apply textures and materials",
+    "Create walkthroughs and scene animations",
+    "Use the 3D Warehouse for components",
+    "Export high-quality renders for presentations"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: SketchUp Basics",
+      "topics": [
+        "Interface & navigation",
+        "Drawing tools",
+        "Push/pull modeling",
+        "Groups & components"
+      ]
+    },
+    {
+      "module": "Module 2: Advanced Modeling",
+      "topics": [
+        "Follow-me tool",
+        "Solid tools",
+        "Curved surfaces",
+        "Complex geometry"
+      ]
+    },
+    {
+      "module": "Module 3: Materials & Textures",
+      "topics": [
+        "Applying materials",
+        "Custom textures",
+        "Lighting setup",
+        "Shadow studies"
+      ]
+    },
+    {
+      "module": "Module 4: Presentation",
+      "topics": [
+        "Scenes & animations",
+        "LayOut basics",
+        "Export for rendering",
+        "Client presentations"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "No prior experience required",
+    "Basic design interest helpful"
+  ],
+  "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80"
+}

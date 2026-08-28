@@ -1,0 +1,64 @@
+{
+  "id": "bim-360",
+  "title": "BIM 360",
+  "category": "BIM",
+  "gradient": "from-sky-700 to-cyan-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Master Autodesk BIM 360 for cloud-based project management, document control, and team collaboration.",
+  "fullDescription": "BIM 360 (now Autodesk Construction Cloud) is the platform for managing construction projects in the cloud. This course covers document management, design collaboration, field management, and project reporting using BIM 360.",
+  "rating": 4.6,
+  "students": 34,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Set up and manage BIM 360 projects",
+    "Control document workflows and approvals",
+    "Collaborate on design models in the cloud",
+    "Manage RFIs, submittals, and issues",
+    "Track project progress with dashboards",
+    "Coordinate field teams with mobile apps"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: BIM 360 Setup",
+      "topics": [
+        "Account & project setup",
+        "Member roles",
+        "Document folders",
+        "Permission control"
+      ]
+    },
+    {
+      "module": "Module 2: Design Collaboration",
+      "topics": [
+        "Model coordination",
+        "Clash review",
+        "Design packages",
+        "Version control"
+      ]
+    },
+    {
+      "module": "Module 3: Field Management",
+      "topics": [
+        "Issues & RFIs",
+        "Submittals",
+        "Daily logs",
+        "Photo documentation"
+      ]
+    },
+    {
+      "module": "Module 4: Reporting & Handover",
+      "topics": [
+        "Project dashboards",
+        "Analytics reports",
+        "Asset management",
+        "Project closeout"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic computer skills",
+    "Familiarity with Revit or AutoCAD helpful"
+  ],
+  "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
+}

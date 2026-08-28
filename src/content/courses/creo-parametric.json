@@ -1,0 +1,64 @@
+{
+  "id": "creo-parametric",
+  "title": "CREO Parametric",
+  "category": "Mechanical Engineering",
+  "gradient": "from-blue-700 to-blue-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn CREO Parametric for 3D modeling, assembly design, and engineering drawings used in product manufacturing.",
+  "fullDescription": "CREO Parametric is a leading CAD software used across aerospace, automotive, and manufacturing industries. This course covers part modeling, assembly design, sheet metal, and drawing creation for real-world engineering applications.",
+  "rating": 4.6,
+  "students": 47,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Create 3D parametric part models in CREO",
+    "Design and manage complex assemblies",
+    "Generate 2D engineering drawings with GD&T",
+    "Work with sheet metal components",
+    "Apply design constraints and relations",
+    "Use CREO simulation for basic analysis"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: CREO Interface & Sketching",
+      "topics": [
+        "UI overview",
+        "Sketch tools",
+        "Constraints",
+        "Dimensions"
+      ]
+    },
+    {
+      "module": "Module 2: Part Modeling",
+      "topics": [
+        "Extrude & revolve",
+        "Sweep & blend",
+        "Holes & chamfers",
+        "Patterns"
+      ]
+    },
+    {
+      "module": "Module 3: Assembly Design",
+      "topics": [
+        "Assembly constraints",
+        "Exploded views",
+        "BOM creation",
+        "Top-down design"
+      ]
+    },
+    {
+      "module": "Module 4: Drawing & Sheet Metal",
+      "topics": [
+        "Engineering drawings",
+        "GD&T symbols",
+        "Sheet metal bends",
+        "Flat patterns"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic mechanical engineering knowledge",
+    "No prior CREO experience needed"
+  ],
+  "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+}

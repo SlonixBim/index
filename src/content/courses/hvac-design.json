@@ -1,0 +1,33 @@
+{
+  "id": "hvac-design",
+  "title": "HVAC Systems Design",
+  "category": "Mechanical Engineering",
+  "gradient": "from-orange-600 to-orange-500",
+  "duration": "12 weeks",
+  "level": "Intermediate",
+  "description": "Design efficient heating, ventilation, and air conditioning systems.",
+  "fullDescription": "Comprehensive guide to HVAC design, including psychrometrics, heat load calculation, and equipment selection.",
+  "rating": 4.6,
+  "students": 42,
+  "instructor": "LOKESH KUMAR",
+  "whatYouWillLearn": [
+    "Heat load calculations",
+    "Psychrometric analysis",
+    "Duct design principles",
+    "System component selection"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Thermodynamics",
+      "topics": [
+        "Heat transfer",
+        "Cooling cycles",
+        "Refrigerants"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Mechanical Engineering degree or student status"
+  ],
+  "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
+}

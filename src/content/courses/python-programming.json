@@ -1,0 +1,82 @@
+{
+  "id": "python-programming",
+  "title": "Python Programming",
+  "category": "IT Programs",
+  "gradient": "from-red-700 to-red-600",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "description": "Master Python programming from basics to advanced applications.",
+  "fullDescription": "Learn Python from scratch and build real-world applications. Cover web development, data analysis, automation, and more with hands-on projects.",
+  "rating": 4.9,
+  "students": 62,
+  "instructor": "SACHIN",
+  "whatYouWillLearn": [
+    "Write clean, efficient Python code",
+    "Build web applications with Django/Flask",
+    "Automate tasks and workflows",
+    "Work with databases and APIs",
+    "Analyze data with Pandas and NumPy",
+    "Create data visualizations"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Python Fundamentals",
+      "topics": [
+        "Variables and data types",
+        "Control structures",
+        "Functions",
+        "Modules and packages"
+      ]
+    },
+    {
+      "module": "Module 2: Object-Oriented Programming",
+      "topics": [
+        "Classes and objects",
+        "Inheritance",
+        "Polymorphism",
+        "Design patterns"
+      ]
+    },
+    {
+      "module": "Module 3: Web Development",
+      "topics": [
+        "Flask basics",
+        "Django framework",
+        "REST APIs",
+        "Database integration"
+      ]
+    },
+    {
+      "module": "Module 4: Data Analysis",
+      "topics": [
+        "Pandas library",
+        "NumPy arrays",
+        "Data cleaning",
+        "Statistical analysis"
+      ]
+    },
+    {
+      "module": "Module 5: Automation",
+      "topics": [
+        "File operations",
+        "Web scraping",
+        "Task scheduling",
+        "Email automation"
+      ]
+    },
+    {
+      "module": "Module 6: Advanced Topics",
+      "topics": [
+        "Async programming",
+        "Testing",
+        "Deployment",
+        "Best practices"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic programming concepts helpful but not required",
+    "Computer with Python installed"
+  ],
+  "image": "https://images.unsplash.com/photo-1649180556628-9ba704115795?w=800&q=80"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "business-analytics",
+  "title": "Business Analytics",
+  "category": "Management",
+  "gradient": "from-indigo-600 to-blue-500",
+  "duration": "12 weeks",
+  "level": "Beginner to Intermediate",
+  "description": "Learn to analyze business data using Excel, Power BI, and SQL to drive data-driven decisions.",
+  "fullDescription": "Business Analytics bridges the gap between data and decision-making. This course covers data analysis with Excel, dashboard creation in Power BI, SQL for data querying, and statistical techniques to solve real business problems.",
+  "rating": 4.7,
+  "students": 33,
+  "instructor": "GOWRI",
+  "whatYouWillLearn": [
+    "Analyze business data using advanced Excel",
+    "Build interactive dashboards in Power BI",
+    "Write SQL queries to extract business insights",
+    "Apply statistical analysis to business problems",
+    "Create business reports and presentations",
+    "Develop data-driven decision-making skills"
+  ],
+  "curriculum": [
+    {
+      "module": "Module 1: Excel for Analytics",
+      "topics": [
+        "Pivot tables",
+        "VLOOKUP & INDEX-MATCH",
+        "Data cleaning",
+        "Charts & dashboards"
+      ]
+    },
+    {
+      "module": "Module 2: Power BI",
+      "topics": [
+        "Data modeling",
+        "DAX basics",
+        "Interactive visuals",
+        "Publishing reports"
+      ]
+    },
+    {
+      "module": "Module 3: SQL for Business",
+      "topics": [
+        "SELECT & joins",
+        "Aggregations",
+        "Subqueries",
+        "Business case queries"
+      ]
+    },
+    {
+      "module": "Module 4: Statistics & Insights",
+      "topics": [
+        "Descriptive statistics",
+        "Regression basics",
+        "KPI frameworks",
+        "Storytelling with data"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic Excel knowledge",
+    "No programming experience required"
+  ],
+  "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80"
+}
